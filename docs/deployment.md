@@ -30,6 +30,24 @@
 - `video/npm run check`：HyperFrames 0.8.135 的 lint、runtime、layout、motion
   检查通过；9 个时间采样点无布局问题，31/31 文本对比度检查通过。
 
+## 正式网站验收 · 2026-10-06
+
+`https://takeoff.genedai.me` 已部署到 Cloudflare，HTTPS 返回正常。
+GitHub 的公开仓库与 `main` 分支已推送，GitHub Actions 数据和构建检查通过。
+
+- 正式域名的 120 张照片逐项下载，字节数与 SHA-256 全部匹配源文件；
+  共 29,130,981 字节。HTML、脚本、样式、署名页等 11 个文件也逐字节一致。
+- 生产浏览器完成 42 项交互检查和全部照片解码，未出现 JavaScript 运行错误。
+- 生产触屏模拟完成 94 项检查，覆盖 14 种手机与平板尺寸，以及 360 次城市
+  标题边界检查。安全区、键盘缩小后的城市搜索和触屏遮板操作均通过。
+- 正式网站环境音完成 9 项浏览器检查；启用后测得音频输出，静音、暂停、
+  恢复和快速切换符合预期。
+- HTML 未被追加 Cloudflare Analytics 或 JavaScript Detections 脚本；
+  `no-transform` 生效。未知路径返回 404。
+
+上述移动端检查使用 Chromium 触屏模拟，尚未在实体 iOS/Android 设备上验收。
+本地完整记录保存在忽略的 `output/` 目录，公开仓库保留可复用的检查脚本。
+
 ## 发布复核方法
 
 `npm run build` 在 `dist/version.json` 写入 Git commit 与目录校验值。

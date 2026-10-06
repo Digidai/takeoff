@@ -7,7 +7,8 @@ pick a destination, or let the world drift past your window.
 
 [开始起飞 / Open Takeoff](https://takeoff.genedai.me) ·
 [照片署名 / Photo credits](https://takeoff.genedai.me/credits) ·
-[研究资料 / Research](research/README.md)
+[研究资料 / Research](research/README.md) ·
+[发布验收 / Verification](docs/deployment.md)
 
 ## Explore
 
