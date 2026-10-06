@@ -1,0 +1,44 @@
+{
+  "shanghai": {
+    "align": "xMinYMid slice"
+  },
+  "florence": {
+    "align": "xMaxYMid slice"
+  },
+  "taipei": {
+    "align": "xMidYMin slice"
+  },
+  "hong-kong": {
+    "officialSource": "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-victoria-harbour.html"
+  },
+  "paris": {
+    "officialSource": "https://www.toureiffel.paris/en/access-map"
+  },
+  "cape-town": {
+    "officialSource": "https://www.sanparks.org/parks/table-mountain/what-to-do/attractions/table-mountain"
+  },
+  "sydney": {
+    "officialSource": "https://www.sydneyoperahouse.com/about-us"
+  },
+  "new-york": {
+    "officialSource": "https://www.nps.gov/stli/index.htm"
+  },
+  "valparaiso": {
+    "landmark": "瓦尔帕莱索历史城区",
+    "landmarkSource": "https://whc.unesco.org/en/list/959/",
+    "officialSource": "https://whc.unesco.org/en/list/959/",
+    "visualNote": "展示历史城区实景；不将整片城区照片声称为某一处单体建筑。"
+  },
+  "chicago": {
+    "align": "xMaxYMid slice"
+  },
+  "singapore": {
+    "creditName": "Supanut Arunoprayote"
+  },
+  "seoul": {
+    "align": "xMinYMid slice"
+  },
+  "jakarta": {
+    "align": "xMaxYMid slice"
+  }
+}

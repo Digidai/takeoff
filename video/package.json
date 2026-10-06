@@ -1,0 +1,14 @@
+{
+  "name": "takeoff-video",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync": "node sync.mjs",
+    "check": "npm run sync && npx --yes hyperframes@0.8.135 check --timeout 15000",
+    "preview": "npm run sync && npx --yes hyperframes@0.8.135 preview --background --port 3019",
+    "render": "npm run sync && npx --yes hyperframes@0.8.135 render --quality delivery --fps 30 --output ../deliverables/takeoff-global.mp4"
+  },
+  "devDependencies": {
+    "gsap": "3.14.2"
+  }
+}

@@ -1,0 +1,31 @@
+import { cp, mkdir, readFile, writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+import { createRequire } from 'node:module';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import '../public/ambient.js';
+
+const here = dirname(fileURLToPath(import.meta.url));
+const publicDir = join(here, '..', 'public');
+const require = createRequire(import.meta.url);
+await mkdir(join(here, 'vendor'), {recursive:true});
+await mkdir(join(here, 'assets'), {recursive:true});
+const shared = ['scene.css', 'scene.js', 'cities.js', 'credits.html'];
+for (const name of shared) await cp(join(publicDir, name), join(here, name));
+await cp(join(publicDir, 'assets'), join(here, 'assets'), {recursive:true});
+await cp(require.resolve('gsap/dist/gsap.min.js'), join(here, 'vendor/gsap.min.js'));
+
+const { createSamples, sampleRate } = globalThis.TakeoffAmbient;
+const samples = createSamples(), seconds = 504, count = sampleRate * seconds;
+const wav = Buffer.alloc(44 + count * 2);
+wav.write('RIFF', 0); wav.writeUInt32LE(wav.length - 8, 4); wav.write('WAVE', 8);
+wav.write('fmt ', 12); wav.writeUInt32LE(16, 16); wav.writeUInt16LE(1, 20);
+wav.writeUInt16LE(1, 22); wav.writeUInt32LE(sampleRate, 24);
+wav.writeUInt32LE(sampleRate * 2, 28); wav.writeUInt16LE(2, 32); wav.writeUInt16LE(16, 34);
+wav.write('data', 36); wav.writeUInt32LE(count * 2, 40);
+for (let i = 0; i < count; i++) wav.writeInt16LE(Math.round(samples[i % samples.length] * 0.8 * 32767), 44 + i * 2);
+await writeFile(join(here, 'assets/ambient.wav'), wav);
+const manifest = {};
+for (const name of shared) manifest[name] = createHash('sha256').update(await readFile(join(here, name))).digest('hex');
+await writeFile(join(here, 'source-manifest.json'), JSON.stringify(manifest, null, 2) + '\n');
+console.log('Staged 120 licensed photos, shared scene, photo credits, and 504 seconds of original synthesized audio.');

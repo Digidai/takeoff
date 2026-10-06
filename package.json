@@ -1,0 +1,20 @@
+{
+  "name": "takeoff",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A quiet airplane window to 120 cities around the world.",
+  "license": "MIT",
+  "type": "module",
+  "repository": { "type": "git", "url": "https://github.com/Digidai/takeoff.git" },
+  "homepage": "https://takeoff.genedai.me",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "dev": "node scripts/serve.mjs",
+    "catalog": "python3 scripts/compile-cities.py",
+    "check": "node scripts/check.mjs",
+    "build": "node scripts/build.mjs",
+    "deploy": "npm run check && npm run build && wrangler deploy"
+  },
+  "devDependencies": { "wrangler": "4.147.0" },
+  "engines": { "node": ">=22" }
+}

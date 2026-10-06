@@ -1,0 +1,10 @@
+@font-face { font-family:'Takeoff Serif'; src:local('Times New Roman'); font-weight:400; }
+@font-face { font-family:'Takeoff Serif'; src:local('Times New Roman Bold'); font-weight:700; }
+.takeoff-scene { position:relative; width:1054px; height:720px; overflow:hidden; background:#000; color:#f5f4f1; font-family:'Takeoff Serif',serif; isolation:isolate; }
+.scene-background { position:absolute; inset:0; background:#030303 url('assets/grain.svg') repeat; }
+.scene-text { position:absolute; left:-3px; top:81px; width:100%; text-align:center; z-index:3; will-change:opacity; }
+.scene-title { margin:0; font-size:40px; font-weight:700; line-height:50px; letter-spacing:-.5px; }
+.scene-coordinates { margin:14px 0 0; color:#575551; font-size:16px; font-weight:400; line-height:20px; white-space:pre; letter-spacing:-.3px; }
+.scene-coordinate-inner { display:inline-block; }
+.window-art { position:absolute; width:212px; height:292px; top:262px; left:418px; overflow:visible; }
+.scene-grain { position:absolute; inset:0; z-index:4; pointer-events:none; opacity:.013; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.91' numOctaves='3' stitchTiles='stitch' seed='7'/%3E%3C/filter%3E%3Cpath fill='%23fff' filter='url(%23n)' d='M0 0h180v180H0z'/%3E%3C/svg%3E"); }

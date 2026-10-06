@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,interactive-widget=resizes-content">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="从一扇机窗出发，漫游六大洲的120座城市。拖动遮光板，寻找世界的下一站。">
+  <title>Takeoff · 起飞去看世界</title>
+  <link rel="canonical" href="https://takeoff.genedai.me/">
+  <meta property="og:title" content="Takeoff · 起飞去看世界">
+  <meta property="og:description" content="从一扇机窗出发，漫游六大洲的120座城市。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://takeoff.genedai.me/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="scene.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main aria-label="起飞去看世界">
+    <div id="stage" class="stage"></div>
+    <button id="window-control" class="window-control" aria-label="拖动遮光板，或点按前往下一座城市" title="向上拖动遮光板，前往下一站"></button>
+    <div class="seat-label" aria-hidden="true"><span class="seat-mark">↗</span> TAKEOFF <span class="seat-note">WINDOW SEAT · 01A</span></div>
+    <button id="current-info" class="current-info" aria-label="查看当前城市与照片来源"><span id="current-place"></span><span id="current-landmark"></span></button>
+    <div id="interface" class="interface">
+      <p class="hint" id="hint">向上轻推遮光板，去下一站</p>
+      <nav class="destinations" aria-label="选择目的地">
+        <button id="browse" class="browse-button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><ellipse cx="12" cy="12" rx="4" ry="8"/><path d="M4 12h16"/></svg><span>探索世界</span><span id="city-total" class="count-pill">120</span></button>
+        <button id="random" title="随机前往一座城市">随便飞 ↗</button>
+      </nav>
+      <div class="playback">
+        <button id="prev" class="icon-button" aria-label="上一站" title="上一站（←）"><svg viewBox="0 0 24 24"><path d="m14 6-6 6 6 6"/></svg></button>
+        <button id="play" class="play-button" aria-pressed="false"><span id="play-symbol">▷</span><span id="play-label">自动漫游</span></button>
+        <button id="next" class="icon-button" aria-label="下一站" title="下一站（→）"><svg viewBox="0 0 24 24"><path d="m10 6 6 6-6 6"/></svg></button>
+        <span class="divider"></span>
+        <button id="sound" class="icon-button" aria-label="开启环境音" aria-pressed="false" title="环境音"><svg viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4z"/><path id="sound-waves" d="m17 9 5 6m0-6-5 6"/></svg></button>
+        <button id="immersive" class="icon-button" aria-label="进入沉浸模式" title="沉浸模式（Esc 退出）"><svg viewBox="0 0 24 24"><path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/></svg></button>
+      </div>
+    </div>
+    <button id="exit-immersive" aria-label="退出沉浸模式">退出沉浸 <span>Esc</span></button>
+    <div class="journey-status"><span id="route-name">环球漫游</span><span id="route-counter">01 / 120</span></div>
+    <p id="announcement" class="sr-only" role="status" aria-live="polite"></p>
+  </main>
+  <dialog id="atlas" class="atlas-dialog" aria-labelledby="atlas-title">
+    <div class="atlas-heading"><div><p class="eyebrow">A WINDOW TO EVERYWHERE</p><h2 id="atlas-title">世界，从一扇窗开始。</h2><p id="atlas-summary"></p></div><button class="close-dialog" data-close="atlas" aria-label="关闭目的地目录">×</button></div>
+    <div class="atlas-map" aria-hidden="true"><svg id="world-dots" viewBox="0 0 720 180"></svg></div>
+    <div class="atlas-tools"><label class="search-wrap"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><input id="search" type="search" placeholder="搜索城市、国家／地区、地标" autocomplete="off" aria-label="搜索目的地"><kbd>/</kbd></label><div id="region-filters" class="region-filters" role="group" aria-label="按洲筛选"></div></div>
+    <div class="atlas-list-header"><span id="results-count"></span><button id="tour-region">漫游全部目的地 →</button></div>
+    <div id="city-grid" class="city-grid"></div>
+    <p id="no-results" class="no-results" hidden>暂时没有这座城市。试试中文、英文或地标名称。</p>
+    <footer class="atlas-footer">每一站都有真实照片与可查阅的来源。<a href="credits.html" target="_blank" rel="noopener">照片署名与研究来源 ↗</a> · <a href="https://github.com/Digidai/takeoff" target="_blank" rel="noopener">GitHub ↗</a></footer>
+  </dialog>
+  <dialog id="place-details" class="details-dialog" aria-labelledby="detail-title"><button class="close-dialog" data-close="place-details" aria-label="关闭城市详情">×</button><div id="detail-content"></div></dialog>
+  <script src="cities.js"></script>
+  <script src="scene.js"></script>
+  <script src="ambient.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

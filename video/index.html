@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=1054,height=720">
+  <title>Takeoff · 120 Cities Around the World</title>
+  <link rel="stylesheet" href="scene.css">
+  <script src="vendor/gsap.min.js"></script><script src="cities.js"></script><script src="scene.js"></script>
+  <style>
+    html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#050505}*{box-sizing:border-box;cursor:none!important}
+    #root,#scene{position:relative;width:100%;height:100%;overflow:hidden}
+    .scene-coordinates{color:#aaa297}
+    #place{position:absolute;top:571px;left:120px;width:814px;text-align:center;color:#c7b195;font:11px/1.8 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;letter-spacing:1px}
+    #landmark{display:block;color:#a48d71;font-size:10px;letter-spacing:.6px;margin-top:4px}
+    #progress{position:absolute;left:30px;bottom:31px;color:#b4a28b;font:10px/1.8 -apple-system,sans-serif;letter-spacing:1px}
+    #photo-credit{position:absolute;left:190px;right:30px;bottom:27px;color:#9d8d78;text-align:right;font:9px/1.6 -apple-system,sans-serif;overflow-wrap:anywhere}
+    #brand{position:absolute;left:30px;top:30px;color:#a99984;font:9px -apple-system,sans-serif;letter-spacing:3px}
+  </style>
+</head><body>
+  <div data-hf-id="hf-3geg" id="root" data-composition-id="takeoff-global" data-start="0" data-duration="504" data-width="1054" data-height="720">
+    <section data-hf-id="hf-a78g" id="scene" class="clip" data-start="0" data-duration="504" data-track-index="0" aria-label="120 cities, six continents, a window to the world"></section>
+    <div data-hf-id="hf-mz39" id="brand">↗ TAKEOFF · A WINDOW TO THE WORLD</div>
+    <div data-hf-id="hf-wx8y" id="place"><span data-hf-id="hf-n9iu" id="city-country"></span><span data-hf-id="hf-kn1e" id="landmark"></span></div>
+    <div data-hf-id="hf-o6ww" id="progress"></div><div data-hf-id="hf-tjwr" id="photo-credit"></div>
+    <audio data-hf-id="hf-eefq" id="global-audio" src="assets/ambient.wav" data-start="0" data-duration="504" data-track-index="1" data-volume="1"></audio>
+  </div>
+  <script>
+    const cities=window.TakeoffCities;
+    const buckets=['asia','europe','africa','north-america','south-america','oceania'].map(region=>cities.map((c,i)=>c.region===region?i:-1).filter(i=>i>=0));
+    const route=[];for(let n=0;route.length<cities.length;n++)for(const bucket of buckets)if(bucket[n]!==undefined)route.push(bucket[n]);
+    const scene=TakeoffScene.mount(document.getElementById('scene'),{assetBase:'assets/',cities,preloadAll:true});
+    scene.element.querySelector('.scene-text').setAttribute('data-layout-allow-overflow','');
+    let previousCity=-1;
+    function seek(seconds){
+      const state=TakeoffScene.tourAt(Math.min(seconds,503.999),route,4.2),c=cities[state.city];scene.setState(state);
+      document.getElementById('place').style.opacity=state.titleOpacity;
+      if(previousCity!==state.city){
+        document.getElementById('city-country').textContent=c.zh+' · '+c.country+' · '+c.regionName;
+        document.getElementById('landmark').textContent=c.landmark;
+        document.getElementById('progress').textContent=String(state.routeIndex+1).padStart(3,'0')+' / 120';
+        document.getElementById('photo-credit').textContent='Photo: '+c.artist+' · '+c.license+' · Wikimedia Commons / credits.html#'+c.id;
+        previousCity=state.city;
+      }
+    }
+    const playhead={seconds:0};const tl=gsap.timeline({paused:true});
+    tl.to(playhead,{seconds:504,duration:504,ease:'none',onUpdate:()=>seek(playhead.seconds)},0);
+    seek(0);window.__timelines=window.__timelines||{};window.__timelines['takeoff-global']=tl;
+    window.globalTour={seek,route,cities,scene,duration:504,secondsPerCity:4.2};
+  </script>
+</body></html>
