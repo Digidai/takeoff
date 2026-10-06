@@ -1,0 +1,14 @@
+{
+  "id": "cape-town",
+  "image": "illustrations/cape-town.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-02ef59af-3d99-4957-bce0-5e3627e9922d",
+  "promptSha256": "4b4648e8f5cc854485c91408bd47301794cc05f7c2fa9631695453931583c939",
+  "originalSha256": "b6dd83baef9f1d8cf71c570c004bd3d84b6ebb0d9c166b919ae71701f8c1ab80",
+  "originalBytes": 3038917,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "3c131425368a7e5b1ae057beb0c9b6ad9031e66f72d576ac3bbaa25394e64f4b",
+  "bytes": 493894,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

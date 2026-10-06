@@ -1,0 +1,14 @@
+{
+  "id": "colombo",
+  "image": "illustrations/colombo.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-881d68fa-5d64-4f43-b9de-2b4af01cf79c",
+  "promptSha256": "583ae90e7455665086d8f3e17a2544c29f4b85c9ed74d6e5490e9838c0244f96",
+  "originalSha256": "b16019f3cacd017aa6cea89b03c7d0ff345ea27050e15ea81b443864d1aba753",
+  "originalBytes": 2869756,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "3218950d287e67168e5666dce86d3984b768dc03d600d9df3d35d55d77806341",
+  "bytes": 412044,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

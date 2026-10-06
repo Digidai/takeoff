@@ -1,0 +1,14 @@
+{
+  "id": "rome",
+  "image": "illustrations/rome.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-8d5b68be-bddd-4d67-9a89-349ba59e6bed",
+  "promptSha256": "edc6140ba5e47e1c9a284d2f1dea804af6108d8eb85eb3b97c4d45c7f3808298",
+  "originalSha256": "3cdd78ef3e6bae3c36b3c85da3d3a1c67572b91202c6834392d944b36ff49007",
+  "originalBytes": 3128880,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "d63068b99150dfec445b18a8c523462b13b755be6f760428ba027abb6d8994a4",
+  "bytes": 507604,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

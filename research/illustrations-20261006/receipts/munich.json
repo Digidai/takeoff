@@ -1,0 +1,14 @@
+{
+  "id": "munich",
+  "image": "illustrations/munich.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-bf078596-63ee-46de-9183-d9df65226cc0",
+  "promptSha256": "52a18b6af1b59599e1920342a9cdb284d99d429bd0d363b4829af85b83af8eac",
+  "originalSha256": "08f07dfc53d5ebb562312a56bcfe7900f20e1142fe21f07763e415b5ed7a86df",
+  "originalBytes": 3010715,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "660d78e536ecf3860b4b76828b4c4bc8bdbebe0dbfbfd92870995bcebe80dcb9",
+  "bytes": 466000,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

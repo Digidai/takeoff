@@ -2,6 +2,7 @@
 
 - [全球 120 城市研究](global-cities-20261006/README.md)：覆盖范围、照片选择、坐标约定与逐城来源。
 - [完整呈现目录](global-cities-20261006/site-catalog.json)：作者、许可、来源、照片哈希及视觉参数。
+- [120 城市插画](illustrations-20261006/README.md)：逐城生成的插画、完整提示词与素材校验记录。
 - [照片授权清单](../THIRD_PARTY_NOTICES.md)：120 个独立文件的署名和许可。
 - [项目说明](../README.md)：本地运行、构建与 Cloudflare 部署。
 

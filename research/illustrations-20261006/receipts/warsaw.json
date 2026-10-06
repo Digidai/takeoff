@@ -1,0 +1,14 @@
+{
+  "id": "warsaw",
+  "image": "illustrations/warsaw.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-d87794a6-1f7d-431e-94a7-f1b40a2525ff",
+  "promptSha256": "953274307f4010f61110b4ca861b80c4ae4b2683ced64603b0d67cc9db035f60",
+  "originalSha256": "ecc6aac66fc6fb75488df8e47f7045b219bc1dbd3ad7382b8eb3684d36511806",
+  "originalBytes": 2998894,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "d30ee05b66c5f98562b3acd15cd5bf401cbe8c48474952c1c795db651fe54aa5",
+  "bytes": 472510,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

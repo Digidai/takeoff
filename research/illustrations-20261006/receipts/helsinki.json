@@ -1,0 +1,14 @@
+{
+  "id": "helsinki",
+  "image": "illustrations/helsinki.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-f4d8eabb-7b63-459d-9a56-79716c9a5a09",
+  "promptSha256": "f922787e46b7d4fb7faf7c504b18656e67bdcf651988576937e9d1b8333b0f8e",
+  "originalSha256": "3f3f3bd38ac8a7daa723a88605ffa9b8929d948efba23446fd3cd6295a209054",
+  "originalBytes": 2757253,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "fcd6475f92c19cf15c1e09bc379d617b415949651d3f7b6f407b3813c617a7cd",
+  "bytes": 399730,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "chiang-mai",
+  "image": "illustrations/chiang-mai.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-05a77dde-a8a2-4b47-bde0-bdcf9f3714aa",
+  "promptSha256": "bc7494fb5bd542d12a3e527beae9e171d0beb052d41f31b082d2491bb1608ef7",
+  "originalSha256": "e3b4939aa7a061590d86327cf1a573aea22847560f6878f809197a5194e4d599",
+  "originalBytes": 2980306,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "054967178ecaef857b0d8bb51cb29f56fa1f1493ecc03cc99c267c364c4937ee",
+  "bytes": 455286,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

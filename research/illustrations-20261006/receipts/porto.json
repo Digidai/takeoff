@@ -1,0 +1,14 @@
+{
+  "id": "porto",
+  "image": "illustrations/porto.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-7065b2fc-7803-4515-bdcb-c156ff6226ec",
+  "promptSha256": "6a18b48c7340c9ec072e7bafe06e68b7f72fd0ef21d475efbf85c901613ca693",
+  "originalSha256": "055f2480dbf94ebf704ff4eb17d85b1585fc40f9d056a00c69bb7696499ef528",
+  "originalBytes": 3225692,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "a02df1b3398ac0ba83a6ad9cd776d9c3867a45ef510b0fd34ff0165fe5e90297",
+  "bytes": 542048,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "stockholm",
+  "image": "illustrations/stockholm.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-1dd98a36-dac1-4f24-b427-4e978c9e07ba",
+  "promptSha256": "0dde5c9047bc1b50b3003ecad25a2aad1ac6689bccb5591c0aec0d11ab88d603",
+  "originalSha256": "c9dd145ed1c88472cee8e89a0647ae425fd500e109bdbdaca084942885ec4a0a",
+  "originalBytes": 2866209,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "85057f70c80164d78ead30d95ca6afcf15794bdbf5a7ba3e140f9f673319f85d",
+  "bytes": 420672,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

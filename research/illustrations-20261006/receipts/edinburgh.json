@@ -1,0 +1,14 @@
+{
+  "id": "edinburgh",
+  "image": "illustrations/edinburgh.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-5b3794ed-705f-4e5d-8ba2-1900e260aa67",
+  "promptSha256": "492769907eb56049ef787fc32d1acb7ad34b59ee2652c15967c049e14472bcc3",
+  "originalSha256": "c69db7f3a2d72ff224f0e9d12337548b14b4e7df33a0dd69cad768cfe5605a02",
+  "originalBytes": 3133873,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "247a88d2519285243d8dafcdddd2723b7673220c29ef2333e50ab1066cf9be5e",
+  "bytes": 527914,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

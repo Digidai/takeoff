@@ -1,0 +1,14 @@
+{
+  "id": "lima",
+  "image": "illustrations/lima.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-63fb6820-9afe-472a-9b0f-3eecebe7e980",
+  "promptSha256": "c1a2cd888d9f1e1d384da50b7673ba14535d50d747be25f1f5fe2fe5083d2abe",
+  "originalSha256": "81336415e45581a0d778e198580cbe21a63d831f47f86029fbcab3294c8a31f0",
+  "originalBytes": 2975257,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "7cad3846421cbc0eceb9ef0c36f9e585476bc7b6a76feeb9c24fe5b611c63a49",
+  "bytes": 464878,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

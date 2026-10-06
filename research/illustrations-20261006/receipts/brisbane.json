@@ -1,0 +1,14 @@
+{
+  "id": "brisbane",
+  "image": "illustrations/brisbane.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-60b9318d-d00e-4ce5-886f-0c9ed9ec5393",
+  "promptSha256": "06e75db497dba507d5e1164a18382c9db2f4f266d1ccee83b4b8213a4aa8c988",
+  "originalSha256": "70242fc03cd2025aabf4efd229359e841ae77caf73450311ffc8b6e91dfbd2a2",
+  "originalBytes": 3053771,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "e493b2d59b8ee19df9031f85f86e3006a5fc41ee35a2cdc445084295744562e6",
+  "bytes": 492136,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

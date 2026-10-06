@@ -1,0 +1,14 @@
+{
+  "id": "bangkok",
+  "image": "illustrations/bangkok.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-305fac0d-811a-466a-99ad-4604823e77b8",
+  "promptSha256": "7e618930626a78448658b73e580f9d4dcd72b9df000c5944cf225c78bccb3d34",
+  "originalSha256": "a4d5efd604a32a8f5da3ab472cb1e7515c3ce7b8f832374cf6a1b6631b08ef38",
+  "originalBytes": 2668290,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "a21c922c74f039163c181facb81cda785528aaccce9bb660045681cbc52d5f12",
+  "bytes": 376492,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

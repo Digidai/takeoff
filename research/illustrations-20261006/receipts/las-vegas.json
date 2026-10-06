@@ -1,0 +1,14 @@
+{
+  "id": "las-vegas",
+  "image": "illustrations/las-vegas.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-b3671887-7ecd-4e3a-a381-38982f295f60",
+  "promptSha256": "1e26a527bf895f3885954e591cef21d5f9de1fbce144085f793c3f96bea75989",
+  "originalSha256": "1e69ffe63b5cea8e47795a3cc39bef7a50b0b9d2eda0a5c10e0a1b89680d133e",
+  "originalBytes": 2969864,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "e56b97cec7442340be032eb52ac79d88a472600e2c69a691d01826c091631fbc",
+  "bytes": 427538,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

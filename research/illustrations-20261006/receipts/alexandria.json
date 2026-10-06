@@ -1,0 +1,14 @@
+{
+  "id": "alexandria",
+  "image": "illustrations/alexandria.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-b47b0e55-05c4-4e40-a542-5f8a91b218cf",
+  "promptSha256": "9952e03985daf9f505d72a9d433fd7269f84fb2245586ab515c644424881789a",
+  "originalSha256": "56ec8904b9c2987bd9d1aa6d012c4ad6dfe222320fc69a4c45e13e7804444309",
+  "originalBytes": 2985593,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "a9cbc1e811bdfff544975071075ac7e75070d2bed790a16e0cd6cca787837820",
+  "bytes": 440260,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

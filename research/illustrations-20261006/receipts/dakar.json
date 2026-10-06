@@ -1,0 +1,14 @@
+{
+  "id": "dakar",
+  "image": "illustrations/dakar.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-6aca3f6a-6a5a-4f34-80f9-1d73d8416fd8",
+  "promptSha256": "f7d589eab73e85bb5da48c09dddc32042241de6e9e79550f884a019b635dec25",
+  "originalSha256": "fab1df858102019cc5c29fd8bdc7434316d5d09917b2b3595e59c878a001c648",
+  "originalBytes": 2894044,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "f088aeafffeb72099fc99e52a76af99aaec4d89d5cc8061fd907408403ee518d",
+  "bytes": 431404,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

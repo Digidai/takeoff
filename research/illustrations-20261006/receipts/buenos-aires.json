@@ -1,0 +1,14 @@
+{
+  "id": "buenos-aires",
+  "image": "illustrations/buenos-aires.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-50c058b2-d3f1-4d1b-b28a-b32a3a45ce62",
+  "promptSha256": "282663721c5c86929fc4c930f0e97d9c89f8d353ab9885cae64dd2f8e484c91c",
+  "originalSha256": "d19659b5d7cab993c956cb755bb1140feeb225fec66e312485727be56d287913",
+  "originalBytes": 3128562,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "fc11b952918cfcbea7f808d1a02d680bc72503b872699378cd4ca6ddf254a6db",
+  "bytes": 516808,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

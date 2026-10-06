@@ -1,0 +1,14 @@
+{
+  "id": "milan",
+  "image": "illustrations/milan.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-ffeb30c2-d368-4d65-b9ed-2000c444cacc",
+  "promptSha256": "a8ab4771a64e5cefe37fa674818eec458b92e7e8fce0dd1d95e2cce24a820e7c",
+  "originalSha256": "b2a2c197254e453bf49eea0819d47e665945ea9dd1a1cfe7b644f98fa9cf011c",
+  "originalBytes": 2792057,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "fb48101b4bf4ab657bc8df5ebbdce12415a333668772e518202a877b121cb598",
+  "bytes": 399542,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

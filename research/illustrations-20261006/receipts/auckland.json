@@ -1,0 +1,14 @@
+{
+  "id": "auckland",
+  "image": "illustrations/auckland.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-36561ccd-25d8-4fe0-b295-5d1fc94159e3",
+  "promptSha256": "7378b8cb76285de872f5a81aa579e0200f0be4810386a5d3e5f082e72164def4",
+  "originalSha256": "766de63d2e74f277dad3ad97104fedbe72382019db40aac6bebb6461f82a4756",
+  "originalBytes": 2877311,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "dd67ff7d3b4d995cf2cef6321b9e5c2a5324a0d9b220e9a3b2b8ad18a9d88157",
+  "bytes": 436680,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

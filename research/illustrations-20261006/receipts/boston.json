@@ -1,0 +1,14 @@
+{
+  "id": "boston",
+  "image": "illustrations/boston.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-2789c71d-510d-4f9a-a3d3-ab18f460e26b",
+  "promptSha256": "485e938fb56fef92575525ec0cf8d8644aa872d99f3a1473c9bfcf57784aa60f",
+  "originalSha256": "3494f027d6d226eb523529ea1f2fdcefb2e7df42c77afe6d779dda2d30e77d0b",
+  "originalBytes": 2885552,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "81ba1dd54e4fa6d6ef9c8e4f7ae2509365a4546b60ee386643be3122f256095a",
+  "bytes": 424124,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

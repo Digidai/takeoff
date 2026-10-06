@@ -1,0 +1,14 @@
+{
+  "id": "salvador",
+  "image": "illustrations/salvador.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-5af2d971-9a8c-4763-b358-4fa49cd45a93",
+  "promptSha256": "367298500e30b8d9c2731f80c8e88e7eb737fc30e912f335659f68efcd23f2d7",
+  "originalSha256": "00fb4979f6cf327916ec4cc494396f661fc0120f30a4720fde3c39dfb915b564",
+  "originalBytes": 3143333,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "8ed72db33a1cfb8c85dd2b99c4dc57e30573cee8b22c89322c4c1e307bc733c3",
+  "bytes": 515070,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

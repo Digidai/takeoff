@@ -1,0 +1,14 @@
+{
+  "id": "paris",
+  "image": "illustrations/paris.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-28245cf2-c228-445a-9b60-880697c810da",
+  "promptSha256": "c6454bdc32911eebd31948aa40e8f26aed8e27dfd239dac2954e7578ba8142a6",
+  "originalSha256": "ba1292845bdf4688a0b5a4daf65f2c1b16b10c82dab2ee2f95885e761684a46d",
+  "originalBytes": 2810323,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "ff4a47a9293d0526e6f814949912e06d4f745e320c85c945fa035192f2ee8180",
+  "bytes": 410756,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

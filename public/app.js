@@ -1,174 +1,372 @@
 (function () {
   'use strict';
-  const $=s=>document.querySelector(s),cities=TakeoffScene.cities;
-  const regions=[['all','全部'],['asia','亚洲'],['europe','欧洲'],['africa','非洲'],['north-america','北美洲'],['south-america','南美洲'],['oceania','大洋洲']];
-  const label=id=>regions.find(r=>r[0]===id)?.[1]||id;
-  const normalize=s=>String(s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
-  const escape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const indices=cities.map((_,i)=>i);
-  function interleave(){
-    const buckets=regions.slice(1).map(([id])=>indices.filter(i=>cities[i].region===id));
-    const result=[];for(let n=0;result.length<cities.length;n++)for(const b of buckets)if(b[n]!==undefined)result.push(b[n]);
-    return result;
+  const $ = selector => document.querySelector(selector);
+  const geography = ['id','name','zh','country','region','regionName','lat','lon','coordinates','line','landmark','landmarkArticle','citySource','landmarkSource','coordinateSource','officialSource'];
+  const cities = window.TakeoffCities.map(current => ({
+    ...Object.fromEntries(geography.map(key => [key,current[key]])),
+    ...(window.TakeoffIllustrations?.[current.id] || {id:current.id,image:`illustrations/${current.id}.webp`}),
+    imageKind:'illustration',align:'xMidYMid slice',
+    researchPhoto:{image:current.image,sha256:current.sha256,bytes:current.bytes,artist:current.artist,license:current.license,licenseUrl:current.licenseUrl,photoSource:current.photoSource}
+  }));
+  window.TakeoffDestinations = cities;
+  const regions = [['all','全部'],['asia','亚洲'],['europe','欧洲'],['africa','非洲'],['north-america','北美洲'],['south-america','南美洲'],['oceania','大洋洲']];
+  const label = id => regions.find(region => region[0] === id)?.[1] || id;
+  const normalize = value => String(value).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+  const escape = value => String(value).replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
+  const indices = cities.map((_,index) => index);
+  const clamp = value => Math.max(0,Math.min(1,value));
+  function interleave() {
+    const buckets = regions.slice(1).map(([id]) => indices.filter(index => cities[index].region === id));
+    const route = [];
+    for (let row = 0; route.length < cities.length; row++) for (const bucket of buckets) if (bucket[row] !== undefined) route.push(bucket[row]);
+    return route;
   }
-  const scene=TakeoffScene.mount($('#stage'));
-  const media=matchMedia('(prefers-reduced-motion: reduce)'),shade=$('#window-control'),audio=TakeoffAmbient.create();
-  const params=new URLSearchParams(location.search);
-  let scale=1,city=Math.max(0,cities.findIndex(c=>c.id===params.get('city'))),openness=1,playing=false,elapsed=0,previous=0,raf=0,transitionToken=0,sound=false,drag=null,immersive=false,manualPose=true;
-  let route=interleave(),routeName='环球漫游',selectedRegion='all',lastCity=-1,visible=[],recent=[],rendered=false;
-  const seconds=5;
-  if(params.has('clean'))document.body.classList.add('clean');
-  const regionParam=params.get('region');
-  if(regions.some(r=>r[0]===regionParam)&&regionParam!=='all'){
-    route=indices.filter(i=>cities[i].region===regionParam);routeName=label(regionParam)+'漫游';selectedRegion=regionParam;
-    if(!route.includes(city))city=route[0];
+
+  const scene = TakeoffCabin.mount($('#stage'),{cities});
+  const media = matchMedia('(prefers-reduced-motion: reduce)');
+  const shade = $('#window-control');
+  const audio = TakeoffAmbient.create();
+  const params = new URLSearchParams(location.search);
+  let city = Math.max(0,cities.findIndex(candidate => candidate.id === params.get('city')));
+  let openness = 1, playing = false, elapsed = 0, previous = 0, raf = 0, transitionToken = 0;
+  let sound = false, drag = null, immersive = false, manualPose = true, scale = 1, hasPlayed = false;
+  let seconds = 8, route = interleave(), routeName = '环球漫游', selectedRegion = 'all';
+  let visible = [], recent = [], lastCity = -1, rendered = false, progressValue = -1, pendingCity = null;
+  let fullHeight = innerHeight, lastWidth = innerWidth, resizeFrame = 0;
+  let arrivalAnimations = [];
+  if (params.has('clean')) document.body.classList.add('clean');
+  const regionParam = params.get('region');
+  if (regions.some(([id]) => id === regionParam) && regionParam !== 'all') {
+    route = indices.filter(index => cities[index].region === regionParam);
+    selectedRegion = regionParam; routeName = label(regionParam) + '漫游';
+    if (!route.includes(city)) city = route[0];
   }
-  const statCountries=new Set(cities.map(c=>c.country)).size;
-  $('#city-total').textContent=cities.length;
-  $('#atlas-summary').textContent=`${cities.length} 座城市 · ${statCountries} 个国家／地区 · 6 大洲`;
-  $('#region-filters').innerHTML=regions.map(([id,title])=>`<button data-region="${id}" aria-pressed="${id==='all'}">${title}<span>${id==='all'?cities.length:cities.filter(c=>c.region===id).length}</span></button>`).join('');
-  $('#world-dots').innerHTML=`<path d="M0 90h720M360 0v180M0 45h720M0 135h720" class="map-guide"/>`+cities.map((c,i)=>`<circle data-point="${i}" cx="${((c.lon+180)/360*680+20).toFixed(2)}" cy="${((85-c.lat)/170*160+10).toFixed(2)}" r="2.4"><title>${escape(c.zh)}</title></circle>`).join('');
-  let fullHeight=innerHeight,lastWidth=innerWidth;
-  const art=scene.element.querySelector('.window-art'),sceneText=scene.element.querySelector('.scene-text'),sceneTitle=scene.element.querySelector('.scene-title');
-  function resize(){
-    const viewport=window.visualViewport,w=innerWidth,h=Math.min(innerHeight,viewport?.height||innerHeight);
-    if(Math.abs(w-lastWidth)>32)fullHeight=h;else fullHeight=Math.max(fullHeight,h);lastWidth=w;
-    const landscape=w>480&&w<=960&&h<=500&&w>h,portrait=!landscape&&(matchMedia('(pointer:coarse)').matches||w<=600||(w<=900&&h>w));
-    document.documentElement.style.setProperty('--visual-height',h+'px');
-    document.documentElement.style.setProperty('--visual-top',(viewport?.offsetTop||0)+'px');
-    document.body.classList.toggle('mobile-portrait',portrait);document.body.classList.toggle('mobile-landscape',landscape);
-    document.body.classList.toggle('keyboard-open',portrait&&document.activeElement?.id==='search'&&(fullHeight-h>120||h<480));
-    const dock=$('#interface');dock.style.top='';dock.style.left='';dock.style.bottom='';dock.style.transform='';
-    scene.element.style.left=w/2+'px';scene.element.style.top=h/2+'px';
-    art.style.top='';sceneText.style.top='';sceneText.style.left='';sceneText.style.width='';sceneTitle.style.fontSize='';
-    sceneTitle.textContent=cities[city].name;
-    if(portrait){
-      const headerBottom=$('.seat-label').getBoundingClientRect().bottom+16,dockTop=dock.getBoundingClientRect().top;
-      const available=dockTop-headerBottom-12;
-      scale=Math.max(.25,Math.min(w>600?1.3:1.12,(w-64)/212,(available-92)/376));
-      document.documentElement.style.setProperty('--scene-scale',scale);
-      const textWidth=(w-36)/scale;sceneText.style.width=textWidth+'px';sceneText.style.left=(527-textWidth/2)+'px';
-      const range=document.createRange();range.selectNodeContents(sceneTitle);const width=range.getBoundingClientRect().width;
-      if(width>w-36)sceneTitle.style.fontSize=40*(w-36)/width+'px';
-      const titleHeight=sceneText.offsetHeight*scale,total=titleHeight+292*scale+44+34;
-      const titleTop=headerBottom+Math.max(0,(available-total)/2),windowTop=titleTop+titleHeight+24;
-      sceneText.style.top=(360+(titleTop-h/2)/scale)+'px';art.style.top=(360+(windowTop-h/2)/scale)+'px';
-      $('#current-info').style.top=windowTop+292*scale+10+'px';
-    }else if(landscape){
-      const safe=getComputedStyle(document.documentElement),safeTop=parseFloat(safe.getPropertyValue('--safe-top'))||0,safeBottom=parseFloat(safe.getPropertyValue('--safe-bottom'))||0,safeRight=parseFloat(safe.getPropertyValue('--safe-right'))||0;
-      scale=Math.min(1.12,Math.max(.35,(h-safeTop-safeBottom-48)/292));
-      document.documentElement.style.setProperty('--scene-scale',scale);
-      const windowCenter=w*.28,rightCenter=w-Math.max(24,safeRight+12)-dock.offsetWidth/2,windowTop=safeTop+(h-safeTop-safeBottom-292*scale)/2;
-      scene.element.style.left=windowCenter+'px';art.style.top=(360+(windowTop-h/2)/scale)+'px';
-      const textWidth=(dock.offsetWidth+8)/scale;sceneText.style.width=textWidth+'px';sceneText.style.left=(527+(rightCenter-windowCenter)/scale-textWidth/2)+'px';
-      const range=document.createRange();range.selectNodeContents(sceneTitle);const width=range.getBoundingClientRect().width;
-      if(width>dock.offsetWidth)sceneTitle.style.fontSize=40*dock.offsetWidth/width+'px';
-      const titleHeight=sceneText.offsetHeight*scale,total=titleHeight+44+dock.offsetHeight+20,titleTop=safeTop+Math.max(8,(h-safeTop-safeBottom-total)/2);
-      sceneText.style.top=(360+(titleTop-h/2)/scale)+'px';
-      $('#current-info').style.top=titleTop+titleHeight+6+'px';$('#current-info').style.left=rightCenter+'px';
-      dock.style.top=titleTop+titleHeight+44+14+'px';dock.style.left=rightCenter+'px';dock.style.bottom='auto';dock.style.transform='translateX(-50%)';
-    }else{
-      scale=Math.min(h/720,w/1054);document.documentElement.style.setProperty('--scene-scale',scale);
-      $('#current-info').style.top=h/2+(568-360)*scale+'px';
-    }
-    if(!landscape)$('#current-info').style.left='';
-    const box=art.getBoundingClientRect();shade.style.left=box.left+'px';shade.style.top=box.top+'px';shade.style.width=box.width+'px';shade.style.height=box.height+'px';
+
+  $('#city-total').textContent = cities.length;
+  $('#atlas-summary').textContent = `${cities.length} 座城市 · ${new Set(cities.map(candidate => candidate.country)).size} 个国家／地区 · 6 大洲`;
+  $('#region-filters').innerHTML = regions.map(([id,title]) => `<button data-region="${id}" aria-pressed="${id === selectedRegion}">${title}<span>${id === 'all' ? cities.length : cities.filter(candidate => candidate.region === id).length}</span></button>`).join('');
+  $('#world-dots').innerHTML = '<path d="M0 90h720M360 0v180M0 45h720M0 135h720" class="map-guide"/>' + cities.map((candidate,index) => `<circle data-point="${index}" cx="${((candidate.lon+180)/360*680+20).toFixed(2)}" cy="${((85-candidate.lat)/170*160+10).toFixed(2)}" r="2.4"/>`).join('');
+
+  function resize() {
+    const viewport = window.visualViewport;
+    const width = innerWidth, height = Math.min(innerHeight,viewport?.height || innerHeight);
+    if (Math.abs(width-lastWidth) > 32) fullHeight = height;
+    else fullHeight = Math.max(fullHeight,height);
+    lastWidth = width;
+    const landscape = width > 480 && width <= 1180 && height <= 540 && width > height;
+    const portrait = !landscape && (width <= 600 || (width <= 900 && height > width));
+    document.documentElement.style.setProperty('--visual-height',height + 'px');
+    document.documentElement.style.setProperty('--visual-top',(viewport?.offsetTop || 0) + 'px');
+    document.body.classList.toggle('mobile-portrait',portrait);
+    document.body.classList.toggle('mobile-landscape',landscape);
+    document.body.classList.toggle('keyboard-open',portrait && document.activeElement?.id === 'search' && (fullHeight-height > 120 || height < 480));
+    const area = scene.element.getBoundingClientRect();
+    const maximum = immersive || params.has('clean') ? 1.5 : portrait ? 1.02 : landscape ? 1.32 : Math.min(1.16,Math.max(.82,width*.19/TakeoffCabin.width));
+    scale = Math.max(.1,Math.min((area.width-36)/TakeoffCabin.width,(area.height-24)/TakeoffCabin.height,maximum));
+    scene.art.style.width = TakeoffCabin.width*scale + 'px';
+    scene.art.style.height = TakeoffCabin.height*scale + 'px';
+    const art = scene.art.getBoundingClientRect(), stage = $('#stage').getBoundingClientRect();
+    shade.style.left = art.left-stage.left + 'px';
+    shade.style.top = art.top-stage.top + 'px';
+    shade.style.width = art.width + 'px';
+    shade.style.height = art.height + 'px';
   }
-  function ambient(){document.documentElement.style.setProperty('--ambient',Math.pow(openness,.68));}
-  function update(){
-    ambient();$('#play').setAttribute('aria-pressed',playing);$('#play-label').textContent=playing?'暂停漫游':'自动漫游';$('#play-symbol').textContent=playing?'Ⅱ':'▷';
-    $('#hint').textContent=playing?`${routeName}，下一站就在窗外`:'向上轻推遮光板，去下一站';
-    $('#route-name').textContent=routeName;$('#route-counter').textContent=`${String(route.indexOf(city)+1).padStart(2,'0')} / ${route.length}`;
-    if(lastCity!==city){
-      const c=cities[city];$('#current-place').textContent=`${c.zh} · ${c.country}`;$('#current-landmark').textContent=c.landmark;
-      $('#current-info').setAttribute('aria-label',`查看${c.zh}与照片来源`);
-      if(rendered)$('#city-grid').querySelectorAll('[data-destination]').forEach(b=>b.setAttribute('aria-pressed',Number(b.dataset.destination)===city));
-      $('#world-dots').querySelectorAll('circle').forEach(p=>p.classList.toggle('active',Number(p.dataset.point)===city));
-      const next=route[(route.indexOf(city)+1)%route.length];scene.prepare(next).catch(()=>{});lastCity=city;resize();
+  function scheduleResize() {
+    cancelAnimationFrame(resizeFrame);
+    resizeFrame = requestAnimationFrame(resize);
+  }
+
+  function setProgress(value) {
+    const percent = Math.round(clamp(value)*100);
+    $('#stop-progress').style.transform = `scaleX(${clamp(value)})`;
+    if (percent !== progressValue) {
+      $('.route-progress').setAttribute('aria-valuenow',percent);
+      progressValue = percent;
     }
   }
-  function paint(o=openness,extra={}){openness=o;scene.setState({city,openness:o,...extra});ambient();$('#current-info').style.opacity=Math.max(0,(o-.55)/.45);}
-  function pause(){playing=false;transitionToken++;cancelAnimationFrame(raf);previous=0;audio.setActive(false);update();}
-  function frame(now){
-    if(!playing)return;if(previous)elapsed+=(now-previous)/1000;previous=now;
-    const duration=route.length*seconds;if(elapsed>=duration)elapsed%=duration;
-    const state=TakeoffScene.tourAt(elapsed,route,seconds);city=state.city;openness=state.openness;scene.setState(state);$('#current-info').style.opacity=state.titleOpacity;update();
-    raf=requestAnimationFrame(frame);
+  function updateControls() {
+    $('#play').setAttribute('aria-pressed',String(playing));
+    $('#play-label').textContent = playing ? '暂停漫游' : hasPlayed ? '继续漫游' : '开始漫游';
+    $('#play').setAttribute('aria-label',$('#play-label').textContent);
+    $('#play-symbol').innerHTML = playing ? '<path d="M8 5h3v14H8zM15 5h3v14h-3z"/>' : '<path d="m9 5 11 7-11 7z"/>';
+    $('#route-name').textContent = routeName;
+    $('#route-counter').textContent = `${String(Math.max(0,route.indexOf(city))+1).padStart(2,'0')} / ${route.length}`;
+    const total = route.length*seconds;
+    $('#route-duration').textContent = `${route.length} 座城市 · 约 ${total < 60 ? total + ' 秒' : Math.round(total/60) + ' 分钟'}`;
+    $('#hint-text').textContent = immersive ? `${cities[city].zh} · ${cities[city].country}` : playing ? '世界正在经过你的窗。' : '向上轻推遮光板，去下一站';
   }
-  async function syncAudio(){
-    const token=transitionToken;
-    try{await audio.setActive(sound&&playing);}
-    catch{if(token===transitionToken){sound=false;audio.setActive(false);updateSound();}}
-  }
-  async function play(){
-    if(playing)return;const token=++transitionToken;playing=true;previous=0;update();
-    if(manualPose){if(openness<.999&&!await tween(1,450,token))return;if(token!==transitionToken)return;elapsed=Math.max(0,route.indexOf(city))*seconds+1.25;manualPose=false;}
-    syncAudio();raf=requestAnimationFrame(frame);
-  }
-  function tween(to,duration,token,reveal=false){
-    if(media.matches){paint(to);return Promise.resolve(token===transitionToken);}
-    const from=openness,start=performance.now();return new Promise(resolve=>{
-      function tick(now){
-        if(token!==transitionToken)return resolve(false);
-        const p=Math.min(1,(now-start)/duration),move=Math.min(1,(now-start)/Math.min(duration,850)),e=move*move*(3-2*move);
-        paint(from+(to-from)*e,reveal?{titleOpacity:1-(1-Math.min(1,p*2.5))**3,titleOffset:8*(1-Math.min(1,p*2))**3,coordinateProgress:Math.max(0,Math.min(1,(p-.15)/.75))}:{});
-        if(p<1)requestAnimationFrame(tick);else resolve(true);
-      }requestAnimationFrame(tick);
+  function animateArrival() {
+    arrivalAnimations.forEach(animation => animation.cancel());
+    arrivalAnimations = [];
+    if (media.matches) return;
+    ['.city-heading','.landmark-caption'].forEach((selector,index) => {
+      const frames = selector === '.landmark-caption' ? [{opacity:0},{opacity:1}] : [{opacity:0,transform:'translateY(7px)'},{opacity:1,transform:'translateY(0)'}];
+      arrivalAnimations.push($(selector).animate(frames,{duration:460,delay:index*40,easing:'cubic-bezier(.22,1,.36,1)'}));
     });
   }
-  async function travel(target){
-    if(!Number.isInteger(target))return false;target=((target%cities.length)+cities.length)%cities.length;
-    pause();manualPose=true;const token=++transitionToken;
-    try{
-      const [closed]=await Promise.all([tween(0,430,token),scene.prepare(target)]);if(!closed||token!==transitionToken)return false;
-      city=target;update();paint(0);recent=[...recent.slice(-4),city];
-      if(!await tween(1,1100,token,true))return false;
-      elapsed=Math.max(0,route.indexOf(city))*seconds+1.25;manualPose=false;$('#announcement').textContent=`已抵达${cities[city].zh}，${cities[city].country}`;return true;
-    }catch{
-      if(token===transitionToken){await tween(1,350,token);$('#hint').textContent='这张照片暂时未能打开，请再试一次';}return false;
+  function updateCity() {
+    if (lastCity === city) return;
+    const current = cities[city];
+    $('#city-name').textContent = current.name;
+    $('#current-place').textContent = `${current.zh} · ${current.country}`;
+    $('#coordinates').textContent = current.coordinates;
+    $('#current-landmark').textContent = current.landmark;
+    $('#arrival-region').textContent = '已抵达 · ' + label(current.region);
+    $('#current-info').setAttribute('aria-label',`查看${current.zh}与插画资料`);
+    $('#current-info').title = current.landmark + ' · 城市与插画资料';
+    if (rendered) $('#city-grid').querySelectorAll('[data-destination]').forEach(button => button.setAttribute('aria-pressed',String(Number(button.dataset.destination) === city)));
+    $('#world-dots').querySelectorAll('circle').forEach(point => point.classList.toggle('active',Number(point.dataset.point) === city));
+    const next = route[(Math.max(0,route.indexOf(city))+1)%route.length];
+    scene.prepare(next).catch(() => {});
+    if (lastCity !== -1) animateArrival();
+    lastCity = city; updateControls(); resize();
+  }
+  function paint(value = openness) {
+    openness = clamp(value);
+    scene.setState({city,openness});
+  }
+  function busy(value,text = '') {
+    $('#travel-status').hidden = !value;
+    $('#travel-status').textContent = text;
+    $('#stage').setAttribute('aria-busy',String(value));
+  }
+  function pause(reveal = false) {
+    playing = false; transitionToken++; cancelAnimationFrame(raf); previous = 0; pendingCity = null;
+    audio.setActive(false); updateControls();
+    if (reveal && !drag && openness < .999) {
+      manualPose = true; tween(1,300,transitionToken);
     }
   }
-  function nextIndex(step){return route[(Math.max(0,route.indexOf(city))+step+route.length)%route.length];}
-  function updateSound(){
-    $('#sound').setAttribute('aria-pressed',sound);$('#sound').setAttribute('aria-label',sound?'关闭环境音':'开启环境音');$('#sound-waves').setAttribute('d',sound?'M17 8q4 4 0 8m3-11q7 7 0 14':'m17 9 5 6m0-6-5 6');
+  async function syncAudio() {
+    const token = transitionToken;
+    try { await audio.setActive(sound && playing); }
+    catch { if (token === transitionToken) { sound = false; audio.setActive(false); updateSound(); } }
   }
-  function setImmersive(value){immersive=value;document.body.classList.toggle('immersive',value);$(value?'#exit-immersive':'#immersive').focus();}
-  function renderGrid(){
-    const q=normalize($('#search').value.trim());visible=indices.filter(i=>(selectedRegion==='all'||cities[i].region===selectedRegion)&&normalize([cities[i].zh,cities[i].name,cities[i].country,cities[i].landmark,cities[i].landmarkArticle].join(' ')).includes(q));
-    $('#region-filters').querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.region===selectedRegion));
-    $('#city-grid').innerHTML=visible.map(i=>{const c=cities[i];return `<button class="city-card" data-destination="${i}" aria-pressed="${i===city}" aria-label="前往${escape(c.zh)}"><span class="card-photo"><img src="assets/${c.image}" loading="lazy" decoding="async" alt="${escape(c.imageKind==='city'?c.zh+'城市景观':c.landmark)}"><span class="card-region">${label(c.region)}</span><span class="card-arrow">↗</span></span><span class="card-caption"><strong>${escape(c.zh)}</strong><span>${escape(c.name)}</span><small>${escape(c.country)} · ${escape(c.landmark)}</small></span></button>`;}).join('');
-    $('#no-results').hidden=visible.length>0;$('#results-count').textContent=`${visible.length} 个目的地`;
-    $('#tour-region').textContent=`漫游这 ${visible.length} 座城市 →`;$('#tour-region').disabled=visible.length===0;rendered=true;
+  function tourAt(time) {
+    const routeIndex = Math.floor(time/seconds)%route.length, phase = time%seconds;
+    const opening = seconds*.12, closingAt = seconds*.86, closing = seconds*.12;
+    const smooth = value => value*value*(3-2*value);
+    const value = phase < opening ? smooth(clamp(phase/opening)) : phase < closingAt ? 1 : 1-smooth(clamp((phase-closingAt)/closing));
+    return {city:route[routeIndex],openness:value};
   }
-  function openAtlas(){pause();renderGrid();$('#atlas').showModal();if(innerWidth<=900||matchMedia('(pointer:coarse)').matches)$('#atlas .close-dialog').focus({preventScroll:true});else $('#search').focus();resize();}
-  function openDetails(){
-    pause();const c=cities[city];$('#detail-content').innerHTML=`<img class="detail-photo" src="assets/${c.image}" alt="${escape(c.imageKind==='city'?c.zh+'城市景观':c.landmark)}"><p class="eyebrow">${label(c.region)} · ${escape(c.country)}</p><h2 id="detail-title">${escape(c.zh)}<span>${escape(c.name)}</span></h2><p class="detail-line">${escape(c.line)}</p><div class="detail-landmark">${escape(c.landmark)}<span>${escape(c.coordinates)}</span></div><div class="source-links"><a href="${escape(c.citySource)}" target="_blank" rel="noopener">城市资料 ↗</a><a href="${escape(c.landmarkSource)}" target="_blank" rel="noopener">地标资料 ↗</a></div><div class="photo-credit"><p>照片：${escape(c.artist)}</p><p><a href="${escape(c.photoSource)}" target="_blank" rel="noopener">查看原始照片 ↗</a> · <a href="${escape(c.licenseUrl)}" target="_blank" rel="noopener">${escape(c.license)}</a></p><p>机窗按比例裁切展示；坐标为城市位置。</p></div>`;$('#place-details').showModal();
+  function frame(now) {
+    if (!playing) return;
+    if (previous) elapsed += (now-previous)/1000;
+    previous = now;
+    const duration = route.length*seconds;
+    if (elapsed >= duration) elapsed %= duration;
+    const state = tourAt(elapsed);
+    if (state.city !== city && !scene.isPrepared(state.city)) {
+      travel(state.city).then(success => { if (success && !document.hidden) play(); });
+      return;
+    }
+    city = state.city; paint(state.openness); updateCity();
+    setProgress((elapsed%seconds)/seconds);
+    raf = requestAnimationFrame(frame);
   }
-  $('#browse').addEventListener('click',openAtlas);$('#current-info').addEventListener('click',openDetails);
-  document.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click',()=>$('#'+b.dataset.close).close()));
-  [$('#atlas'),$('#place-details')].forEach(d=>d.addEventListener('click',e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close();}}));
+  async function play() {
+    if (playing) return;
+    const token = ++transitionToken;
+    playing = true; hasPlayed = true; previous = 0; pendingCity = null; updateControls(); busy(false);
+    try {
+      await scene.prepare(city);
+      if (token !== transitionToken) return;
+      if (manualPose) {
+        if (openness < .999 && !await tween(1,380,token)) return;
+        if (token !== transitionToken) return;
+        elapsed = Math.max(0,route.indexOf(city))*seconds + seconds*.16;
+        manualPose = false;
+      }
+      syncAudio(); raf = requestAnimationFrame(frame);
+    } catch {
+      if (token === transitionToken) { pause(); busy(false); $('#hint-text').textContent = '插画暂时未能打开，可在目录中重试。'; }
+    }
+  }
+  function tween(to,duration,token,opening = false) {
+    if (media.matches) { paint(to); return Promise.resolve(token === transitionToken); }
+    const from = openness, start = performance.now();
+    return new Promise(resolve => {
+      function tick(now) {
+        if (token !== transitionToken) return resolve(false);
+        const progress = Math.min(1,(now-start)/duration);
+        const eased = opening ? 1-Math.pow(1-progress,3) : progress*progress*(3-2*progress);
+        paint(from+(to-from)*eased);
+        if (progress < 1) requestAnimationFrame(tick);
+        else resolve(true);
+      }
+      requestAnimationFrame(tick);
+    });
+  }
+  async function travel(target) {
+    if (!Number.isInteger(target)) return false;
+    target = ((target%cities.length)+cities.length)%cities.length;
+    pause(); manualPose = true; pendingCity = target;
+    const token = ++transitionToken;
+    busy(true,'正在飞往' + cities[target].zh + '…');
+    try {
+      const [closed] = await Promise.all([tween(0,320,token),scene.prepare(target)]);
+      if (!closed || token !== transitionToken) return false;
+      city = target; pendingCity = null; paint(0); updateCity(); recent = [...recent.slice(-4),city]; busy(false);
+      if (!await tween(1,760,token,true)) return false;
+      elapsed = Math.max(0,route.indexOf(city))*seconds + seconds*.16;
+      manualPose = false; setProgress(0);
+      $('#announcement').textContent = `已抵达${cities[city].zh}，${cities[city].country}`;
+      return true;
+    } catch {
+      if (token === transitionToken) {
+        const recovery = ++transitionToken; pendingCity = null; busy(false);
+        if (await tween(1,320,recovery,true)) $('#hint-text').textContent = '插画暂时未能打开，可在目录中重试或选择另一站。';
+      }
+      return false;
+    }
+  }
+  function nextIndex(step) { return route[(Math.max(0,route.indexOf(pendingCity ?? city))+step+route.length)%route.length]; }
+  function updateSound() {
+    $('#sound').setAttribute('aria-pressed',String(sound));
+    $('#sound').setAttribute('aria-label',sound ? '关闭环境音' : '开启环境音');
+    $('#sound-waves').setAttribute('d',sound ? 'M17 8q4 4 0 8m3-11q7 7 0 14' : 'm17 9 5 6m0-6-5 6');
+    $('#sound-state').textContent = sound ? '开启' : '关闭';
+  }
+  function setImmersive(value) {
+    if ($('#settings').open) $('#settings').close();
+    immersive = value; document.body.classList.toggle('immersive',value);
+    updateControls(); resize(); $(value ? '#exit-immersive' : '#settings-toggle').focus({preventScroll:true});
+  }
+
+  function renderGrid() {
+    const query = normalize($('#search').value.trim());
+    visible = indices.filter(index => (selectedRegion === 'all' || cities[index].region === selectedRegion) && normalize([cities[index].zh,cities[index].name,cities[index].country,cities[index].landmark,cities[index].landmarkArticle].join(' ')).includes(query));
+    $('#region-filters').querySelectorAll('button').forEach(button => button.setAttribute('aria-pressed',String(button.dataset.region === selectedRegion)));
+    $('#city-grid').innerHTML = visible.map(index => {
+      const current = cities[index];
+      return `<button class="city-card" data-destination="${index}" aria-pressed="${index === city}" aria-label="前往${escape(current.zh)}"><span class="card-photo"><img src="assets/${current.image}" loading="lazy" decoding="async" alt="${escape(current.zh+'城市插画')}" ><span class="card-region">${index === city ? '正在看 · ' : ''}${label(current.region)}</span><span class="card-arrow" aria-hidden="true">↗</span></span><span class="card-caption"><strong>${escape(current.zh)}</strong><span>${escape(current.name)}</span><small>${escape(current.country)} · ${escape(current.landmark)}</small></span></button>`;
+    }).join('');
+    $('#no-results').hidden = visible.length > 0;
+    $('#city-grid').hidden = visible.length === 0;
+    $('#results-count').textContent = `${visible.length} 个目的地`;
+    $('#tour-region').textContent = `漫游这 ${visible.length} 座城市 →`;
+    $('#tour-region').disabled = visible.length === 0;
+    $('#random-atlas').disabled = visible.length === 0;
+    rendered = true;
+  }
+  function openAtlas() {
+    pause(true); busy(false); renderGrid(); $('#atlas').showModal();
+    if (innerWidth <= 900 || matchMedia('(pointer:coarse)').matches) $('#atlas .close-dialog').focus({preventScroll:true});
+    else $('#search').focus({preventScroll:true});
+    resize();
+  }
+  function openDetails() {
+    pause(true); busy(false);
+    const current = cities[city];
+    $('#detail-content').innerHTML = `<img class="detail-photo" src="assets/${current.image}" alt="${escape(current.zh+'城市插画')}"><p class="eyebrow">${label(current.region)} · ${escape(current.country)}</p><h2 id="detail-title">${escape(current.zh)}<span>${escape(current.name)}</span></h2><p class="detail-line">${escape(current.line)}</p><div class="detail-landmark">${escape(current.landmark)}<span>${escape(current.coordinates)}</span></div><div class="source-links"><a href="${escape(current.citySource)}" target="_blank" rel="noopener">城市资料 ↗</a><a href="${escape(current.landmarkSource)}" target="_blank" rel="noopener">地标资料 ↗</a></div><div class="photo-credit"><p>城市插画 · OpenAI imagegen 生成</p><p>地标与视角为艺术化表现；坐标为城市参考位置。</p><p><a href="credits.html#${current.id}" target="_blank" rel="noopener">插画与研究资料 ↗</a> · <a href="https://github.com/Digidai/takeoff/tree/main/research/illustrations-20261006" target="_blank" rel="noopener">生成记录 ↗</a></p></div>`;
+    $('#place-details').showModal();
+  }
+
+  $('#browse').addEventListener('click',openAtlas);
+  $('#settings-toggle').addEventListener('click',() => { $('#settings').showModal(); $('#settings .close-dialog').focus({preventScroll:true}); });
+  $('#current-info').addEventListener('click',openDetails);
+  document.querySelectorAll('[data-close]').forEach(button => button.addEventListener('click',() => $('#'+button.dataset.close).close()));
+  [$('#atlas'),$('#place-details'),$('#settings')].forEach(dialog => {
+    dialog.addEventListener('click',event => {
+      if (event.target !== dialog) return;
+      const rect = dialog.getBoundingClientRect();
+      if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) dialog.close();
+    });
+    dialog.addEventListener('close',scheduleResize);
+  });
   $('#search').addEventListener('input',renderGrid);
-  $('#region-filters').addEventListener('click',e=>{const b=e.target.closest('[data-region]');if(b){selectedRegion=b.dataset.region;renderGrid();}});
-  $('#city-grid').addEventListener('click',e=>{const b=e.target.closest('[data-destination]');if(b){route=selectedRegion==='all'?interleave():indices.filter(i=>cities[i].region===selectedRegion);routeName=selectedRegion==='all'?'环球漫游':label(selectedRegion)+'漫游';$('#atlas').close();travel(Number(b.dataset.destination));}});
-  $('#tour-region').addEventListener('click',async()=>{
-    if(!visible.length)return;route=[...visible];routeName=selectedRegion==='all'&&visible.length===cities.length?'环球漫游':selectedRegion==='all'?'精选漫游':label(selectedRegion)+'漫游';$('#atlas').close();if(await travel(route.includes(city)?city:route[0]))play();
+  $('#reset-search').addEventListener('click',() => { selectedRegion = 'all'; $('#search').value = ''; renderGrid(); $('#search').focus({preventScroll:true}); });
+  $('#region-filters').addEventListener('click',event => {
+    const button = event.target.closest('[data-region]');
+    if (button) { selectedRegion = button.dataset.region; renderGrid(); }
   });
-  $('#random').addEventListener('click',()=>{const choices=route.filter(i=>i!==city&&!recent.includes(i));const list=choices.length?choices:route.filter(i=>i!==city);if(list.length)travel(list[Math.floor(Math.random()*list.length)]);});
-  $('#play').addEventListener('click',()=>playing?pause():play());$('#prev').addEventListener('click',()=>travel(nextIndex(-1)));$('#next').addEventListener('click',()=>travel(nextIndex(1)));
-  $('#sound').addEventListener('click',()=>{sound=!sound;updateSound();if(sound&&!playing)play();else syncAudio();});$('#immersive').addEventListener('click',()=>setImmersive(true));$('#exit-immersive').addEventListener('click',()=>setImmersive(false));
-  shade.addEventListener('pointerdown',e=>{if(!e.isPrimary||e.button!==0)return;pause();manualPose=true;transitionToken++;shade.setPointerCapture(e.pointerId);drag={id:e.pointerId,y:e.clientY,open:openness,moved:false};});
-  shade.addEventListener('pointermove',e=>{if(!drag||e.pointerId!==drag.id)return;const dy=(e.clientY-drag.y)/scale;if(Math.abs(dy)>4)drag.moved=true;paint(Math.max(0,Math.min(1,drag.open+dy/244)));});
-  shade.addEventListener('pointerup',e=>{if(!drag||e.pointerId!==drag.id)return;const moved=drag.moved;drag=null;if(!moved||openness<.32)travel(nextIndex(1));else tween(1,420,++transitionToken);});
-  shade.addEventListener('pointercancel',e=>{if(!drag||e.pointerId!==drag.id)return;drag=null;tween(1,350,++transitionToken);});shade.addEventListener('click',e=>{if(e.detail===0)travel(nextIndex(1));});
-  document.addEventListener('keydown',e=>{
-    if(e.target.matches('input,textarea,select'))return;
-    if($('#atlas').open||$('#place-details').open)return;
-    if(e.key==='Escape'&&immersive){setImmersive(false);return;}
-    if(e.target.tagName==='BUTTON'&&(e.key===' '||e.key==='Enter'))return;
-    if(e.key==='/'){e.preventDefault();openAtlas();}else if(e.key==='ArrowRight'){e.preventDefault();travel(nextIndex(1));}else if(e.key==='ArrowLeft'){e.preventDefault();travel(nextIndex(-1));}else if(e.key===' '){e.preventDefault();playing?pause():play();}
+  $('#city-grid').addEventListener('click',event => {
+    const button = event.target.closest('[data-destination]');
+    if (!button) return;
+    route = selectedRegion === 'all' ? interleave() : indices.filter(index => cities[index].region === selectedRegion);
+    routeName = selectedRegion === 'all' ? '环球漫游' : label(selectedRegion)+'漫游';
+    $('#atlas').close(); travel(Number(button.dataset.destination));
   });
-  document.addEventListener('visibilitychange',()=>{if(document.hidden&&playing)pause();});addEventListener('resize',resize);window.visualViewport?.addEventListener('resize',resize);window.visualViewport?.addEventListener('scroll',resize);$('#search').addEventListener('focus',resize);$('#search').addEventListener('blur',()=>requestAnimationFrame(resize));
-  paint(1);resize();update();scene.prepare(city).catch(()=>{});
-  if(params.has('autoplay')&&!media.matches)play();
-  window.takeoff={scene,getAudioState:audio.getState,getState:()=>({city,cityId:cities[city].id,openness,playing,elapsed,sound,immersive,route:[...route],selectedRegion}),travel};
+  $('#tour-region').addEventListener('click',async () => {
+    if (!visible.length) return;
+    route = [...visible];
+    routeName = selectedRegion === 'all' && visible.length === cities.length ? '环球漫游' : selectedRegion === 'all' ? '精选漫游' : label(selectedRegion)+'漫游';
+    $('#atlas').close();
+    if (await travel(route.includes(city) ? city : route[0])) play();
+  });
+  function flyRandom() {
+    if ($('#atlas').open) {
+      route = [...visible];
+      routeName = selectedRegion === 'all' && visible.length === cities.length ? '环球漫游' : selectedRegion === 'all' ? '精选漫游' : label(selectedRegion)+'漫游';
+    }
+    const choices = route.filter(index => index !== city && !recent.includes(index));
+    const candidates = choices.length ? choices : route.filter(index => index !== city);
+    if ($('#atlas').open) $('#atlas').close();
+    if (candidates.length) travel(candidates[Math.floor(Math.random()*candidates.length)]);
+    else if (route.length) travel(route[0]);
+  }
+  $('#random').addEventListener('click',flyRandom);
+  $('#random-atlas').addEventListener('click',flyRandom);
+  $('#play').addEventListener('click',() => playing ? pause(true) : play());
+  $('#prev').addEventListener('click',() => travel(nextIndex(-1)));
+  $('#next').addEventListener('click',() => travel(nextIndex(1)));
+  $('#pace').addEventListener('change',() => {
+    const next = Number($('#pace').value);
+    elapsed = elapsed/seconds*next; seconds = next; previous = 0; updateControls();
+  });
+  $('#sound').addEventListener('click',() => { sound = !sound; updateSound(); syncAudio(); });
+  $('#immersive').addEventListener('click',() => setImmersive(true));
+  $('#exit-immersive').addEventListener('click',() => setImmersive(false));
+  shade.addEventListener('pointerdown',event => {
+    if (!event.isPrimary || event.button !== 0) return;
+    pause(); busy(false); manualPose = true; transitionToken++;
+    shade.setPointerCapture(event.pointerId);
+    drag = {id:event.pointerId,y:event.clientY,open:openness,moved:false};
+  });
+  shade.addEventListener('pointermove',event => {
+    if (!drag || event.pointerId !== drag.id) return;
+    const distance = (event.clientY-drag.y)/scale;
+    if (Math.abs(distance) > 4) drag.moved = true;
+    paint(clamp(drag.open+distance/TakeoffCabin.shadeTravel));
+  });
+  shade.addEventListener('pointerup',event => {
+    if (!drag || event.pointerId !== drag.id) return;
+    const moved = drag.moved; drag = null;
+    if (!moved || openness < .32) travel(nextIndex(1));
+    else tween(1,360,++transitionToken,true);
+  });
+  shade.addEventListener('pointercancel',event => {
+    if (!drag || event.pointerId !== drag.id) return;
+    drag = null; tween(1,300,++transitionToken,true);
+  });
+  shade.addEventListener('click',event => { if (event.detail === 0) travel(nextIndex(1)); });
+  document.addEventListener('keydown',event => {
+    if (event.target.matches('input,textarea,select')) return;
+    if ($('#atlas').open || $('#place-details').open || $('#settings').open) return;
+    if (event.key === 'Escape' && immersive) { setImmersive(false); return; }
+    if (event.target.tagName === 'BUTTON' && (event.key === ' ' || event.key === 'Enter')) return;
+    if (event.key === '/') { event.preventDefault(); openAtlas(); }
+    else if (event.key === 'ArrowRight') { event.preventDefault(); travel(nextIndex(1)); }
+    else if (event.key === 'ArrowLeft') { event.preventDefault(); travel(nextIndex(-1)); }
+    else if (event.key === ' ') { event.preventDefault(); playing ? pause(true) : play(); }
+  });
+  document.addEventListener('visibilitychange',() => { if (document.hidden && playing) pause(true); });
+  media.addEventListener('change',() => {
+    if (media.matches) {
+      if (playing) pause();
+      arrivalAnimations.forEach(animation => animation.cancel());
+      paint(1); manualPose = true;
+    }
+  });
+  addEventListener('resize',scheduleResize);
+  window.visualViewport?.addEventListener('resize',scheduleResize);
+  window.visualViewport?.addEventListener('scroll',scheduleResize);
+  $('#search').addEventListener('focus',scheduleResize);
+  $('#search').addEventListener('blur',scheduleResize);
+  new ResizeObserver(scheduleResize).observe($('#stage'));
+  document.fonts.ready.then(scheduleResize);
+  paint(1); updateCity(); resize();
+  scene.prepare(city).catch(() => { $('#hint-text').textContent = '插画暂时未能打开，可在目录中重试。'; });
+  if (params.has('autoplay') && !media.matches) play();
+  window.takeoff = {scene,getAudioState:audio.getState,getState:() => ({city,cityId:cities[city].id,pendingCity,openness,playing,elapsed,sound,immersive,secondsPerCity:seconds,route:[...route],selectedRegion}),travel};
 })();

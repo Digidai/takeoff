@@ -1,0 +1,14 @@
+{
+  "id": "rio-de-janeiro",
+  "image": "illustrations/rio-de-janeiro.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-22a2f5ba-df3e-4744-9bbb-9e90b7e7134d",
+  "promptSha256": "946c5f41ec0efbf1d8923608cfb9aee38803e0d157f515057507a94233656411",
+  "originalSha256": "0dc5053ef71edcfb6b62891a5ab1f851162a8361da8308e9dfc83047fe286886",
+  "originalBytes": 2834798,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "32c5e06d4ed55d8838683e91dcfe751f23a2d32a22b53d8421e1a0dcaf2ddbce",
+  "bytes": 414600,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

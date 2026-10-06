@@ -1,0 +1,14 @@
+{
+  "id": "perth",
+  "image": "illustrations/perth.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-01fc96d1-b610-40e4-88e7-91916e3805e7",
+  "promptSha256": "5e1be93551f13f22a3ab8813a061628bc8b1357193742bf1834a7b0c5b925790",
+  "originalSha256": "9dd1bd7faeeb30e6c04238dd360e70df995050144db85a32d3e386aa8065161e",
+  "originalBytes": 3081656,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "0148b5164cc6615e7603b32563eff000dccd061b3d3049addbff0e071b382e9d",
+  "bytes": 495038,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

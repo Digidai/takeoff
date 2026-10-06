@@ -1,0 +1,14 @@
+{
+  "id": "montevideo",
+  "image": "illustrations/montevideo.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-118a3a29-4eb6-4016-9fa4-1a01294be3a3",
+  "promptSha256": "164b26aa1419c9cced57a90d9cce66490a4100f8da18cfc1347803f4dab6850f",
+  "originalSha256": "fb36438c721693992120d2a5cfa6d90b8513a8bf500d99714557cf033f635b0c",
+  "originalBytes": 2995576,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "7028388fe8deb57fc9d1d975930be1d1af149a4e77c25770547e06943ce52c33",
+  "bytes": 448946,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

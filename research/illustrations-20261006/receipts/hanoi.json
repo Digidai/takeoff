@@ -1,0 +1,14 @@
+{
+  "id": "hanoi",
+  "image": "illustrations/hanoi.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-a5e48c5e-ce0a-4913-9e03-0dcecc324a4d",
+  "promptSha256": "cee7416fd30f69c7f21d6028fbd12a095842655d78f2089897911136b1a47dcf",
+  "originalSha256": "e38599f334441171751aa1da94246fe192cb20ae1ddfd2e0826a8999a810bb1a",
+  "originalBytes": 2986118,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "123c9319852d11343eb9c4454e7f1fd4e97c0b123cbc4b9217ae73ac9c1da472",
+  "bytes": 469818,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

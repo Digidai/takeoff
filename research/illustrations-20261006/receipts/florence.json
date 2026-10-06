@@ -1,0 +1,14 @@
+{
+  "id": "florence",
+  "image": "illustrations/florence.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-12ee1743-53fb-478d-acdf-d3e9ce30d1d9",
+  "promptSha256": "0baccff955bf77240eab59ce471f9d97403b0767a0b502edfacaa7dfd815139f",
+  "originalSha256": "1daceca47bb3c1fc0cf3d86e3a6270f9e296ab370f202f76ede708ae1cb8f9b5",
+  "originalBytes": 2946171,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "fa0cc530b570464358dd4cefac568923ff9f535a3ac51d8ae5249814a9f28e87",
+  "bytes": 452522,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

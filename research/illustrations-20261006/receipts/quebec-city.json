@@ -1,0 +1,14 @@
+{
+  "id": "quebec-city",
+  "image": "illustrations/quebec-city.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-4e966af8-eae6-479f-9dd0-3e9d3c835331",
+  "promptSha256": "2968ffd9a351efa918b7b487c6593b6ee40be797d8dd47968f2d148b1d448e54",
+  "originalSha256": "01cf7f3a622c4598996b0c05e75c7e9f5c0c1c2f557f75c5b26bd5dcf0000831",
+  "originalBytes": 2986581,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "247f8eeac83c7e96a31f0ae855f2fe84fcda18e9db82255bf7b2ada28a294758",
+  "bytes": 457254,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

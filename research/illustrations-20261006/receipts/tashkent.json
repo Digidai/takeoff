@@ -1,0 +1,14 @@
+{
+  "id": "tashkent",
+  "image": "illustrations/tashkent.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-8614324d-7256-4db1-9062-bd239ad335bc",
+  "promptSha256": "916da31f1850162828a06ea8077a27d13abc6d5269120aed45a60c0d1b4da20f",
+  "originalSha256": "fd95240203776acd9699feb08df3380ec87cd4f4a5f8d9d9ddd0061efd31e5a6",
+  "originalBytes": 3072397,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "f8c6139b8f8af2422ce7209e3e14273744f83598b7ce55b3e1038ae3564af3b5",
+  "bytes": 495136,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

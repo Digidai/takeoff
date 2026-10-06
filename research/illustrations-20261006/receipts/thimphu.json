@@ -1,0 +1,14 @@
+{
+  "id": "thimphu",
+  "image": "illustrations/thimphu.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-b9daabd8-926b-4a5b-b06a-224d92d5a748",
+  "promptSha256": "8fa7a90f8a4831b06f3919099d000888b64a2a3e38e3f15b910fe17978c62627",
+  "originalSha256": "94e4d9a5e6d2bbc0c8fea13becf8b1ddfd17c7f9ac428b0013b3a9119e8dfe59",
+  "originalBytes": 3055920,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "612981b5372038cdde0bd6602d834698e87871d9894e1a5a887f6700dee3b2f3",
+  "bytes": 499654,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

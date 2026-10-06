@@ -1,0 +1,14 @@
+{
+  "id": "new-york",
+  "image": "illustrations/new-york.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-77896f80-8b8d-419f-ac59-e2107b5149f2",
+  "promptSha256": "003ced27d86e9a2b1e77156c649591454868fe0b1454cd2b5fd80404c7538d1e",
+  "originalSha256": "af819ba1478dbd99224027c6f81f15fe053be292d8b1aa685d63af9f0af73c2b",
+  "originalBytes": 2787427,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "4031a2be78dfa81bf39dd9836fb30490d674ca1fb923995e20e9af78df68e818",
+  "bytes": 386632,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

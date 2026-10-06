@@ -1,0 +1,14 @@
+{
+  "id": "taipei",
+  "image": "illustrations/taipei.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-ad6e1a78-7308-448f-a324-46390667c467",
+  "promptSha256": "bd3bc9c42da71784ba5b711038e7f10b4b69c7c804507e47106e0f29a126410c",
+  "originalSha256": "a0953a7020a5ff2cb007a651690169125d3a358c82da880c824b7a48492ec7e1",
+  "originalBytes": 2796440,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "18ad613e758771542d9e8bb7f18e540b35734b397be872846b68900ea175b8a1",
+  "bytes": 397890,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

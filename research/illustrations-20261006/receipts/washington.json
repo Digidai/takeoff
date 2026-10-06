@@ -1,0 +1,14 @@
+{
+  "id": "washington",
+  "image": "illustrations/washington.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-078e601d-a9e1-4236-9c9e-abc06141fc29",
+  "promptSha256": "041688696d43008bd84c199bace600c55a562018c2b99692c3e2b871732bf2fb",
+  "originalSha256": "1de585474f8d4816eb0a91a713f125ceee3f8d935896cc21b990d5434582ad5a",
+  "originalBytes": 2816017,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "976227497b86a26d7fd591fc45305bd5594d9db6f8c6b5609723110dffff909c",
+  "bytes": 399146,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

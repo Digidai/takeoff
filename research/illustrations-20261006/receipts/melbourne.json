@@ -1,0 +1,14 @@
+{
+  "id": "melbourne",
+  "image": "illustrations/melbourne.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-e4cba333-b0d3-4e54-9950-0fcf103e7e05",
+  "promptSha256": "ba27ef68981e7522162c132322f3790d183e1d2c8e30c5089f1bcd1ba29fbbfc",
+  "originalSha256": "8d92a7af7df2667d02bde2ccdcb5ced88dacf30719199371e64afc76f9f6ae48",
+  "originalBytes": 3004370,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "f9f3d76397d3d97a4bda9d1d5a568bea93ee5a8979128f3a4c53fa9a5acd658a",
+  "bytes": 490202,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "family": "Newsreader",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/newsreader/Newsreader%5Bopsz%2Cwght%5D.ttf",
+    "license": "SIL OFL 1.1",
+    "license_source": "https://raw.githubusercontent.com/google/fonts/main/ofl/newsreader/OFL.txt",
+    "file": "newsreader.woff2",
+    "bytes": 214960,
+    "sha256": "e7f0a9ee0f945c882fba21e6cab8412a69f61c37515b3fa6e99d72e61ac7d5ea",
+    "processing": "Lossless TTF to WOFF2 container compression; no subsetting or glyph edits."
+  },
+  {
+    "family": "Manrope",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/Manrope%5Bwght%5D.ttf",
+    "license": "SIL OFL 1.1",
+    "license_source": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/OFL.txt",
+    "file": "manrope.woff2",
+    "bytes": 53692,
+    "sha256": "a11472713c5f83de41097192e528f02a52ed984d52be2d99bcc15c9163bf248d",
+    "processing": "Lossless TTF to WOFF2 container compression; no subsetting or glyph edits."
+  }
+]

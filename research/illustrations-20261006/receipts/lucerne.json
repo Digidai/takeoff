@@ -1,0 +1,14 @@
+{
+  "id": "lucerne",
+  "image": "illustrations/lucerne.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-a22abf93-15ce-405a-bf1e-516b4d03b29e",
+  "promptSha256": "8f7eb0d16e71bd06fbe27d976a010e152eae1cea230e4735c3f5c5a4a96c8d4d",
+  "originalSha256": "0be75afcc1dbb1569291a9505428ac558b9c807b0fbd183a6a88f57d12d8690a",
+  "originalBytes": 3017579,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "52447bbc876b954228c084cdb39389084732844783d521e71b2397bbbd7f513c",
+  "bytes": 485622,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "doha",
+  "image": "illustrations/doha.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-29dbee9a-5d40-467f-b8a2-bd8d42a8ba35",
+  "promptSha256": "e36ccbf4af0abbb1077dfe950882311be7e26091b0fac4008a5c9cfe61efdde6",
+  "originalSha256": "15d47fa53836a422d7b57c050f38c765f599028fe8dfb2e6c22138b970cfa055",
+  "originalBytes": 2578956,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "10b3727e5b641dba14b13fe284691018148ef864d72a97b85fec6e4f5c49b916",
+  "bytes": 338020,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

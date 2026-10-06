@@ -1,0 +1,14 @@
+{
+  "id": "oslo",
+  "image": "illustrations/oslo.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-b836c4f3-e8c3-486a-9d4c-2aa119e55f93",
+  "promptSha256": "488ba6659b3958f8818667a349c0cfd676161092d88e741635c5c8d4a3687e04",
+  "originalSha256": "964e7cee4fc574a4166c9508519927015704d57753f705f4392651d324d67e2e",
+  "originalBytes": 3047057,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "0a36b556b020a07da5690ccd57bc75e798af9c58d123768efca9885c303e6143",
+  "bytes": 506124,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "istanbul",
+  "image": "illustrations/istanbul.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-4d97e1b3-a819-4575-9a7a-a9e8a644da18",
+  "promptSha256": "8b025faaa5b6831e51fda803248806b24deffb6e28bd24c1c47f026d31b70b68",
+  "originalSha256": "dc45d1ae55b8c62eb838c027bae9fcb5c019d74d93d868399941cdf1c11cdbb6",
+  "originalBytes": 2989389,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "527fe24f40d0b7ef2d1ce66c315edfa9ba23eaa9e1ab1d1a49adbd089c060d2a",
+  "bytes": 458854,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

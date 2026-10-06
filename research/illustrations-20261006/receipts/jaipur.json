@@ -1,0 +1,14 @@
+{
+  "id": "jaipur",
+  "image": "illustrations/jaipur.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-d980c135-0a66-4c0a-94d9-82abc8bf5f0e",
+  "promptSha256": "c198ce39ddb2b604b957263f948516fbae867b0e755359830cb94e15c6c87687",
+  "originalSha256": "92c5e8cdf6dace86b2bc8d61dbda47ee9444bbdd3fef4c77a67d0670454869b2",
+  "originalBytes": 3116685,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "76865ca57add87398803d715936d84e24d222d8290301db3b794c46ed33d5f78",
+  "bytes": 519028,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

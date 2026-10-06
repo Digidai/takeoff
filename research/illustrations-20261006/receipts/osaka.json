@@ -1,0 +1,14 @@
+{
+  "id": "osaka",
+  "image": "illustrations/osaka.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-643dd48b-dcfa-4990-92c8-c551cecbce31",
+  "promptSha256": "39c3fec4b4204862ced9e3e5a473cce1cb04b0148a7e000c3342613681fb8372",
+  "originalSha256": "666af8c9a338c92b46effb3cd85c6def3ed44f07a402b38bc8aee0d232a9d480",
+  "originalBytes": 3274991,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "8bfc22f2f1e656253fc74051ac12c6dd2c14c17d7033d2e5344aaebfe6fb2705",
+  "bytes": 553216,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

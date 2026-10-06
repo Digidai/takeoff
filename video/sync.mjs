@@ -10,7 +10,7 @@ const publicDir = join(here, '..', 'public');
 const require = createRequire(import.meta.url);
 await mkdir(join(here, 'vendor'), {recursive:true});
 await mkdir(join(here, 'assets'), {recursive:true});
-const shared = ['scene.css', 'scene.js', 'cities.js', 'credits.html'];
+const shared = ['scene.css', 'scene.js', 'cities.js', 'credits.html', 'credits.css'];
 for (const name of shared) await cp(join(publicDir, name), join(here, name));
 await cp(join(publicDir, 'assets'), join(here, 'assets'), {recursive:true});
 await cp(require.resolve('gsap/dist/gsap.min.js'), join(here, 'vendor/gsap.min.js'));

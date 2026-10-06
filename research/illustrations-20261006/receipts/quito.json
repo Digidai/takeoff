@@ -1,0 +1,14 @@
+{
+  "id": "quito",
+  "image": "illustrations/quito.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-2238e9c8-ec7c-48e0-a219-2af1148ba020",
+  "promptSha256": "8956059cc5c4beb91d1a0e9fb392ac86fc7fc2b0b56eb7633b8bb27679ea7fd4",
+  "originalSha256": "5f1cf17b6697053680fa4047f27ac72013be0953a2f27511c092743714ec4a63",
+  "originalBytes": 2914566,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "3a7b652841319d1813e5c6d00fe928017bcf1fd576a9f45451c2210dc899b312",
+  "bytes": 454144,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

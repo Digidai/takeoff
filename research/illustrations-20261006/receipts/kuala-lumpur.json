@@ -1,0 +1,14 @@
+{
+  "id": "kuala-lumpur",
+  "image": "illustrations/kuala-lumpur.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-61a96add-40ef-4a02-90d2-c0d934bba7b8",
+  "promptSha256": "06a3be906402527b83729e55f6b912c223ff82be5789cf79c7e4398eca05be35",
+  "originalSha256": "3fd81c3e95b25a5095b0cc27fb01bcf1fe4b3680e6109506a49ce26716529d3f",
+  "originalBytes": 3055426,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "46604a71c34760ba61c211677fbca527db709006e6bf0002ba0e5f56fb9cf4cd",
+  "bytes": 501596,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

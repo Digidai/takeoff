@@ -1,0 +1,726 @@
+{
+  "generator": "OpenAI built-in imagegen",
+  "style": "hand-painted gouache travel illustration",
+  "cities": [
+    {
+      "id": "shanghai",
+      "name": "Shanghai",
+      "zh": "上海",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Shanghai, China — the historic Bund waterfront, its recognizable riverfront domed and clock-tower buildings along the Huangpu River, with the Shanghai skyline softly visible across the river. Style/medium: refined hand-painted gouache travel illustration, simplified architectural shapes with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Composition: portrait 2:3 canvas; center the landmark scene inside the middle 75 percent so it remains recognizable through a rounded airplane-window crop. Sky in the upper third, waterfront architecture across the middle, river in the foreground. Warm late-afternoon sunlight, muted blue sky and water, ivory stone, small warm terracotta and gold details. Fill the entire canvas with the illustration. No airplane, window frame, border, words, lettering, labels, logos, signature, watermarks or photorealism. This is a new standalone illustration, not a webpage mockup."
+    },
+    {
+      "id": "tokyo",
+      "name": "Tokyo",
+      "zh": "东京",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Tokyo (东京), 日本, featuring the distinctive 东京塔 as the recognizable main landmark. Context: 城市灯火中的一抹朱红 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "rio-de-janeiro",
+      "name": "Rio de Janeiro",
+      "zh": "里约热内卢",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Rio de Janeiro (里约热内卢), 巴西, featuring the distinctive 基督像 as the recognizable main landmark. Context: 山海之间，张开双臂 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "paris",
+      "name": "Paris",
+      "zh": "巴黎",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Paris (巴黎), 法国, featuring the distinctive 埃菲尔铁塔 as the recognizable main landmark. Context: 塞纳河畔的钢铁诗行 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "sydney",
+      "name": "Sydney",
+      "zh": "悉尼",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Sydney (悉尼), 澳大利亚, featuring the distinctive 悉尼歌剧院 as the recognizable main landmark. Context: 海风吹过白色风帆 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "beijing",
+      "name": "Beijing",
+      "zh": "北京",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Beijing (北京), 中国, featuring the distinctive 天坛 as the recognizable main landmark. Context: 蓝瓦与朱墙，写下古都的轮廓 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "hong-kong",
+      "name": "Hong Kong",
+      "zh": "香港",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Hong Kong (香港), 中国, featuring the distinctive 维多利亚港 as the recognizable main landmark. Context: 山与海，夹住一城霓虹 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "taipei",
+      "name": "Taipei",
+      "zh": "台北",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Taipei (台北), 中国台湾, featuring the distinctive 台北101 as the recognizable main landmark. Context: 群山之间，一座高塔向上生长 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "seoul",
+      "name": "Seoul",
+      "zh": "首尔",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Seoul (首尔), 韩国, featuring the distinctive 南山首尔塔 as the recognizable main landmark. Context: 在山顶，望向整座城市 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "busan",
+      "name": "Busan",
+      "zh": "釜山",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Busan (釜山), 韩国, featuring the distinctive 广安大桥 as the recognizable main landmark. Context: 海上的桥，连接两岸灯火 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "kyoto",
+      "name": "Kyoto",
+      "zh": "京都",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Kyoto (京都), 日本, featuring the distinctive 金阁寺 as the recognizable main landmark. Context: 庭园水面，收住一片金色 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "osaka",
+      "name": "Osaka",
+      "zh": "大阪",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Osaka (大阪), 日本, featuring the distinctive 大阪城 as the recognizable main landmark. Context: 城楼与绿意，留住关西往事 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "singapore",
+      "name": "Singapore",
+      "zh": "新加坡",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Singapore (新加坡), 新加坡, featuring the distinctive 滨海湾金沙 as the recognizable main landmark. Context: 在海湾上方，停泊一艘天际之船 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "bangkok",
+      "name": "Bangkok",
+      "zh": "曼谷",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Bangkok (曼谷), 泰国, featuring the distinctive 郑王庙 as the recognizable main landmark. Context: 湄南河畔，尖塔迎向天光 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "chiang-mai",
+      "name": "Chiang Mai",
+      "zh": "清迈",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Chiang Mai (清迈), 泰国, featuring the distinctive 契迪龙寺 as the recognizable main landmark. Context: 古城深处，砖塔静立 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "hanoi",
+      "name": "Hanoi",
+      "zh": "河内",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Hanoi (河内), 越南, featuring the distinctive 还剑湖 as the recognizable main landmark. Context: 湖水与街巷，慢慢展开 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "ho-chi-minh-city",
+      "name": "Ho Chi Minh City",
+      "zh": "胡志明市",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Ho Chi Minh City (胡志明市), 越南, featuring the distinctive 西贡圣母大教堂 as the recognizable main landmark. Context: 红砖教堂，站在热带街头 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "kuala-lumpur",
+      "name": "Kuala Lumpur",
+      "zh": "吉隆坡",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Kuala Lumpur (吉隆坡), 马来西亚, featuring the distinctive 双子塔 as the recognizable main landmark. Context: 两座银色高塔，映入热带天空 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "jakarta",
+      "name": "Jakarta",
+      "zh": "雅加达",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Jakarta (雅加达), 印度尼西亚, featuring the distinctive 国家纪念碑 as the recognizable main landmark. Context: 金色火焰，俯瞰城市广场 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "yogyakarta",
+      "name": "Yogyakarta",
+      "zh": "日惹",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Yogyakarta (日惹), 印度尼西亚, featuring the distinctive 水宫 as the recognizable main landmark. Context: 旧日王城，藏着水与庭院 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "manila",
+      "name": "Manila",
+      "zh": "马尼拉",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Manila (马尼拉), 菲律宾, featuring the distinctive 圣奥古斯丁教堂 as the recognizable main landmark. Context: 石墙深处，热带阳光缓缓落下 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "delhi",
+      "name": "Delhi",
+      "zh": "德里",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Delhi (德里), 印度, featuring the distinctive 印度门 as the recognizable main landmark. Context: 大道尽头，一座拱门守望 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "agra",
+      "name": "Agra",
+      "zh": "阿格拉",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Agra (阿格拉), 印度, featuring the distinctive 泰姬陵 as the recognizable main landmark. Context: 白色穹顶，在水面中成双 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "jaipur",
+      "name": "Jaipur",
+      "zh": "斋浦尔",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Jaipur (斋浦尔), 印度, featuring the distinctive 风之宫 as the recognizable main landmark. Context: 粉色窗格，接住沙漠的风 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "mumbai",
+      "name": "Mumbai",
+      "zh": "孟买",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Mumbai (孟买), 印度, featuring the distinctive 印度之门 as the recognizable main landmark. Context: 阿拉伯海边，拱门面朝船帆 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "kathmandu",
+      "name": "Kathmandu",
+      "zh": "加德满都",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Kathmandu (加德满都), 尼泊尔, featuring the distinctive 博达哈大佛塔 as the recognizable main landmark. Context: 群山脚下，经幡随风飘动 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "colombo",
+      "name": "Colombo",
+      "zh": "科伦坡",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Colombo (科伦坡), 斯里兰卡, featuring the distinctive 莲花塔 as the recognizable main landmark. Context: 印度洋旁，一朵莲花升向天空 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "islamabad",
+      "name": "Islamabad",
+      "zh": "伊斯兰堡",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Islamabad (伊斯兰堡), 巴基斯坦, featuring the distinctive 费萨尔清真寺 as the recognizable main landmark. Context: 山麓白色帐篷，向四角展开 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "thimphu",
+      "name": "Thimphu",
+      "zh": "廷布",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Thimphu (廷布), 不丹, featuring the distinctive 扎西曲宗 as the recognizable main landmark. Context: 山谷里的白墙与红檐 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "dubai",
+      "name": "Dubai",
+      "zh": "迪拜",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Dubai (迪拜), 阿拉伯联合酋长国, featuring the distinctive 哈利法塔 as the recognizable main landmark. Context: 沙漠天际，一道银色针锋 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "abu-dhabi",
+      "name": "Abu Dhabi",
+      "zh": "阿布扎比",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Abu Dhabi (阿布扎比), 阿拉伯联合酋长国, featuring the distinctive 谢赫扎耶德大清真寺 as the recognizable main landmark. Context: 白色穹顶，在水中展开 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "doha",
+      "name": "Doha",
+      "zh": "多哈",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Doha (多哈), 卡塔尔, featuring the distinctive 伊斯兰艺术博物馆 as the recognizable main landmark. Context: 海湾边，几何石墙接住日光 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "muscat",
+      "name": "Muscat",
+      "zh": "马斯喀特",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Muscat (马斯喀特), 阿曼, featuring the distinctive 苏丹卡布斯大清真寺 as the recognizable main landmark. Context: 山海之间，穹顶与宣礼塔相望 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "riyadh",
+      "name": "Riyadh",
+      "zh": "利雅得",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Riyadh (利雅得), 沙特阿拉伯, featuring the distinctive 王国中心 as the recognizable main landmark. Context: 城市上方，一道天空之门 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "amman",
+      "name": "Amman",
+      "zh": "安曼",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Amman (安曼), 约旦, featuring the distinctive 安曼城堡山 as the recognizable main landmark. Context: 山城高处，石柱迎风 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "beirut",
+      "name": "Beirut",
+      "zh": "贝鲁特",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Beirut (贝鲁特), 黎巴嫩, featuring the distinctive 穆罕默德阿明清真寺 as the recognizable main landmark. Context: 蓝色穹顶，靠近地中海 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "baku",
+      "name": "Baku",
+      "zh": "巴库",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Baku (巴库), 阿塞拜疆, featuring the distinctive 火焰塔 as the recognizable main landmark. Context: 里海之滨，三束火焰向上 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "almaty",
+      "name": "Almaty",
+      "zh": "阿拉木图",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Almaty (阿拉木图), 哈萨克斯坦, featuring the distinctive 升天大教堂 as the recognizable main landmark. Context: 雪山脚下，彩色木塔藏在树间 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "tashkent",
+      "name": "Tashkent",
+      "zh": "塔什干",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Tashkent (塔什干), 乌兹别克斯坦, featuring the distinctive 楚苏巴扎 as the recognizable main landmark. Context: 蓝色圆顶下，城市慢慢醒来 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "london",
+      "name": "London",
+      "zh": "伦敦",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: London (伦敦), 英国, featuring the distinctive 伦敦塔桥 as the recognizable main landmark. Context: 两座石塔，跨过泰晤士河 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "rome",
+      "name": "Rome",
+      "zh": "罗马",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Rome (罗马), 意大利, featuring the distinctive 斗兽场 as the recognizable main landmark. Context: 古老拱廊，围成一座时光之城 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "venice",
+      "name": "Venice",
+      "zh": "威尼斯",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Venice (威尼斯), 意大利, featuring the distinctive 里亚托桥 as the recognizable main landmark. Context: 石桥与水道，接住水城晨光 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "florence",
+      "name": "Florence",
+      "zh": "佛罗伦萨",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Florence (佛罗伦萨), 意大利, featuring the distinctive 圣母百花大教堂 as the recognizable main landmark. Context: 红色穹顶，浮在托斯卡纳城上 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "milan",
+      "name": "Milan",
+      "zh": "米兰",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Milan (米兰), 意大利, featuring the distinctive 米兰大教堂 as the recognizable main landmark. Context: 白色尖塔，在广场上铺开 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "barcelona",
+      "name": "Barcelona",
+      "zh": "巴塞罗那",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Barcelona (巴塞罗那), 西班牙, featuring the distinctive 圣家堂 as the recognizable main landmark. Context: 石头与光，在城市中生长 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "madrid",
+      "name": "Madrid",
+      "zh": "马德里",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Madrid (马德里), 西班牙, featuring the distinctive 西贝莱斯宫 as the recognizable main landmark. Context: 城市广场，一座白色宫殿 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "lisbon",
+      "name": "Lisbon",
+      "zh": "里斯本",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Lisbon (里斯本), 葡萄牙, featuring the distinctive 贝伦塔 as the recognizable main landmark. Context: 河口石塔，望向远方海面 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "porto",
+      "name": "Porto",
+      "zh": "波尔图",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Porto (波尔图), 葡萄牙, featuring the distinctive 路易一世大桥 as the recognizable main landmark. Context: 铁桥弧线，越过杜罗河 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "amsterdam",
+      "name": "Amsterdam",
+      "zh": "阿姆斯特丹",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Amsterdam (阿姆斯特丹), 荷兰, featuring the distinctive 阿姆斯特丹运河 as the recognizable main landmark. Context: 水道与窄屋，织出城市纹理 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "berlin",
+      "name": "Berlin",
+      "zh": "柏林",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Berlin (柏林), 德国, featuring the distinctive 勃兰登堡门 as the recognizable main landmark. Context: 石柱之上，一辆战车向前 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "munich",
+      "name": "Munich",
+      "zh": "慕尼黑",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Munich (慕尼黑), 德国, featuring the distinctive 新市政厅 as the recognizable main landmark. Context: 钟楼俯瞰广场与屋顶 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "prague",
+      "name": "Prague",
+      "zh": "布拉格",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Prague (布拉格), 捷克, featuring the distinctive 查理大桥 as the recognizable main landmark. Context: 桥上石像，望向伏尔塔瓦河 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "vienna",
+      "name": "Vienna",
+      "zh": "维也纳",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Vienna (维也纳), 奥地利, featuring the distinctive 圣斯蒂芬大教堂 as the recognizable main landmark. Context: 彩色屋瓦，铺向高塔脚下 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "budapest",
+      "name": "Budapest",
+      "zh": "布达佩斯",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Budapest (布达佩斯), 匈牙利, featuring the distinctive 匈牙利国会大厦 as the recognizable main landmark. Context: 多瑙河畔，一排尖塔倒映 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "athens",
+      "name": "Athens",
+      "zh": "雅典",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Athens (雅典), 希腊, featuring the distinctive 帕特农神庙 as the recognizable main landmark. Context: 山丘之上，石柱留住旧日光线 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "istanbul",
+      "name": "Istanbul",
+      "zh": "伊斯坦布尔",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Istanbul (伊斯坦布尔), 土耳其, featuring the distinctive 圣索菲亚 as the recognizable main landmark. Context: 穹顶与海峡，连接城市两岸 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "copenhagen",
+      "name": "Copenhagen",
+      "zh": "哥本哈根",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Copenhagen (哥本哈根), 丹麦, featuring the distinctive 新港 as the recognizable main landmark. Context: 彩色屋檐，靠着港湾排开 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "stockholm",
+      "name": "Stockholm",
+      "zh": "斯德哥尔摩",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Stockholm (斯德哥尔摩), 瑞典, featuring the distinctive 斯德哥尔摩市政厅 as the recognizable main landmark. Context: 水岸砖塔，望向群岛 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "oslo",
+      "name": "Oslo",
+      "zh": "奥斯陆",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Oslo (奥斯陆), 挪威, featuring the distinctive 奥斯陆歌剧院 as the recognizable main landmark. Context: 白色斜坡，从峡湾边升起 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "helsinki",
+      "name": "Helsinki",
+      "zh": "赫尔辛基",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Helsinki (赫尔辛基), 芬兰, featuring the distinctive 赫尔辛基大教堂 as the recognizable main landmark. Context: 白色柱廊，面对城市广场 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "reykjavik",
+      "name": "Reykjavík",
+      "zh": "雷克雅未克",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Reykjavík (雷克雅未克), 冰岛, featuring the distinctive 哈尔格林姆教堂 as the recognizable main landmark. Context: 玄武岩般的塔，立在北方天空 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "dublin",
+      "name": "Dublin",
+      "zh": "都柏林",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Dublin (都柏林), 爱尔兰, featuring the distinctive 半便士桥 as the recognizable main landmark. Context: 利菲河上，一道白色弧线 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "edinburgh",
+      "name": "Edinburgh",
+      "zh": "爱丁堡",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Edinburgh (爱丁堡), 英国, featuring the distinctive 爱丁堡城堡 as the recognizable main landmark. Context: 岩丘上的城堡，守着旧城 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "zurich",
+      "name": "Zürich",
+      "zh": "苏黎世",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Zürich (苏黎世), 瑞士, featuring the distinctive 苏黎世大教堂 as the recognizable main landmark. Context: 河岸双塔，划出城市天际 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "lucerne",
+      "name": "Lucerne",
+      "zh": "卢塞恩",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Lucerne (卢塞恩), 瑞士, featuring the distinctive 卡佩尔桥 as the recognizable main landmark. Context: 木桥穿过水面，远山在后 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "warsaw",
+      "name": "Warsaw",
+      "zh": "华沙",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Warsaw (华沙), 波兰, featuring the distinctive 文化科学宫 as the recognizable main landmark. Context: 石色高楼，俯瞰重生的城市 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "krakow",
+      "name": "Kraków",
+      "zh": "克拉科夫",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Kraków (克拉科夫), 波兰, featuring the distinctive 瓦维尔城堡 as the recognizable main landmark. Context: 河湾之上，红瓦城堡静立 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "tallinn",
+      "name": "Tallinn",
+      "zh": "塔林",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Tallinn (塔林), 爱沙尼亚, featuring the distinctive 亚历山大涅夫斯基大教堂 as the recognizable main landmark. Context: 穹顶与城墙，藏在波罗的海古城 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "cairo",
+      "name": "Cairo",
+      "zh": "开罗",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Cairo (开罗), 埃及, featuring the distinctive 穆罕默德阿里清真寺 as the recognizable main landmark. Context: 城堡山上，穹顶望向尼罗河 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "alexandria",
+      "name": "Alexandria",
+      "zh": "亚历山大",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Alexandria (亚历山大), 埃及, featuring the distinctive 凯特贝城堡 as the recognizable main landmark. Context: 海边堡垒，守望地中海 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "marrakesh",
+      "name": "Marrakesh",
+      "zh": "马拉喀什",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Marrakesh (马拉喀什), 摩洛哥, featuring the distinctive 库图比亚清真寺 as the recognizable main landmark. Context: 红城深处，一座方塔向上 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "casablanca",
+      "name": "Casablanca",
+      "zh": "卡萨布兰卡",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Casablanca (卡萨布兰卡), 摩洛哥, featuring the distinctive 哈桑二世清真寺 as the recognizable main landmark. Context: 大西洋岸，宣礼塔向天延伸 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "tunis",
+      "name": "Tunis",
+      "zh": "突尼斯",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Tunis (突尼斯), 突尼斯, featuring the distinctive 宰图纳清真寺 as the recognizable main landmark. Context: 旧城白墙，围住石色塔楼 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "algiers",
+      "name": "Algiers",
+      "zh": "阿尔及尔",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Algiers (阿尔及尔), 阿尔及利亚, featuring the distinctive 烈士纪念碑 as the recognizable main landmark. Context: 三片弧形石叶，迎向海风 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "cape-town",
+      "name": "Cape Town",
+      "zh": "开普敦",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Cape Town (开普敦), 南非, featuring the distinctive 桌山 as the recognizable main landmark. Context: 平顶山下，城市抵达海洋 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "johannesburg",
+      "name": "Johannesburg",
+      "zh": "约翰内斯堡",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Johannesburg (约翰内斯堡), 南非, featuring the distinctive 希尔布罗塔 as the recognizable main landmark. Context: 高原城市，一座细塔穿过天际 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "nairobi",
+      "name": "Nairobi",
+      "zh": "内罗毕",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Nairobi (内罗毕), 肯尼亚, featuring the distinctive 肯雅塔国际会议中心 as the recognizable main landmark. Context: 城市高楼，带着东非阳光 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "mombasa",
+      "name": "Mombasa",
+      "zh": "蒙巴萨",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Mombasa (蒙巴萨), 肯尼亚, featuring the distinctive 耶稣堡 as the recognizable main landmark. Context: 印度洋边，珊瑚石墙留住历史 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "addis-ababa",
+      "name": "Addis Ababa",
+      "zh": "亚的斯亚贝巴",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Addis Ababa (亚的斯亚贝巴), 埃塞俄比亚, featuring the distinctive 圣三一大教堂 as the recognizable main landmark. Context: 高原城中，石墙与穹顶相望 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "dakar",
+      "name": "Dakar",
+      "zh": "达喀尔",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Dakar (达喀尔), 塞内加尔, featuring the distinctive 非洲复兴纪念碑 as the recognizable main landmark. Context: 海岸高处，雕像指向远方 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "accra",
+      "name": "Accra",
+      "zh": "阿克拉",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Accra (阿克拉), 加纳, featuring the distinctive 黑星门 as the recognizable main landmark. Context: 海边广场，一颗黑星高悬 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "lagos",
+      "name": "Lagos",
+      "zh": "拉各斯",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Lagos (拉各斯), 尼日利亚, featuring the distinctive 莱基伊科伊大桥 as the recognizable main landmark. Context: 潟湖上方，桥索拉开城市线条 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "kigali",
+      "name": "Kigali",
+      "zh": "基加利",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Kigali (基加利), 卢旺达, featuring the distinctive 基加利会议中心 as the recognizable main landmark. Context: 千丘之间，一座彩色穹顶 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "antananarivo",
+      "name": "Antananarivo",
+      "zh": "塔那那利佛",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Antananarivo (塔那那利佛), 马达加斯加, featuring the distinctive 安塔那那利佛王宫 as the recognizable main landmark. Context: 高地之上，王宫望向红瓦屋顶 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "new-york",
+      "name": "New York",
+      "zh": "纽约",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: New York (纽约), 美国, featuring the distinctive 自由女神像 as the recognizable main landmark. Context: 海港之上，一束火焰高举 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "san-francisco",
+      "name": "San Francisco",
+      "zh": "旧金山",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: San Francisco (旧金山), 美国, featuring the distinctive 金门大桥 as the recognizable main landmark. Context: 红色桥塔，穿过海湾薄雾 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "los-angeles",
+      "name": "Los Angeles",
+      "zh": "洛杉矶",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Los Angeles (洛杉矶), 美国, featuring the distinctive 格里菲斯天文台 as the recognizable main landmark. Context: 山坡穹顶，望向天使之城 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "chicago",
+      "name": "Chicago",
+      "zh": "芝加哥",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Chicago (芝加哥), 美国, featuring the distinctive 威利斯大厦与城市天际线 as the recognizable main landmark. Context: 银色云朵，收住城市倒影 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "washington",
+      "name": "Washington, D.C.",
+      "zh": "华盛顿",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Washington, D.C. (华盛顿), 美国, featuring the distinctive 美国国会大厦 as the recognizable main landmark. Context: 白色穹顶，立在城市轴线上 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "boston",
+      "name": "Boston",
+      "zh": "波士顿",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Boston (波士顿), 美国, featuring the distinctive 海关大楼钟塔 as the recognizable main landmark. Context: 旧港城市，钟塔在屋顶间升起 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "seattle",
+      "name": "Seattle",
+      "zh": "西雅图",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Seattle (西雅图), 美国, featuring the distinctive 太空针塔 as the recognizable main landmark. Context: 海湾与远山，一座高塔在前 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "miami",
+      "name": "Miami",
+      "zh": "迈阿密",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Miami (迈阿密), 美国, featuring the distinctive 海湾市场 as the recognizable main landmark. Context: 棕榈与海湾，接住南方阳光 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "las-vegas",
+      "name": "Las Vegas",
+      "zh": "拉斯维加斯",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Las Vegas (拉斯维加斯), 美国, featuring the distinctive 欢迎来到拉斯维加斯 as the recognizable main landmark. Context: 沙漠公路，一块霓虹路牌 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "vancouver",
+      "name": "Vancouver",
+      "zh": "温哥华",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Vancouver (温哥华), 加拿大, featuring the distinctive 加拿大广场 as the recognizable main landmark. Context: 白色帆顶，靠着港湾展开 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "toronto",
+      "name": "Toronto",
+      "zh": "多伦多",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Toronto (多伦多), 加拿大, featuring the distinctive 加拿大国家电视塔 as the recognizable main landmark. Context: 湖岸上，一座细塔直入天空 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "quebec-city",
+      "name": "Québec City",
+      "zh": "魁北克城",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Québec City (魁北克城), 加拿大, featuring the distinctive 芳堤娜城堡 as the recognizable main landmark. Context: 圣劳伦斯河边，铜色屋顶高悬 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "mexico-city",
+      "name": "Mexico City",
+      "zh": "墨西哥城",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Mexico City (墨西哥城), 墨西哥, featuring the distinctive 艺术宫 as the recognizable main landmark. Context: 金色穹顶，藏在高原城市 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "havana",
+      "name": "Havana",
+      "zh": "哈瓦那",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Havana (哈瓦那), 古巴, featuring the distinctive 哈瓦那国会大厦 as the recognizable main landmark. Context: 加勒比街头，一座石色穹顶 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "panama-city",
+      "name": "Panama City",
+      "zh": "巴拿马城",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Panama City (巴拿马城), 巴拿马, featuring the distinctive 生物多样性博物馆 as the recognizable main landmark. Context: 海岸边，彩色屋顶迎向天空 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "san-jose",
+      "name": "San José",
+      "zh": "圣何塞",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: San José (圣何塞), 哥斯达黎加, featuring the distinctive 哥斯达黎加国家剧院 as the recognizable main landmark. Context: 热带高原，剧院面向城市广场 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "buenos-aires",
+      "name": "Buenos Aires",
+      "zh": "布宜诺斯艾利斯",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Buenos Aires (布宜诺斯艾利斯), 阿根廷, featuring the distinctive 布宜诺斯艾利斯方尖碑 as the recognizable main landmark. Context: 宽阔大道，一枚石针立在中央 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "sao-paulo",
+      "name": "São Paulo",
+      "zh": "圣保罗",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: São Paulo (圣保罗), 巴西, featuring the distinctive 圣保罗大教堂 as the recognizable main landmark. Context: 高楼之间，两座尖塔并立 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "brasilia",
+      "name": "Brasília",
+      "zh": "巴西利亚",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Brasília (巴西利亚), 巴西, featuring the distinctive 巴西利亚大教堂 as the recognizable main landmark. Context: 弧形白柱，向天空合拢 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "salvador",
+      "name": "Salvador",
+      "zh": "萨尔瓦多",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Salvador (萨尔瓦多), 巴西, featuring the distinctive 拉塞尔达升降机 as the recognizable main landmark. Context: 海湾之城，一座升降塔连接高低 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "lima",
+      "name": "Lima",
+      "zh": "利马",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Lima (利马), 秘鲁, featuring the distinctive 利马主教座堂 as the recognizable main landmark. Context: 太平洋旁，古城石塔成双 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "cusco",
+      "name": "Cusco",
+      "zh": "库斯科",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Cusco (库斯科), 秘鲁, featuring the distinctive 库斯科大教堂 as the recognizable main landmark. Context: 安第斯高处，石墙围住广场 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "santiago",
+      "name": "Santiago",
+      "zh": "圣地亚哥",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Santiago (圣地亚哥), 智利, featuring the distinctive 圣地亚哥大塔 as the recognizable main landmark. Context: 安第斯山前，一座玻璃高塔 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "valparaiso",
+      "name": "Valparaíso",
+      "zh": "瓦尔帕莱索",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Valparaíso (瓦尔帕莱索), 智利, featuring the distinctive 瓦尔帕莱索历史城区 as the recognizable main landmark. Context: 海岸山坡，彩色屋檐层层铺开 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "bogota",
+      "name": "Bogotá",
+      "zh": "波哥大",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Bogotá (波哥大), 哥伦比亚, featuring the distinctive 蒙塞拉特山 as the recognizable main landmark. Context: 高原城市，山顶教堂在云边 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "cartagena",
+      "name": "Cartagena",
+      "zh": "卡塔赫纳",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Cartagena (卡塔赫纳), 哥伦比亚, featuring the distinctive 圣费利佩城堡 as the recognizable main landmark. Context: 加勒比海边，石墙面向海风 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "quito",
+      "name": "Quito",
+      "zh": "基多",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Quito (基多), 厄瓜多尔, featuring the distinctive 国家誓言圣殿 as the recognizable main landmark. Context: 赤道高原，尖塔望向山谷 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "montevideo",
+      "name": "Montevideo",
+      "zh": "蒙得维的亚",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Montevideo (蒙得维的亚), 乌拉圭, featuring the distinctive 萨尔沃宫 as the recognizable main landmark. Context: 拉普拉塔河旁，一座塔楼升起 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "la-paz",
+      "name": "La Paz",
+      "zh": "拉巴斯",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: La Paz (拉巴斯), 玻利维亚, featuring the distinctive 圣弗朗西斯科教堂 as the recognizable main landmark. Context: 山谷深处，石刻立面迎着高原光 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "melbourne",
+      "name": "Melbourne",
+      "zh": "墨尔本",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Melbourne (墨尔本), 澳大利亚, featuring the distinctive 弗林德斯街车站 as the recognizable main landmark. Context: 金色圆顶，守着城市街角 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "brisbane",
+      "name": "Brisbane",
+      "zh": "布里斯班",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Brisbane (布里斯班), 澳大利亚, featuring the distinctive 故事桥 as the recognizable main landmark. Context: 河道蜿蜒，钢桥越过水面 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "perth",
+      "name": "Perth",
+      "zh": "珀斯",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Perth (珀斯), 澳大利亚, featuring the distinctive 伊丽莎白码头 as the recognizable main landmark. Context: 天鹅河畔，城市在水边展开 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "auckland",
+      "name": "Auckland",
+      "zh": "奥克兰",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Auckland (奥克兰), 新西兰, featuring the distinctive 天空塔 as the recognizable main landmark. Context: 两片海之间，一座高塔向上 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "wellington",
+      "name": "Wellington",
+      "zh": "惠灵顿",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Wellington (惠灵顿), 新西兰, featuring the distinctive 惠灵顿缆车 as the recognizable main landmark. Context: 红色车厢，沿山坡抵达海湾 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "suva",
+      "name": "Suva",
+      "zh": "苏瓦",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Suva (苏瓦), 斐济, featuring the distinctive 苏瓦海港 as the recognizable main landmark. Context: 南太平洋上，港口靠着绿山 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    },
+    {
+      "id": "port-moresby",
+      "name": "Port Moresby",
+      "zh": "莫尔兹比港",
+      "prompt": "Use case: illustration-story. Asset type: one portrait city illustration for the inside of an airplane window on a dark travel website. Primary request: Port Moresby (莫尔兹比港), 巴布亚新几内亚, featuring the distinctive 莫尔兹比港城市景观 as the recognizable main landmark. Context: 热带海湾，城市沿岸生长 Style/medium: refined hand-painted gouache travel illustration, simplified architectural forms with accurate distinctive silhouettes, softly textured brushwork, elegant rather than cartoonish. Portrait 2:3 canvas. Center the recognizable landmark within the middle 75 percent for a rounded airplane-window crop; sky in the upper third, characteristic local surroundings across the middle and foreground. Warm late-afternoon daylight, muted blue sky, natural local stone and building colors, subtle gold sunlight. Fill the whole canvas with artwork. No airplane, window frame, borders, words, labels, logos, signature, watermark, or photorealism. New standalone city illustration, not a webpage mockup."
+    }
+  ]
+}

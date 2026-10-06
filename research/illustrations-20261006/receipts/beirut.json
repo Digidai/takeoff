@@ -1,0 +1,14 @@
+{
+  "id": "beirut",
+  "image": "illustrations/beirut.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-f9391eb7-59d6-4cb0-bd41-0c87397d0ed6",
+  "promptSha256": "c015415c25a867e837795e2bc0b218c9a8ba3f46c23ad65f166f2d45752ea291",
+  "originalSha256": "6c413a8decbdaa753c66c60a19b83959317e35dfe4ab78c0c58c2abbc08af7f8",
+  "originalBytes": 2972605,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "fc261bfc35bd21c7e2cf97a2083cea339ab09905af43c5ec156d0396cf4a22de",
+  "bytes": 433650,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

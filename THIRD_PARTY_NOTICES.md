@@ -1,4 +1,4 @@
-# Third-party photographs and metadata
+# Third-party assets and metadata
 
 Original project code and synthesis are MIT licensed. The photographs below retain their individual licenses and are excluded from that grant. Downloaded pixels are unchanged; the interface and film use proportional display crops. Any rights in the photo presentation remain subject to the photo license, including applicable share-alike terms.
 
@@ -130,3 +130,14 @@ Research date: 2026-10-06. City coordinates identify the city, not the camera or
 | `public/assets/cities/port-moresby.jpg` / Port Moresby | MSchlauch | [Public domain](https://commons.wikimedia.org/wiki/Commons:Public_domain) | [Commons file](https://commons.wikimedia.org/wiki/File:Port_Moresby_Town2_Mschlauch.jpg) |
 
 City, landmark, and coordinate source links are in `public/cities.js`, the dated research catalog, and `public/credits.html`. The supplied reference recording and its soundtrack are not distributed.
+
+## Generated city illustrations
+
+The interactive website uses 120 separate city illustrations generated with the OpenAI built-in imagegen tool. The generated illustration files are distributed with the project under LICENSE. They do not inherit the licenses of the separately retained research photographs. Generation prompts and asset receipts are in `research/illustrations-20261006/`; web asset checksums are in `public/illustrations.json`. Architectural combinations, lighting, and viewpoints are artistic interpretations.
+
+## Bundled fonts
+
+Newsreader and Manrope are distributed under the SIL Open Font License 1.1, outside the MIT grant. Fonts are locally hosted. Only lossless TTF-to-WOFF2 container compression was performed; no glyph changes or subsetting.
+
+- **Newsreader**: [upstream font](https://raw.githubusercontent.com/google/fonts/main/ofl/newsreader/Newsreader%5Bopsz%2Cwght%5D.ttf), [upstream license](https://raw.githubusercontent.com/google/fonts/main/ofl/newsreader/OFL.txt); bundled license: `public/assets/fonts/OFL-Newsreader.txt`.
+- **Manrope**: [upstream font](https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/Manrope%5Bwght%5D.ttf), [upstream license](https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/OFL.txt); bundled license: `public/assets/fonts/OFL-Manrope.txt`.

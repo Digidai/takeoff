@@ -1,0 +1,14 @@
+{
+  "id": "mumbai",
+  "image": "illustrations/mumbai.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-2cbcb15b-b137-4294-82a0-8b1b1a2b1609",
+  "promptSha256": "11d6b8c0268a36f862d05c828c50f04ede3247b5f8b1c1c23265a049104ef68b",
+  "originalSha256": "a65f4b63a76314748927776d588b41ebb3f0797ad4b34e640df85147082b242e",
+  "originalBytes": 2901187,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "24e2c33004d9250649d28f28adbd7eaea35674deea2b5d59202c144928f2bc00",
+  "bytes": 428832,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

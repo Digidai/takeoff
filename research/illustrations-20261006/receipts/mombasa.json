@@ -1,0 +1,14 @@
+{
+  "id": "mombasa",
+  "image": "illustrations/mombasa.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-c2c85937-6885-4090-b291-78604cab81dc",
+  "promptSha256": "7fcd7fff941657e741754e679467f6690adb637f8b99f81da63f7b454aac36d9",
+  "originalSha256": "3cdf61f9ede9684a62b697eff42802df762d495f94fd3188b73b5d6472cad102",
+  "originalBytes": 3119342,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "0b4e5ab160c4fc47d7ec5d22419be25b58ec1f623d49246750b3cac3eb32eb52",
+  "bytes": 501156,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

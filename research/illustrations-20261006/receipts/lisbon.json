@@ -1,0 +1,14 @@
+{
+  "id": "lisbon",
+  "image": "illustrations/lisbon.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-21a796b1-027c-4855-a0ce-05868bc5d7d4",
+  "promptSha256": "01e6b01a754fd36718b990e341bcbaf66106fe9a3826bb2d86137421ed9abc71",
+  "originalSha256": "d6419247fc3efbde363f743ea94d9ad15fd1d79925353adc81d8325aa6dcba48",
+  "originalBytes": 2972329,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "e6c1d7d89b255169abf4af90a37d3ddf47a76218d0aa5cf524a015a50ab2c806",
+  "bytes": 440954,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

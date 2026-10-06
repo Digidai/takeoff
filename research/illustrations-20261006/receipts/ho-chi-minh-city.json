@@ -1,0 +1,14 @@
+{
+  "id": "ho-chi-minh-city",
+  "image": "illustrations/ho-chi-minh-city.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-eb769666-95fd-4fac-b225-4f8cf2debafe",
+  "promptSha256": "c74f772e70851033cd4257a45c7a45ccea825452df155de7a9c7eefbeee97e02",
+  "originalSha256": "7479b1dd4b4c558e7747b1d3960a5a669d598c9c5f7720242ac54326193066d7",
+  "originalBytes": 3001730,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "ac4f90977717805836c71a9f8a6715907c8b89f2c0a244a4db95fdffaefffac6",
+  "bytes": 479864,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

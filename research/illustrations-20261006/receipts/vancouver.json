@@ -1,0 +1,14 @@
+{
+  "id": "vancouver",
+  "image": "illustrations/vancouver.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-0ed12630-e244-49d4-bc08-e6fc1cac534c",
+  "promptSha256": "5c68e9007291b77fbcd6af934bb1d660418dbb02b877211ef2b37c5e2c47e946",
+  "originalSha256": "4e8ba4d3bef385422fd9586078d1717c0a6a818d2492ac5027582aec32fb8d13",
+  "originalBytes": 2859181,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "42d8a3454dc48c3d0c02d021455efbff3ef9c42a883fcea4b2c8c64a0b1bd50f",
+  "bytes": 428654,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

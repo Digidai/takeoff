@@ -1,0 +1,14 @@
+{
+  "id": "busan",
+  "image": "illustrations/busan.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-1067fd60-0bf0-43b2-9a1b-d0528541e91c",
+  "promptSha256": "45008219046c6c8567d87f68e49e276e81ad5cf8690d46cd879df2210f25a532",
+  "originalSha256": "f518aa05b193a88772da83e038da2a46a1327309375aee317f7b5e294f456ae6",
+  "originalBytes": 2989428,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "50b9a7f2b164828c51952946eaa9238cc1729e8db1c95aa3e87fc36b4e85dec2",
+  "bytes": 465670,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

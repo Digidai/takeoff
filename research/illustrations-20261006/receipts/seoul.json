@@ -1,0 +1,14 @@
+{
+  "id": "seoul",
+  "image": "illustrations/seoul.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-a15fb993-8cf5-44d0-bc8b-72f1d7c08047",
+  "promptSha256": "a1cfededa7a400ff7861099b0359a6b37275692c49cf93d8c849d9a327285912",
+  "originalSha256": "7a79bbe0b3e60e7f78865e87e704bbd58b68d693b94a61851fd1eb334fd630e6",
+  "originalBytes": 3067695,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "ae66baa5b55407b344fcb32f8d47e9f0f928a9e9a7daebbca5fb2ab5424cc13a",
+  "bytes": 496422,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

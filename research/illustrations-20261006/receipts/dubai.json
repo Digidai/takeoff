@@ -1,0 +1,14 @@
+{
+  "id": "dubai",
+  "image": "illustrations/dubai.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-8b3ebd4e-a8e0-4427-8b55-1a57c1ca4c62",
+  "promptSha256": "b2719415ab6ad94c61254711498dd1bcc8182deee8aba3b0d8ae350eafc1881b",
+  "originalSha256": "adcd4fb397b9897a3ce3f81213564403e3adb0d38ef21bef51875980461a71dc",
+  "originalBytes": 2631367,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "11c28f9cfcf4fb553c418c53b9e26aeec576a31d89b56963174ad57624b3f66f",
+  "bytes": 338110,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

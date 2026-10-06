@@ -1,0 +1,14 @@
+{
+  "id": "riyadh",
+  "image": "illustrations/riyadh.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-c0cf7391-9786-4fe5-8749-5b0161e1b7f5",
+  "promptSha256": "e1de0aaa5cc02e485b09813411f83c058186a6e419115956bf3c692c31e8c19c",
+  "originalSha256": "add443fe0d55203ce31f52fda1bc12fcf67cf3e2fd7b7ae1901f8569525d4e23",
+  "originalBytes": 2807689,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "bef75bbb91ae1754f1217acb199cc1c4db54cb69f08a3cfa07c05ee66f636cdb",
+  "bytes": 397146,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

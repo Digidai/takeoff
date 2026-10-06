@@ -1,0 +1,14 @@
+{
+  "id": "mexico-city",
+  "image": "illustrations/mexico-city.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-ba4f3f5e-14f0-4d0d-93f8-1ba88308173d",
+  "promptSha256": "72a0a38611397efce508967aec87b3747c90826bedc3ddea7dcb978ddbc01235",
+  "originalSha256": "89c15fed59e0e63eaf47ba6ada8a2ada6af7597705fd46e5a7ededaaa321042c",
+  "originalBytes": 3063112,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "9d2418e7d91915eaba8ca77eef7fa11c51d6e0b89e44b804a5252c303e04f831",
+  "bytes": 497790,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

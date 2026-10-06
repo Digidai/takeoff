@@ -1,0 +1,14 @@
+{
+  "id": "budapest",
+  "image": "illustrations/budapest.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-a16c1a47-3acb-4619-bf90-60a69314db35",
+  "promptSha256": "36f6e3bd0ec3abb4a83e3d4d8a6314ce37bb42000425c0b8fde5842abfdbb422",
+  "originalSha256": "17aaa1dad110aff44a40b7b55f0e0a5ebc298e1d004c3984f2a36eda4f5d29c2",
+  "originalBytes": 2890357,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "bc43e24e406d23cf7e5e1230f874215fa0c7f5cab98dba6cd4845f7e7fabf8ab",
+  "bytes": 419618,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

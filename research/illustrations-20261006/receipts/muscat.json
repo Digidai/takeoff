@@ -1,0 +1,14 @@
+{
+  "id": "muscat",
+  "image": "illustrations/muscat.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-a43ace31-924c-4412-afdf-b2b2c4041acc",
+  "promptSha256": "f67daf4374b656b702d6d0c828d163cbae11750b005358f2d01831d421103891",
+  "originalSha256": "4383641fb67dce587a5b200cc01a50fa2ee5c2886dc16b25e589ab4efc570545",
+  "originalBytes": 2935009,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "2978af21fdd8de5b518f806dfd78db840a5c0d6a1a3131154d65a908417f45ff",
+  "bytes": 419170,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

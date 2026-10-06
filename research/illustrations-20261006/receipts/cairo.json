@@ -1,0 +1,14 @@
+{
+  "id": "cairo",
+  "image": "illustrations/cairo.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-2eaecec4-d29a-4816-b06b-f4ddee9f2f03",
+  "promptSha256": "3023d4da2db1dc91cebe30533f91c82052223f8be9ce0aa138d3a7ce6255badf",
+  "originalSha256": "c9d6874dc3db0735fd03169c57bce8ebd9d443eee29c2163417e4c554f59627c",
+  "originalBytes": 2991532,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "cbb631760b564794e04088f70f13c346cd6dc0d686b539b7aaf3da5e3f7ae882",
+  "bytes": 447612,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

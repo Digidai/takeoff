@@ -1,0 +1,14 @@
+{
+  "id": "port-moresby",
+  "image": "illustrations/port-moresby.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-8039058c-d220-4f07-86c4-021d64978edd",
+  "promptSha256": "60397977af9bf89a417afb644106bb37f88371fdf973855c2ce8cf0fce329b82",
+  "originalSha256": "3fc9c6ded909da33f450f451ec1ec3e717276e0b5b068f60fbf34241e7092388",
+  "originalBytes": 2987588,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "292561d4acd2b2651b1725c959d7606f2ad6032974b6a68cf3dc96056ff80942",
+  "bytes": 473778,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

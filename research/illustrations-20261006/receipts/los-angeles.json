@@ -1,0 +1,14 @@
+{
+  "id": "los-angeles",
+  "image": "illustrations/los-angeles.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-b4c219bb-6d17-40f4-b4a6-17f10f8eea1a",
+  "promptSha256": "e4c1c489d95750167fd820f4c39f258890ccfe51d1e85f2166ac2ff395efa24e",
+  "originalSha256": "cbb9770f3cf205401da37cfa1731e7dc44021fb9804f9060ee69a95b3bc0ab9a",
+  "originalBytes": 2948379,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "501b3048e63a087b882bc706bce6d84c2dd912adadf7040e3d1bbe8678279aa8",
+  "bytes": 462686,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

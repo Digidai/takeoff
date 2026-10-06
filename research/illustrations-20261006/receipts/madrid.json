@@ -1,0 +1,14 @@
+{
+  "id": "madrid",
+  "image": "illustrations/madrid.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-80c0bdf5-e515-43b7-9619-7419a11a1d2e",
+  "promptSha256": "c1870a078bbf5cfd7a039751d47ab1b96931f44292dd97978f5a6d4d0ea9e227",
+  "originalSha256": "00817b984a8d96c075763c42df4419d49eb02d11af2cb9fb83a3f7462d5dfcf2",
+  "originalBytes": 2856511,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "7f6b56ec576fe67985cfdfdc70bf15a24ac8ec9b0946755e46affb83b91c809c",
+  "bytes": 419966,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

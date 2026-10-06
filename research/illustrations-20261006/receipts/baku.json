@@ -1,0 +1,14 @@
+{
+  "id": "baku",
+  "image": "illustrations/baku.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-1863e0ce-3004-45bb-abdc-d4723b92ed18",
+  "promptSha256": "1d2a9f54f216ff5ce6b7feda5c6cced8afe488e7268fe3bc54b9692f9b4592bd",
+  "originalSha256": "448e4c793b40940b013e6f49954ea739487f5099c680739331c9ecd033d7d958",
+  "originalBytes": 2945848,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "17e49ed35ff06bdc80bc95acc046f39a503b875ea9e83476cb30827894368a29",
+  "bytes": 467926,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

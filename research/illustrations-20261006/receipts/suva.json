@@ -1,0 +1,14 @@
+{
+  "id": "suva",
+  "image": "illustrations/suva.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-bfde32d4-a995-4fef-824e-163162628ef2",
+  "promptSha256": "ad308757b535bb34052c6d0d95cd977d86c45653a9a085a7895b696d751596b5",
+  "originalSha256": "10b93127c56786c5542958ba9c46f4863d5c19f0e8a4fd2b3717330c6ab9a68c",
+  "originalBytes": 3020753,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "e63ab2a536a37ccacb1e6a38d8a47d524687efd13ed1b1343c7b68bc10fd8800",
+  "bytes": 473726,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

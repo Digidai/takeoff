@@ -1,0 +1,14 @@
+{
+  "id": "sao-paulo",
+  "image": "illustrations/sao-paulo.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-5976c8fd-170a-4a83-b982-1165e71e42d4",
+  "promptSha256": "80ebda922214c4f0c981402927a23aac9b87ad61e8cb526be6d329dbccfd2a0c",
+  "originalSha256": "eec219396acc0e4ad5f7d6c5b1ebd45fb3cb5477a4922980fbaca36de8d05cd7",
+  "originalBytes": 3005985,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "4365ce642554895c914f89065c826d6cddb840c382e84bf5cad25a31e4ae6274",
+  "bytes": 490030,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

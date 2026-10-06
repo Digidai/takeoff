@@ -1,0 +1,14 @@
+{
+  "id": "singapore",
+  "image": "illustrations/singapore.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-1c9e01a2-4ab6-424f-b596-dc1505b1d815",
+  "promptSha256": "0341c16676d91d8c1aefec56420f3f39b7bbf061151adc5da533648d8f49583d",
+  "originalSha256": "b2a69e5d99eb4e396a4f1d40cbfc452168323cd3d16451b79f3ad4af95391a54",
+  "originalBytes": 2929464,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "457c61cc2228aed792ae200d5419ebeab9aeb75177ca3fe8aa2f4a63983706e3",
+  "bytes": 444532,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

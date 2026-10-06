@@ -1,0 +1,14 @@
+{
+  "id": "valparaiso",
+  "image": "illustrations/valparaiso.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-53930ef4-81cf-477b-99ad-ffd48bd0b375",
+  "promptSha256": "3106902a53b26b25ac9aabb3df7d6d1ac85053ed33b986f6685fc46dac304b52",
+  "originalSha256": "395d12ec108e500828d5840bfbed71ca7711bb29888a49ec89311f57be23c8ca",
+  "originalBytes": 3125754,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "70f073e2e47501baf1dea4bdf5dd67e13b13cccb67d651c973ba7a260ee54bd7",
+  "bytes": 506822,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

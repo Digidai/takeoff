@@ -3,55 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,interactive-widget=resizes-content">
-  <meta name="theme-color" content="#050505">
-  <meta name="description" content="从一扇机窗出发，漫游六大洲的120座城市。拖动遮光板，寻找世界的下一站。">
+  <meta name="theme-color" content="#0c1013">
+  <meta name="description" content="从一扇机窗出发，漫游六大洲的120座城市插画。轻推遮光板，遇见下一站。">
   <title>Takeoff · 起飞去看世界</title>
   <link rel="canonical" href="https://takeoff.genedai.me/">
   <meta property="og:title" content="Takeoff · 起飞去看世界">
-  <meta property="og:description" content="从一扇机窗出发，漫游六大洲的120座城市。">
+  <meta property="og:description" content="留一个靠窗的位置，漫游六大洲的120座城市。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://takeoff.genedai.me/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="scene.css">
+  <link rel="preload" href="assets/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main aria-label="起飞去看世界">
-    <div id="stage" class="stage"></div>
-    <button id="window-control" class="window-control" aria-label="拖动遮光板，或点按前往下一座城市" title="向上拖动遮光板，前往下一站"></button>
-    <div class="seat-label" aria-hidden="true"><span class="seat-mark">↗</span> TAKEOFF <span class="seat-note">WINDOW SEAT · 01A</span></div>
-    <button id="current-info" class="current-info" aria-label="查看当前城市与照片来源"><span id="current-place"></span><span id="current-landmark"></span></button>
-    <div id="interface" class="interface">
-      <p class="hint" id="hint">向上轻推遮光板，去下一站</p>
-      <nav class="destinations" aria-label="选择目的地">
-        <button id="browse" class="browse-button"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><ellipse cx="12" cy="12" rx="4" ry="8"/><path d="M4 12h16"/></svg><span>探索世界</span><span id="city-total" class="count-pill">120</span></button>
-        <button id="random" title="随机前往一座城市">随便飞 ↗</button>
-      </nav>
-      <div class="playback">
-        <button id="prev" class="icon-button" aria-label="上一站" title="上一站（←）"><svg viewBox="0 0 24 24"><path d="m14 6-6 6 6 6"/></svg></button>
-        <button id="play" class="play-button" aria-pressed="false"><span id="play-symbol">▷</span><span id="play-label">自动漫游</span></button>
-        <button id="next" class="icon-button" aria-label="下一站" title="下一站（→）"><svg viewBox="0 0 24 24"><path d="m10 6 6 6-6 6"/></svg></button>
-        <span class="divider"></span>
-        <button id="sound" class="icon-button" aria-label="开启环境音" aria-pressed="false" title="环境音"><svg viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4z"/><path id="sound-waves" d="m17 9 5 6m0-6-5 6"/></svg></button>
-        <button id="immersive" class="icon-button" aria-label="进入沉浸模式" title="沉浸模式（Esc 退出）"><svg viewBox="0 0 24 24"><path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/></svg></button>
+  <div class="page-shell">
+    <header class="page-header">
+      <a class="brand" href="./" aria-label="Takeoff 首页"><span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 19 14-14M5 5h14v14"/></svg></span><span>TAKEOFF</span></a><span class="seat-label">WINDOW SEAT · 01A</span>
+      <button id="settings-toggle" class="settings-toggle" aria-label="观景设置" aria-haspopup="dialog" title="观景设置"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 17h16"/><circle cx="8" cy="7" r="3"/><circle cx="16" cy="17" r="3"/></svg></button>
+    </header>
+    <main class="flight-deck" aria-label="起飞去看世界">
+      <section class="destination-panel" aria-labelledby="city-name">
+        <span id="arrival-region" class="sr-only">已抵达 · 亚洲</span>
+        <div class="city-heading"><h1 id="city-name" class="scene-title">Shanghai</h1><p id="coordinates" class="scene-coordinates"></p></div>
+      </section>
+      <section id="stage" class="stage" aria-label="城市机窗景观">
+        <button id="window-control" class="window-control" aria-label="拖动遮光板，或点按前往下一座城市" title="向上轻推遮光板，去下一站"></button>
+        <p id="current-place" class="city-place">上海 · 中国</p>
+        <button id="current-info" class="landmark-caption" aria-label="查看当前城市与插画资料"><span id="current-landmark"></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></button>
+        <p class="window-hint" id="hint"><span id="hint-text">向上轻推遮光板，去下一站</span></p>
+        <div class="loading-status" id="travel-status" role="status" aria-live="polite" hidden></div>
+      </section>
+      <div id="interface" class="interface">
+        <nav class="destinations" aria-label="选择目的地"><button id="browse" class="browse-button" aria-label="探索世界" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><ellipse cx="12" cy="12" rx="4" ry="8"/><path d="M4 12h16"/></svg><span>探索世界</span><span class="count-pill">120</span></button><button id="random" class="random-button" aria-label="随便飞">随便飞 <span aria-hidden="true">↗</span></button></nav>
+        <div class="playback" aria-label="漫游控制">
+          <button id="prev" class="icon-button" aria-label="上一站" title="上一站（←）"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></button>
+          <button id="play" class="play-button" aria-pressed="false"><svg id="play-symbol" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7z"/></svg><span id="play-label">开始漫游</span></button>
+          <button id="next" class="icon-button" aria-label="下一站" title="下一站（→）"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button>
+        </div>
       </div>
+      <button id="exit-immersive" class="exit-immersive" aria-label="退出沉浸模式"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h5V4m11 5h-5V4M4 15h5v5m11-5h-5v5"/></svg>退出沉浸 <span>Esc</span></button>
+      <p id="announcement" class="sr-only" role="status" aria-live="polite"></p>
+    </main>
+    <footer class="page-footer" aria-hidden="true"></footer>
+  </div>
+  <dialog id="settings" class="settings-dialog" aria-labelledby="settings-title">
+    <div class="settings-heading"><div><p class="eyebrow">WINDOW SEAT / 01A</p><h2 id="settings-title">靠窗偏好</h2><p>这一程，按你的节奏。</p></div><button class="close-dialog" data-close="settings" aria-label="关闭观景设置"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+    <div class="journey-ticket"><div class="journey-status"><span id="route-name">环球漫游</span><span id="route-counter">01 / 120</span></div><p id="route-duration">120 座城市 · 约 16 分钟</p><div class="route-progress" role="progressbar" aria-label="当前城市停留进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="stop-progress"></span></div></div>
+    <div class="preference-list">
+      <label class="preference-row" for="pace"><span><strong>每站停留</strong><small>放慢一点，多看一会。</small></span><select id="pace" aria-label="漫游停留时间"><option value="5">5 秒</option><option value="8" selected>8 秒</option><option value="12">12 秒</option></select></label>
+      <div class="preference-row"><span><strong>机舱环境音</strong><small>开启后，随漫游播放。</small></span><button id="sound" class="sound-switch" aria-label="开启环境音" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z"/><path id="sound-waves" d="m17 9 5 6m0-6-5 6"/></svg><span id="sound-state">关闭</span></button></div>
+      <button id="immersive" class="preference-row immersive-action" aria-label="进入沉浸模式"><span><strong>沉浸观景</strong><small>把整个屏幕，留给窗外。</small></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/></svg></button>
     </div>
-    <button id="exit-immersive" aria-label="退出沉浸模式">退出沉浸 <span>Esc</span></button>
-    <div class="journey-status"><span id="route-name">环球漫游</span><span id="route-counter">01 / 120</span></div>
-    <p id="announcement" class="sr-only" role="status" aria-live="polite"></p>
-  </main>
-  <dialog id="atlas" class="atlas-dialog" aria-labelledby="atlas-title">
-    <div class="atlas-heading"><div><p class="eyebrow">A WINDOW TO EVERYWHERE</p><h2 id="atlas-title">世界，从一扇窗开始。</h2><p id="atlas-summary"></p></div><button class="close-dialog" data-close="atlas" aria-label="关闭目的地目录">×</button></div>
-    <div class="atlas-map" aria-hidden="true"><svg id="world-dots" viewBox="0 0 720 180"></svg></div>
-    <div class="atlas-tools"><label class="search-wrap"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><input id="search" type="search" placeholder="搜索城市、国家／地区、地标" autocomplete="off" aria-label="搜索目的地"><kbd>/</kbd></label><div id="region-filters" class="region-filters" role="group" aria-label="按洲筛选"></div></div>
-    <div class="atlas-list-header"><span id="results-count"></span><button id="tour-region">漫游全部目的地 →</button></div>
-    <div id="city-grid" class="city-grid"></div>
-    <p id="no-results" class="no-results" hidden>暂时没有这座城市。试试中文、英文或地标名称。</p>
-    <footer class="atlas-footer">每一站都有真实照片与可查阅的来源。<a href="credits.html" target="_blank" rel="noopener">照片署名与研究来源 ↗</a> · <a href="https://github.com/Digidai/takeoff" target="_blank" rel="noopener">GitHub ↗</a></footer>
+    <footer class="settings-footer"><span><span id="city-total">120</span> 座城市插画 · 六大洲</span><div><a href="credits.html" target="_blank" rel="noopener">插画与资料 ↗</a><a href="https://github.com/Digidai/takeoff" target="_blank" rel="noopener">GitHub ↗</a></div></footer>
   </dialog>
-  <dialog id="place-details" class="details-dialog" aria-labelledby="detail-title"><button class="close-dialog" data-close="place-details" aria-label="关闭城市详情">×</button><div id="detail-content"></div></dialog>
+  <dialog id="atlas" class="atlas-dialog" aria-labelledby="atlas-title">
+    <div class="atlas-heading"><div><p class="eyebrow">YOUR NEXT LITTLE ESCAPE</p><h2 id="atlas-title">下一站，想去哪？</h2><p id="atlas-summary"></p></div><button class="close-dialog" data-close="atlas" aria-label="关闭目的地目录"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+    <div class="atlas-map" aria-hidden="true"><span>世界很大，<br>从喜欢的一站开始。</span><svg id="world-dots" viewBox="0 0 720 180"></svg></div>
+    <div class="atlas-tools"><label class="search-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><input id="search" type="search" placeholder="城市、国家／地区或地标" autocomplete="off" aria-label="搜索目的地"><kbd>/</kbd></label><div id="region-filters" class="region-filters" role="group" aria-label="按洲筛选"></div></div>
+    <div class="atlas-list-header"><span id="results-count"></span><div class="atlas-actions"><button id="random-atlas" class="random-button" aria-label="随便飞" title="随机前往筛选结果中的一座城市"><span>随便飞 ↗</span></button><button id="tour-region">漫游全部目的地 →</button></div></div>
+    <div id="city-grid" class="city-grid"></div>
+    <div id="no-results" class="no-results" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg><h3>换一个词，继续发现。</h3><p>试试中文、英文、国家／地区或地标。</p><button id="reset-search">查看全部城市</button></div>
+    <footer class="atlas-footer"><span>AI 城市插画 · 地标与视角为艺术化表现</span><a href="credits.html" target="_blank" rel="noopener">插画与研究资料 ↗</a><a href="https://github.com/Digidai/takeoff" target="_blank" rel="noopener">GitHub ↗</a></footer>
+  </dialog>
+  <dialog id="place-details" class="details-dialog" aria-labelledby="detail-title"><button class="close-dialog" data-close="place-details" aria-label="关闭城市详情"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button><div id="detail-content"></div></dialog>
   <script src="cities.js"></script>
-  <script src="scene.js"></script>
+  <script src="illustrations.js"></script>
+  <script src="cabin.js"></script>
   <script src="ambient.js"></script>
   <script src="app.js"></script>
 </body>

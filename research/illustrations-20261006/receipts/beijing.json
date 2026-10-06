@@ -1,0 +1,14 @@
+{
+  "id": "beijing",
+  "image": "illustrations/beijing.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-8ba284f1-b16c-416f-bb75-7fbb2133df09",
+  "promptSha256": "72ecf35a8e9b3f0e3ff5f3a64250e7da8655ce8433197a984ed81849841ae5e8",
+  "originalSha256": "d9faee3c39352036aa9d6a5ddb4aaabbc5262ca53fa9bb95b26277c349ee92fc",
+  "originalBytes": 2892063,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "a77bc028414a3755751f93fbbceeafedf3081cf529c490a398897c9a301637a5",
+  "bytes": 416826,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

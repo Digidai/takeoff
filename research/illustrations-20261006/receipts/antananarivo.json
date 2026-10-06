@@ -1,0 +1,14 @@
+{
+  "id": "antananarivo",
+  "image": "illustrations/antananarivo.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-4669c1fc-3a28-484e-816e-c175eaa6e5a8",
+  "promptSha256": "a7602e74e36ccdbee2b561782105844a563097d2619af03746517df0324cd1b6",
+  "originalSha256": "fadd44a91e5822351ef16d278412a6e091614147ab6b9e87396a4c4f1cc6271f",
+  "originalBytes": 3163452,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "a3cd3a2eb7191157c238dde94503b2832f5d0e9d104d76417f3dbcb6c854c0f1",
+  "bytes": 511150,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

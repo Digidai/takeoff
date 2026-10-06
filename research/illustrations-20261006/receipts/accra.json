@@ -1,0 +1,14 @@
+{
+  "id": "accra",
+  "image": "illustrations/accra.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-b66049e1-57d2-462a-bb14-94e5a4f960bd",
+  "promptSha256": "5d16977cd4ca28a26c36846408a9e4487ea27effb0843d70157fbff5cb076637",
+  "originalSha256": "dc0f88c247192658fa0b8563167b7a21e39dbcd72453d9d823997552f3feb47e",
+  "originalBytes": 2644138,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "80a058188e9a3f046a3480e347486061c4840072738974e5d7f4e99bce342784",
+  "bytes": 364654,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

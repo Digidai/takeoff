@@ -1,0 +1,14 @@
+{
+  "id": "jakarta",
+  "image": "illustrations/jakarta.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-eed78a01-1b99-4e31-bc74-56ec2119c671",
+  "promptSha256": "028436bd4261e92e23f100abc11e87aa7cb373d74227c4a0d9ed394c2cf72e24",
+  "originalSha256": "36684da85bd911a6eed168bddea6db9b3b7c0a0aabe465ef48ed3d9cb33198e4",
+  "originalBytes": 2938297,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "e2893a4f30f442130391571f33ffc0c7ec750ccccedde2978a1ef4305b594b3e",
+  "bytes": 445010,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

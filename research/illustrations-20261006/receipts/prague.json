@@ -1,0 +1,14 @@
+{
+  "id": "prague",
+  "image": "illustrations/prague.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-1b493205-bf49-4bb5-8e0b-a2061b68741b",
+  "promptSha256": "90892e0e2a8e6fdd97ef20ca24c961629428fd508767f767055656669a0705c2",
+  "originalSha256": "de733973987bd466fe6f731a141eab1ad51012fd77fcb161254e3061689f6d22",
+  "originalBytes": 2942990,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "8b61f9fc4c0bc9eae4e780dceb09a5ddf000192d9b37031c07adaf3d5317305b",
+  "bytes": 430518,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

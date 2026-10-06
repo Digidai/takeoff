@@ -1,0 +1,14 @@
+{
+  "id": "islamabad",
+  "image": "illustrations/islamabad.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-0e7eb34e-51cf-45ca-91d3-fe324db3ffb2",
+  "promptSha256": "7de83d3b7cf0280243f23c5d4eaa3d97da4b2b0f7dbd1c31c4d1a38393781359",
+  "originalSha256": "d42dc583b6243bc1f37666601e6591544d5bb1f6e53a84fbacb6fa8cf12313cc",
+  "originalBytes": 2993602,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "98d22a3ecce33dfaf2e0dbcfe5d1cd0b7235fcd91f2bfc894a7c7f6dc779d97a",
+  "bytes": 475532,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

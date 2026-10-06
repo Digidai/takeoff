@@ -1,0 +1,14 @@
+{
+  "id": "toronto",
+  "image": "illustrations/toronto.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-d4ac1be9-cfab-4973-a7cb-d30c12917e1b",
+  "promptSha256": "374ad11c6862dc72699a5a5d7dcafe1eea57be3bc1403081450b2bdf03604d49",
+  "originalSha256": "f85f65202ecae029578392644f1a3af6fec6ae507f3448ff188c2b3e5912ebdc",
+  "originalBytes": 2703873,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "855b1e385eb125ef302f19a2205c8edcc9f9424cfd7cc082487926fb3ebd2214",
+  "bytes": 352988,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "wellington",
+  "image": "illustrations/wellington.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-a724c867-a4dd-4903-93d5-c3bd69aadc8b",
+  "promptSha256": "fa64e7d1c3544c87845fa19b56590ee7cddb8bcaf8296d072b2f53bd1784f864",
+  "originalSha256": "c827e529367e1a2740efd9b0ff7dbebad05a2eb1583fd9dcb6a86589a27c2feb",
+  "originalBytes": 2984147,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "730bfb8c57a15bd975660e02a2061decf4ea9c4b3c54156fd88ebead046df9f9",
+  "bytes": 459076,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

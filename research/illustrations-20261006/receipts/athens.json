@@ -1,0 +1,14 @@
+{
+  "id": "athens",
+  "image": "illustrations/athens.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-2bfe21e8-3c2c-4e73-b5e6-134b32e82b98",
+  "promptSha256": "696c5015f58a46bc2245e5415855e2e1d00af98e66c7eea27166074f44265cd6",
+  "originalSha256": "f07f0abd66ff69cbd71e831757cfb1e37d913c48ab4411df8cbb72102b66fe4f",
+  "originalBytes": 3150025,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "61070aeb5afca0144e97df5330562510bfbbc790d68806068b7f142ac0e783e9",
+  "bytes": 505822,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

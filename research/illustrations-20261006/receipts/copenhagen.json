@@ -1,0 +1,14 @@
+{
+  "id": "copenhagen",
+  "image": "illustrations/copenhagen.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-6e5e1a45-4ca2-4bb3-93ac-6ab74b467264",
+  "promptSha256": "b260e14746e868bc401bd00c3a35e7cf55a34abc20876db9958ef9f408678a18",
+  "originalSha256": "ba6647de59a37b0e9a5e6325d231b053259429c2e38532b135b5d18ac451e476",
+  "originalBytes": 3198645,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "418c3a8a5d03b318b25e19cb1b48e58f561dcf8c3a14ae788376322ccdb4949c",
+  "bytes": 538516,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

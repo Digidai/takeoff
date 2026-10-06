@@ -1,0 +1,14 @@
+{
+  "id": "chicago",
+  "image": "illustrations/chicago.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-f82df571-7eaa-48d1-90e4-e1591732e188",
+  "promptSha256": "ed9a22430ddf21b92406eb07847c8fa78a40b7362ba4e993940206879b25c8fc",
+  "originalSha256": "baeb51f92327d31962bfb004758c5800dbde497a0c977b7b91b296c68a25c4b1",
+  "originalBytes": 2755795,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "f81f84b7c1a689afadd14169b03e412e87f2f0796e511db4a2f7f4f6fb7c9e0f",
+  "bytes": 408722,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

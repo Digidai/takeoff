@@ -1,0 +1,14 @@
+{
+  "id": "delhi",
+  "image": "illustrations/delhi.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-11a79e9f-32a0-4afc-bbdb-94ef3406fce3",
+  "promptSha256": "e467f034e59faa799386b18a3db0940c7f986723f2141289e67f82d156bb7a3c",
+  "originalSha256": "a4b366754665a92de9c4cea9e48e28667b70cb89dd0ae8b79e7d34797d8d0808",
+  "originalBytes": 2645728,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "2539ec349de0047d653ca50d72d7fcd4e0e073e0d11c781e46c24e70680f3937",
+  "bytes": 335314,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

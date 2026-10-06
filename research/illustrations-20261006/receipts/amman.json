@@ -1,0 +1,14 @@
+{
+  "id": "amman",
+  "image": "illustrations/amman.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-c1989452-c0f8-4320-a25b-369385245690",
+  "promptSha256": "b043bbcb13c576df653f9a71c9f3984c9faa0fe24091a5e0d32f8854d62467a9",
+  "originalSha256": "38184cce8f91172e845541149b831d9ca5b1937999a607d5a9e47a3eaba8cbdb",
+  "originalBytes": 3286437,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "7d4cc571dc9ecfd505df2e9d9f4f1a8243fd77a089315b28e695db8df7b414e8",
+  "bytes": 538946,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

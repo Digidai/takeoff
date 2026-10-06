@@ -1,0 +1,14 @@
+{
+  "id": "almaty",
+  "image": "illustrations/almaty.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-5c017d29-9d8a-483e-9b52-10fc6f524751",
+  "promptSha256": "07dfe2032901a86165243250985bc7def939c121b7d99136d16502852df9d498",
+  "originalSha256": "495a241727a3e94d21a3ab21bbbbf5794072a32bd73e36989b87534417ea46c4",
+  "originalBytes": 2941457,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "f6ffacd7e615cc3c2e5e355e4746d6174b4b58891e590efe97970bb1f1cccd6f",
+  "bytes": 456648,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

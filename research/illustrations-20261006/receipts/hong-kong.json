@@ -1,0 +1,14 @@
+{
+  "id": "hong-kong",
+  "image": "illustrations/hong-kong.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-b7346d32-33c7-4eb1-b8f3-f20ce59406d5",
+  "promptSha256": "cf01fad6fdfac3612dfbe0475779ad440bbbe4eedc3efd347515a4934d3076d6",
+  "originalSha256": "13330d270a346a6e7d743d419d733db709be2621d184d8b253eed57bfe84dd7d",
+  "originalBytes": 3037582,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "a47a69fe9235324596a7a32fcd217b75e132babc744a4178eed6d75d03911bcd",
+  "bytes": 464420,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

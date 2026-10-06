@@ -19,6 +19,7 @@ async (page) => {
       });
       const inside = rect => rect.left>=-1 && rect.top>=-1 && rect.right<=width+1 && rect.bottom<=height+1;
       assert(!layout.overflow && inside(layout.window) && inside(layout.dock) && inside(layout.info) && inside(layout.title), 'Scene and controls fit ' + width + '×' + height);
+      assert(Math.abs((layout.window.left+layout.window.right)/2-width/2)<1,'The single window is horizontally centered at ' + width + '×' + height);
       assert(layout.targets.every(button => button.width>=43.5 && button.height>=43.5), 'Main touch targets are at least 44px at ' + width + '×' + height);
       const overlaps = (a,b) => Math.min(a.right,b.right)>Math.max(a.left,b.left)+1 && Math.min(a.bottom,b.bottom)>Math.max(a.top,b.top)+1;
       assert(!overlaps(layout.window,layout.dock) && !overlaps(layout.info,layout.dock), 'Window, details, and dock stay separate at ' + width + '×' + height);
@@ -28,6 +29,13 @@ async (page) => {
       assert(atlas.x>=-1 && atlas.y>=-1 && atlas.x+atlas.width<=width+1 && atlas.y+atlas.height<=height+1, 'Atlas fits ' + width + '×' + height);
       assert(await mobile.locator('#search').evaluate(element => parseFloat(getComputedStyle(element).fontSize)>=16), 'Search text is at least 16px at ' + width + '×' + height);
       await mobile.getByRole('button',{name:'关闭目的地目录'}).tap();
+      assert(!await mobile.getByRole('combobox',{name:'漫游停留时间'}).isVisible(),'Preferences stay hidden at ' + width + '×' + height);
+      await mobile.getByRole('button',{name:'观景设置'}).tap(); await settle();
+      const settings=await mobile.locator('#settings').boundingBox();
+      assert(settings.x>=-1 && settings.y>=-1 && settings.x+settings.width<=width+1 && settings.y+settings.height<=height+1,'Preferences fit ' + width + '×' + height);
+      await mobile.getByRole('combobox',{name:'漫游停留时间'}).selectOption('12');
+      assert(await mobile.evaluate(()=>takeoff.getState().secondsPerCity===12),'Hidden preferences remain operable at ' + width + '×' + height);
+      await mobile.getByRole('button',{name:'关闭观景设置'}).tap();
       result.viewports.push({width,height,layout});
     }
     await mobile.setViewportSize({width:390,height:844}); await settle();
@@ -36,7 +44,7 @@ async (page) => {
       document.documentElement.style.setProperty('--safe-bottom','34px');
       dispatchEvent(new Event('resize'));
     }); await settle();
-    const safe = await mobile.evaluate(() => ({brand:document.querySelector('.seat-label').getBoundingClientRect().toJSON(),dock:document.querySelector('.interface').getBoundingClientRect().toJSON()}));
+    const safe = await mobile.evaluate(() => ({brand:document.querySelector('.page-header').getBoundingClientRect().toJSON(),dock:document.querySelector('.interface').getBoundingClientRect().toJSON()}));
     assert(safe.brand.top>=47 && safe.dock.bottom<=844-34, 'Simulated top and bottom safe areas are respected');
     await mobile.screenshot({path:'output/playwright/mobile-safe-area.png'});
     await mobile.evaluate(() => { document.documentElement.style.removeProperty('--safe-top'); document.documentElement.style.removeProperty('--safe-bottom'); dispatchEvent(new Event('resize')); });
@@ -52,9 +60,9 @@ async (page) => {
     assert(await mobile.evaluate(() => takeoff.getState().cityId==='kyoto'), 'Touch search selection travels to the requested city');
     const shade = await mobile.locator('#window-control').boundingBox();
     const cdp = await context.newCDPSession(mobile);
-    const x=shade.x+shade.width/2,y=shade.y+shade.height*.8;
+    const x=shade.x+shade.width/2,y=shade.y+shade.height*.85;
     await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y}]});
-    for(let i=1;i<=12;i++)await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x,y:y-shade.height*.72*i/12}]});
+    for(let i=1;i<=12;i++)await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x,y:y-shade.height*.75*i/12}]});
     assert(await mobile.evaluate(() => takeoff.getState().openness<.32), 'A real touch gesture closes the shade');
     await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
     await mobile.waitForTimeout(1700);
@@ -62,7 +70,7 @@ async (page) => {
     await mobile.emulateMedia({reducedMotion:'reduce'});
     for (const [width,height] of [[320,568],[390,844],[568,320]]) {
       await mobile.setViewportSize({width,height}); await settle();
-      const count=await mobile.evaluate(()=>TakeoffCities.length);
+      const count=await mobile.evaluate(()=>TakeoffDestinations.length);
       for(let index=0;index<count;index++) {
         await mobile.evaluate(index=>takeoff.travel(index),index);
         const title = await mobile.evaluate(() => { const range=document.createRange();range.selectNodeContents(document.querySelector('.scene-title'));const r=range.getBoundingClientRect();return {name:document.querySelector('.scene-title').textContent,left:r.left,right:r.right}; });
@@ -71,6 +79,7 @@ async (page) => {
       }
       assert(true, 'All 120 city titles fit ' + width + '×' + height);
     }
+    assert(await mobile.evaluate(()=>takeoff.scene.getCacheSize()<=8),'Long mobile travel bounds the retained artwork cache');
     assert(result.errors.length===0, 'No runtime errors during mobile acceptance');
     return result;
   } finally { await context.close(); }

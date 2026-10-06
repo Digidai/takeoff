@@ -1,0 +1,14 @@
+{
+  "id": "shanghai",
+  "image": "illustrations/shanghai.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-1010c48d-00c1-47c4-a623-2851dc762af7",
+  "promptSha256": "72a58c3bf71ea02fe74ae8e6b6909671f09c4b8b2f47d0cd0e751540a5fb5589",
+  "originalSha256": "ab40a5c33e428a48579b4151b34867762bef2d05dcf95063340bdc96da4b5d6f",
+  "originalBytes": 2843832,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "4fd58be3b4822e0cea6274b3dc472c498e93bade27564f0ff861ecfd364165d1",
+  "bytes": 420380,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

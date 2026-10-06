@@ -1,0 +1,14 @@
+{
+  "id": "johannesburg",
+  "image": "illustrations/johannesburg.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-1626a20a-16fd-4c4c-a68d-9f1559065329",
+  "promptSha256": "378ef64a3486a6fd469d8b84a1015817380a824d6d17864320f013672911a424",
+  "originalSha256": "05fe52f6c7dad379abe6a1e219a3ccd15d5dd3debde60d072d0dfe068118fbc5",
+  "originalBytes": 2837131,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "4f8782214b4b7329f80842d7cf04c3b7d2388ebca8c8695c05cfb6ce1b06db2a",
+  "bytes": 423046,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

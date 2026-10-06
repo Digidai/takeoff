@@ -1,0 +1,14 @@
+{
+  "id": "bogota",
+  "image": "illustrations/bogota.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-eaa8d685-f2b3-4c23-9905-ce34dfe3e8a2",
+  "promptSha256": "4630fe5364642324d99d3f99e52f12dc54f380e9a71b6665ecd46c9ad718ef72",
+  "originalSha256": "3933fdd70e74ee1c7303bcfc6a4ca7988f1e90a9340336ecdbde936a080beaf2",
+  "originalBytes": 2946977,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "82aab92216f10d526497c175c94fff411df8f9f66e9309c6adff07e569d9ae9e",
+  "bytes": 452912,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

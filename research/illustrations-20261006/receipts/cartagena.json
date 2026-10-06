@@ -1,0 +1,14 @@
+{
+  "id": "cartagena",
+  "image": "illustrations/cartagena.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-47727ca5-dca9-4f65-9a29-6ae522d6f00e",
+  "promptSha256": "508b9e803210b5eeaa502e66ec708bbb0ccc01081a067e79bfac130ae22d1579",
+  "originalSha256": "3fb2417ac2798097dc95f798e2178c36e1809ccd335addf8654bdeb3c5e5e8e9",
+  "originalBytes": 3180993,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "ae4f1eb00107e4b520de2a71fd8cc177708e78b99d0645c05fd0e130739c3617",
+  "bytes": 523866,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

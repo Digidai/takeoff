@@ -1,0 +1,14 @@
+{
+  "id": "casablanca",
+  "image": "illustrations/casablanca.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-92ec37a2-b7e0-4dde-8061-a3ee8b55c3fd",
+  "promptSha256": "a02645106f6d31e7d87de094f1b6cc2c9b26ee81bfc6a26ab2a0920bf6e8646f",
+  "originalSha256": "254a5f15a128ad3c8403ffb923a4a77054b0efae19d2d4e6344ed7a089640586",
+  "originalBytes": 2941997,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "24077fde8d7066d003c0f5781a500e0d5651405f5396e7e2bc4d973e158d4099",
+  "bytes": 420338,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

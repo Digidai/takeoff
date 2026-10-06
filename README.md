@@ -2,27 +2,34 @@
 
 **从一扇机窗出发，去看世界。**
 
-A quiet airplane window to 120 cities across six continents. Lift the shade,
-pick a destination, or let the world drift past your window.
+A quiet airplane window to 120 cities across six continents. Push up the shade,
+pick a destination, or let the world drift past your window. A vintage travel
+experience in deep charcoal and warm brass, centered on one cabin window.
+Every city has its own individually generated gouache illustration.
 
 [开始起飞 / Open Takeoff](https://takeoff.genedai.me) ·
-[照片署名 / Photo credits](https://takeoff.genedai.me/credits) ·
+[插画与资料 / Artwork and sources](https://takeoff.genedai.me/credits) ·
 [研究资料 / Research](research/README.md) ·
 [发布验收 / Verification](docs/deployment.md)
 
 ## Explore
 
 - 120 cities, 75 country/region display labels, and six regions.
-- A draggable window shade, city transitions, and a 10-minute world tour.
+- A shade you push up to travel, gentle city transitions, and a 16-minute world tour.
+- City name and coordinates above one centered window; city information and actions below.
+- Hidden window-seat preferences: 5, 8, or 12 seconds per city, route progress,
+  ambient sound, and immersive viewing. Opening preferences preserves playback.
 - Chinese and English search, landmark search, region filters, and custom tours.
 - Random destinations, immersive mode, keyboard controls, and reduced-motion support.
 - A dedicated touch layout with 44px controls, safe-area support, landscape composition,
   and a keyboard-aware city picker.
-- Local photographs with individual author, license, and source records.
-- Optional original procedural ambient sound. Sound starts only after a click.
+- 120 distinct, locally hosted city illustrations with saved generation prompts and hashes.
+- Optional original procedural ambient sound. Enable it in preferences, then start the tour.
 
 The interface is in Chinese; city names and source records include English.
-Photographs are recorded city views, not live footage or claims of an aerial viewpoint.
+The views are AI-generated city illustrations. Landmark combinations, light, and viewpoints
+are artistic interpretations; coordinates describe the city. Research photographs and their
+individual credits remain available in the repository for the original optional film.
 
 ## Run locally
 
@@ -71,6 +78,12 @@ is an explicit local command; no Cloudflare credentials are stored in this repo.
 | --- | --- |
 | `public/` | The entire website, shared SVG scene, city catalog, and photos |
 | `public/ambient.js` | Original deterministic cabin sound synthesis |
+| `public/cabin.js` | Sculpted window for the redesigned interactive website |
+| `public/scene.js`, `public/scene.css` | Original shared scene for the optional film |
+| `public/assets/fonts/` | Locally hosted Newsreader and Manrope, with OFL notices |
+| `public/assets/illustrations/` | 120 individually generated city illustrations |
+| `public/illustrations.json` | Generator, dimensions, and checksums for every illustration |
+| `research/illustrations-20261006/` | Exact generation prompts and original-output receipts |
 | `scripts/` | Local server, build, validation, and research tooling |
 | `research/` | Dated city research, photo selection, and source metadata |
 | `video/` | Optional 120-city film composition and render instructions |
@@ -94,13 +107,18 @@ npm run catalog
 npm run check
 ```
 
+Generate a separate portrait illustration for each new city with the built-in imagegen tool,
+using the recorded prompts as a style reference. Save its output with
+`scripts/store-illustration.py` (requires Pillow), then run
+`python3 scripts/compile-illustrations.py` to rebuild the illustration manifest before checking.
+
 Retain photo authors, source pages, license links, and hashes when adding or
 replacing images. See the research notes for coordinate and framing conventions.
 
 ## License
 
 Original code, vector graphics, editorial copy, and sound synthesis use the
-[MIT license](LICENSE). Photographs and third-party metadata keep their own
+[MIT license](LICENSE). Photographs, bundled fonts, and third-party metadata keep their own
 licenses, listed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and the
 [credit page](public/credits.html). Preserve those notices when redistributing.
 

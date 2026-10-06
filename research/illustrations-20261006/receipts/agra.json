@@ -1,0 +1,14 @@
+{
+  "id": "agra",
+  "image": "illustrations/agra.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-d46f5fa3-2f96-4771-b5aa-a48ec89c5db6",
+  "promptSha256": "2c1908b075a7e461ef7a1b33b8c3664daa4882f7571146d4c487c6d40bc117ad",
+  "originalSha256": "914902a87ca1505b2436f0c792d4c7a81c24b87f7368a98771ac7d1f58f95373",
+  "originalBytes": 2705835,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "dd689165f096f3a8cd52a7cfdd6c1f26e9bcb9021f5008b76fa489b87c1da8a2",
+  "bytes": 377070,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

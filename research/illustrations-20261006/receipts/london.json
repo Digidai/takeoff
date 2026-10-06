@@ -1,0 +1,14 @@
+{
+  "id": "london",
+  "image": "illustrations/london.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-325565a1-7f1f-48ee-9666-3e611476489b",
+  "promptSha256": "6b438e6e86b8a05e105e1e21432e57954f78251a36e51333296d40cef149a000",
+  "originalSha256": "796517575ccf270b7b2647d7882369ad82e907c4189fe9f87fcb4cdd2a71226e",
+  "originalBytes": 2885113,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "3ac6791048943deaef07c3c52bd6a92508aef247267c524796ca28731ed40e6c",
+  "bytes": 422866,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

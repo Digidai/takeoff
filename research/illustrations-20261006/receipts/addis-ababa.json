@@ -1,0 +1,14 @@
+{
+  "id": "addis-ababa",
+  "image": "illustrations/addis-ababa.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-53ec45c7-92d2-4455-b083-7c51dc467382",
+  "promptSha256": "2329f4ab220ae357256d6aea74dd05c592726cf8fade4e88169f4a26f79c52c6",
+  "originalSha256": "d2c85d36abf26002024f965951d8ce05909ba4eb1e50352428da5b51774613d5",
+  "originalBytes": 3011615,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "71e51009623f41177af471d55147eabe6d2190fcf82d3995c7cfc1812ca95814",
+  "bytes": 481870,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

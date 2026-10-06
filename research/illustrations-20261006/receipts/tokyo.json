@@ -1,0 +1,14 @@
+{
+  "id": "tokyo",
+  "image": "illustrations/tokyo.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-f105fdf4-0a71-48d5-a996-81a4d1ab3eb7",
+  "promptSha256": "67a68d19ba04afe4c2ecfe28e0044c710a14c6457f090fe3a0cdfabf1d7a25ad",
+  "originalSha256": "9f4175fb3888d45bc0c98ec82fc2709286b5a156f9fc18d2c6164bccd9564736",
+  "originalBytes": 2951050,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "27668f1d944e8a42537a62d9fec2a0a321332d3d6fb42d3399212d7cfea784be",
+  "bytes": 466338,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "san-jose",
+  "image": "illustrations/san-jose.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-aa77ab2a-033e-4a1f-8912-7033bb73a5cd",
+  "promptSha256": "b362322031c15580183604c92e2b662cd5d5b1e389b5cccd06ad006b52d21531",
+  "originalSha256": "f5b39f2dd6a485aea38c2dd04694bcd894a7ced7f013cffa0aa0f1cfdf7112f8",
+  "originalBytes": 3124397,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "b575c6d5df192fd0d5401c25664e9fadb329741358ab862b7e3153f26d12d3fe",
+  "bytes": 523172,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

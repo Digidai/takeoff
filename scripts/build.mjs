@@ -8,9 +8,12 @@ await cp(new URL('../public/', import.meta.url), dist, {recursive:true});
 const git = spawnSync('git', ['rev-parse', 'HEAD'], {cwd:fileURLToPath(new URL('../', import.meta.url)),encoding:'utf8'});
 const commit = git.status === 0 ? git.stdout.trim() : null;
 const catalog = await readFile(new URL('../research/global-cities-20261006/site-catalog.json', import.meta.url));
+const illustrations = await readFile(new URL('../public/illustrations.json', import.meta.url));
 await writeFile(new URL('version.json', dist), JSON.stringify({
   name:'takeoff', version:'1.0.0', commit,
   cities:JSON.parse(catalog).length,
-  catalog_sha256:createHash('sha256').update(catalog).digest('hex')
+  catalog_sha256:createHash('sha256').update(catalog).digest('hex'),
+  illustrations:JSON.parse(illustrations).count,
+  illustrations_sha256:createHash('sha256').update(illustrations).digest('hex')
 },null,2)+'\n');
 console.log('Static website built in dist/');

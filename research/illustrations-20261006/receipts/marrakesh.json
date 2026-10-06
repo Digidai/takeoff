@@ -1,0 +1,14 @@
+{
+  "id": "marrakesh",
+  "image": "illustrations/marrakesh.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-8c20f76a-74ce-4506-815f-78c6edbd6bc9",
+  "promptSha256": "42851dd8b0436bdb46e15d730e741fbdcd8f8c1aafdb62a1166942c6894afeab",
+  "originalSha256": "950b2a2400d2d3c35433ab27a853d5433adacf671dfd9591ba409da0e1b0fead",
+  "originalBytes": 3011262,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "8c8b491badf865d81d87f5a408aea2a1a1bac2dda657688392c1c81a7cc4652c",
+  "bytes": 436660,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

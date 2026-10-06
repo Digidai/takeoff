@@ -1,0 +1,14 @@
+{
+  "id": "venice",
+  "image": "illustrations/venice.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-dfc29251-354c-44a2-968f-f782fe102f5f",
+  "promptSha256": "f64af607ca0874df0a1d581bd81246f12b3e91f2f6ba0a66347f16d263681c24",
+  "originalSha256": "bacf6ca489e3dafe431e5b3be753425ab72572a38945b3485aeb60345609748e",
+  "originalBytes": 2868051,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "4314030d49e306468569fe11cbe7805558bf71669795a45bc833525563c03442",
+  "bytes": 406830,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

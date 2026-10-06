@@ -1,0 +1,14 @@
+{
+  "id": "manila",
+  "image": "illustrations/manila.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-803db519-97e8-4f3a-a08e-46296d4551ec",
+  "promptSha256": "4a0c09d9ee6a416c2f95ca4c220ce3b55eaf9f2f2fee0ec648c93db496e0b94f",
+  "originalSha256": "a18fe6d881ea5d611a10a121ca55a4a1dc1ded785fcd3908a578fd519fa3d263",
+  "originalBytes": 3292533,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "d8edcedb3cad53259a66247fe24365518c27ddcd2b3468efc33f89e4a345e22f",
+  "bytes": 549626,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

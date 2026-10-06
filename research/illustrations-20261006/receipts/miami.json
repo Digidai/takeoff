@@ -1,0 +1,14 @@
+{
+  "id": "miami",
+  "image": "illustrations/miami.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-72682441-ce32-428a-adba-d6c13cb2e31a",
+  "promptSha256": "e2b12b624dc6448fc03f14fd88a810f3959f51186562b3c6e830eb122b159c85",
+  "originalSha256": "058ae25f0b81373886f1fbeac2ba2e929cb95983068b2a035cc57faf0ba23072",
+  "originalBytes": 3280669,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "368243f05687d5618c1bec2f07080615ce7857cb1469d8dbad01a8774f927187",
+  "bytes": 551620,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

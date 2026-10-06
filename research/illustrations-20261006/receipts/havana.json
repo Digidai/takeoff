@@ -1,0 +1,14 @@
+{
+  "id": "havana",
+  "image": "illustrations/havana.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-e4588bca-48a8-47f3-ba06-461a242b8e2f",
+  "promptSha256": "be39c7dbb8aa052c50b7914de61981f129e0b41ce115377459d4bbb5d690bad1",
+  "originalSha256": "9e0485b52e95b1aeff427380961325f5af1284340b8138fb0042c5f24ea3c3d0",
+  "originalBytes": 3125047,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "c6dada6c92fd62eac6e539e108ece5556b4df59323e2a64f3a9b34b3b414307f",
+  "bytes": 518382,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

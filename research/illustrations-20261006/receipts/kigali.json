@@ -1,0 +1,14 @@
+{
+  "id": "kigali",
+  "image": "illustrations/kigali.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-7cf2e1f7-971e-4d7a-b941-3044c021b6f7",
+  "promptSha256": "eba954c5e61da340a52d4841ba2edb2b2517852f7b7f92d7456d2273063fa040",
+  "originalSha256": "76ca3e3d8e9c93342af2406638ddc179a2f3b83bca2a659044f131fb9edab8e4",
+  "originalBytes": 3107474,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "9a7845af5e2dc1fa72708763f14aa8a793d5009c52ba5888ee093eecd7fb560a",
+  "bytes": 510434,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

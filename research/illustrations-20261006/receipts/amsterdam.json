@@ -1,0 +1,14 @@
+{
+  "id": "amsterdam",
+  "image": "illustrations/amsterdam.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-2d53ffe2-4dcf-47e4-91ae-a263714bdfe1",
+  "promptSha256": "9cf0e20aedd9650418cade5901e9a713d89a47f5410172287801851b343adce3",
+  "originalSha256": "0c7fbe23d8904aa12bf374ff8c6ccfd4762d7fcc66331a7164f56a22f7913e71",
+  "originalBytes": 3141720,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "0628a26b9b7f40cd78bc06ca41173f0bf71e1b80e6fff1b0c83b2d3e9938f08e",
+  "bytes": 533428,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

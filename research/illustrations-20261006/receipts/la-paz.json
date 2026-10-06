@@ -1,0 +1,14 @@
+{
+  "id": "la-paz",
+  "image": "illustrations/la-paz.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-43d2f5b0-9c0a-4aaf-ad31-7c3248888c5e",
+  "promptSha256": "849257ec05ab3fc7cea18f251aedad5f47c2369141d596942a6b73ac05c3d2a7",
+  "originalSha256": "88fe2b694f2378a54070b0484e86b814ba2b20d3c1ff5da78dc5e7790cb93e4f",
+  "originalBytes": 3064940,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "0c26ffcb963e77aaff38208849ad17122fa88689b81bdce767a0b101f33e7bb1",
+  "bytes": 482216,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

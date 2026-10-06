@@ -1,0 +1,14 @@
+{
+  "id": "tunis",
+  "image": "illustrations/tunis.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-c16f2204-bef6-42e2-a0b8-42629020e6e0",
+  "promptSha256": "c58814b0ef48b1382206aa9c432524b957df25d6dbc6279991266866b47a7f5c",
+  "originalSha256": "63052d8b3ee58a768b824df190f6124ea467bde7575e8b2a602f4f326ec21101",
+  "originalBytes": 2726359,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "088f138560d3f4996ad1587655d7c6518c9fa96f6ee7a72eb6f5f3c17f7a2ab5",
+  "bytes": 365146,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

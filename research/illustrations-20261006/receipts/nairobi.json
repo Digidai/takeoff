@@ -1,0 +1,14 @@
+{
+  "id": "nairobi",
+  "image": "illustrations/nairobi.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-d6a55002-1fb8-4602-9493-0078fc79145e",
+  "promptSha256": "930b9b2f5a61d7f487ea144374ddfb95fa4b517e61aa87b6696918c17238550e",
+  "originalSha256": "360c92fc32dfe81a25554101734cbb1946f57b69e4fd0e664916e1409637e9e1",
+  "originalBytes": 2938342,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "1e622113ec1ca51240d8ccd2f790910c3fed0ed89b40f1bf2014b31baf4f3652",
+  "bytes": 470644,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

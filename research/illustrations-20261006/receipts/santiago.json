@@ -1,0 +1,14 @@
+{
+  "id": "santiago",
+  "image": "illustrations/santiago.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-3a2973e3-b112-46a2-ba42-c646861e74b9",
+  "promptSha256": "1d03bc31a57870fb3d6f618a657f7e7b01dae27faef02b5017173c3748b9707e",
+  "originalSha256": "74e0cfd4c21675a163edad5c2e9a9bc90c85a922d08177fbeab27ec55c9b7cd3",
+  "originalBytes": 3055795,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "569699c31daf00799094eeb2353b7355b36f854e8bda6cd54097c04eb214f32d",
+  "bytes": 487042,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "barcelona",
+  "image": "illustrations/barcelona.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-6bd2b202-699b-4a57-af90-bf1e07a0a1de",
+  "promptSha256": "e34895c4eb7755bf90983162d1e16d9278cf3a1f5fc6f24a4be7c30507408d11",
+  "originalSha256": "0b001a8aab65a124dd1d0d25b487ff411903cfdd6f419cdf25d4942822fecee5",
+  "originalBytes": 3114801,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "45ad784a5c0bd32bd9b858555eee7cb9c8182147b0c25473e7b11585f98c172d",
+  "bytes": 511898,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

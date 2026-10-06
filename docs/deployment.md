@@ -14,7 +14,7 @@
 同一算法生成 504 秒 WAV；渲染依赖在 `video/package-lock.json` 中锁定。
 公开视频工程的 HyperFrames 版本从 0.8.134 更新为 0.8.135，并完成重新检查。
 
-## 本地检查
+## 原版实景网站检查
 
 - `npm run check`：120 城市与研究目录一致，120 张照片 SHA-256 和字节数一致，
   29,130,981 字节；每张照片都有作者、来源和许可记录；脚本语法与环境音有效。
@@ -30,7 +30,7 @@
 - `video/npm run check`：HyperFrames 0.8.135 的 lint、runtime、layout、motion
   检查通过；9 个时间采样点无布局问题，31/31 文本对比度检查通过。
 
-## 正式网站验收 · 2026-10-06
+## 原版实景网站正式验收 · 2026-10-06
 
 `https://takeoff.genedai.me` 已部署到 Cloudflare，HTTPS 返回正常。
 GitHub 的公开仓库与 `main` 分支已推送，GitHub Actions 数据和构建检查通过。
@@ -61,3 +61,29 @@ GitHub Actions 只运行数据与构建检查。Cloudflare 发布通过 `npm run
 Web Analytics 与 JavaScript Detections 向 HTML 注入脚本。该行为来自
 [Cloudflare Web Analytics 文档](https://developers.cloudflare.com/web-analytics/faq/)
 及 [JavaScript Detections 文档](https://developers.cloudflare.com/cloudflare-challenges/challenge-types/javascript-detections/)。
+
+## 深色插画版 · 2026-10-06
+
+本版按用户提供的布局截图排列：城市名与坐标在机窗上方，单个机窗居中，
+城市信息与操作在下方。背景改为深色，停留时间、环境音、进度与沉浸模式
+默认收在“靠窗偏好”中。手机保持单窗布局。
+
+- 120 座城市分别使用内置 imagegen 生成独立插画；全部为 1024×1536。
+  网站 WebP 共 54,621,876 字节。提示词、原始输出校验值和网站文件校验值
+  保存在研究记录中；图片之间的 SHA-256 均不同。
+- `npm run check` 与静态构建通过：120 张插画、120 张保留的研究照片、
+  字体许可和校验值、城市数据与脚本语法均有效。
+- 全局浏览器交互 42 项通过，全部 120 张插画解码成功。
+- 移动端 Chromium 触屏模拟 151 项通过：14 种视口，360 次城市标题边界
+  检查，真实 CDP touch 手势、安全区、键盘缩小后的搜索和隐藏设置操作。
+- UI／UX 补充检查 25 项通过，涵盖设置焦点、停留时间、快速切换、暂停时
+  遮板恢复、图片失败后恢复与重试、沉浸模式和减少动态效果。
+  400 个文字对比度样本均大于 4.5，最低约 7.01。
+- 环境音 11 项浏览器检查通过；开启偏好保持暂停，播放后有可测输出，
+  打开设置继续播放，暂停与静音按预期停止声音。
+
+移动端结果来自浏览器模拟，尚未在实体 iOS／Android 设备上验收。
+上述为本地验收。发布阶段单独核对公开 Git commit、GitHub Actions、Cloudflare
+部署、正式域名版本、全部 120 张插画字节，以及生产浏览器交互；完整发布
+记录保存在本地忽略的 `output/` 目录。`version.json` 同时包含插画数量与清单
+SHA-256，便于对照正式环境。

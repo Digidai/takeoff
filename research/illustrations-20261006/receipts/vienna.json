@@ -1,0 +1,14 @@
+{
+  "id": "vienna",
+  "image": "illustrations/vienna.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-8f571ca7-0026-401d-aede-7636b6b42e8f",
+  "promptSha256": "5f22fd7b81b0e7e6aa0e8c6b6c284c9e622957396d1cd3e71d5585bd042eae52",
+  "originalSha256": "f3780ec10bfdfb088bf3589c5dde85067519a5bed9725a81875c2c23944c00a0",
+  "originalBytes": 2960724,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "adccf1e1564277d2be4b02655609b713455529c0e75f4309460f763bfec9da11",
+  "bytes": 436074,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

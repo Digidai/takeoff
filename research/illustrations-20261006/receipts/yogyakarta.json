@@ -1,0 +1,14 @@
+{
+  "id": "yogyakarta",
+  "image": "illustrations/yogyakarta.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-baa1e05c-479a-4790-aa77-12199ba3e3a2",
+  "promptSha256": "44ab1e54eb89c0617a537ca35f5ab4fd85dc4565904d3a8c162453f2fbacf085",
+  "originalSha256": "840d1702f1577224e9d2d78d8c67bf8d11dbe7912755fa413af79a1f4af59bd4",
+  "originalBytes": 2875890,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "7d6211e7052c0cb364b35cb46f4dbf3d15e2b684fe928b084da84139bb9d64db",
+  "bytes": 409898,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

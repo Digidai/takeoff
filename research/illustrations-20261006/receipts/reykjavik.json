@@ -1,0 +1,14 @@
+{
+  "id": "reykjavik",
+  "image": "illustrations/reykjavik.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-99f97019-d7ca-4f4d-a787-2be95a770612",
+  "promptSha256": "016de2201ca59d2b958bcfb52c1bd052309ab95ac9ccc96ab0528812a43ca0d2",
+  "originalSha256": "7cb61b7399ab1a1f8aa8310ce7a74727b1d516e029cdbff93d91dde8e27b6d56",
+  "originalBytes": 2933266,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "f842528a6e854a0c3d918a1796b02900e523888426f60f338c0ce8c9682d801d",
+  "bytes": 434342,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

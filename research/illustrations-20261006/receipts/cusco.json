@@ -1,0 +1,14 @@
+{
+  "id": "cusco",
+  "image": "illustrations/cusco.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-5c722cf2-9154-45dc-9d34-322f24ea8c11",
+  "promptSha256": "c37938b91463081e8693875a1997785f2329f1724b6f6a7d90e68630a851fe5d",
+  "originalSha256": "5851a9deefc069b70e52d423487192b149252a8755b6ffe68173d3abd6573a5c",
+  "originalBytes": 3210512,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "d5888a2eedc4da0ea4afc393934650717b8ede01782fcb7ef4a8ff886b9c8f52",
+  "bytes": 531544,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

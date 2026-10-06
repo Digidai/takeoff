@@ -1,0 +1,14 @@
+{
+  "id": "sydney",
+  "image": "illustrations/sydney.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-e070202b-f5ae-4726-b996-55cee162bec0",
+  "promptSha256": "c469d61d09fb3135944bcd9c993188aa75118e45964e98a311e5716d2e371601",
+  "originalSha256": "ff9d563c5bbb5f433b1c06de46e1b14fa0fe86d8f467b608a122113ae987643a",
+  "originalBytes": 2736841,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "5077676342a9f24b8d6b91ceb91369d68d95500efeef892e9b66c83918c8c909",
+  "bytes": 371918,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "zurich",
+  "image": "illustrations/zurich.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-5c7e3475-aa60-46e4-a7b4-0c2bbffe7e75",
+  "promptSha256": "85daeabad63535201d3d87fa1ab21c7a8c843fb559b5e430effe7bdf9fcf9663",
+  "originalSha256": "0ec37fcb30b3dae45dcab629a6dc60b232d03c778235860d9a6b301278156936",
+  "originalBytes": 2976292,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "b1f4b0e105a3d6ee417572ae808601a230850756d7a47536f00c25874277bd89",
+  "bytes": 454788,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "san-francisco",
+  "image": "illustrations/san-francisco.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-cc189340-c765-4246-a2a2-b6dadfa0286b",
+  "promptSha256": "431cea47328e14ef82086038bed06bafdb7f8693003c4b89d52e75115acebc2f",
+  "originalSha256": "1a3186a28e69a5bec44f5dd0613e40049272a4eeef46c1c692d3c79b7175034b",
+  "originalBytes": 2918484,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "f798799432feff6cc8a466aca3f45f63fae72e5a93bdd10fdcb88aae8ac5822c",
+  "bytes": 434530,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

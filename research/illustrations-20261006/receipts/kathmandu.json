@@ -1,0 +1,14 @@
+{
+  "id": "kathmandu",
+  "image": "illustrations/kathmandu.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-28696bee-715b-4b38-a171-9c0ed5e85f86",
+  "promptSha256": "9934030dfc47b399350f39e382a6f09db79eb34696bf7d4375fd0cf92098e2b7",
+  "originalSha256": "d55dcd359c40ee8bfe2fa7a74a29efb291434c9a795f49524aa18734c8c6fa7f",
+  "originalBytes": 2597972,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "be5ae1b8e252060f114ba9b64f5e31c0376a330ef1a0abdcc00b1ad67a0784ec",
+  "bytes": 342122,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "tallinn",
+  "image": "illustrations/tallinn.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-74d594a7-7223-4ada-bb68-45cc8e773642",
+  "promptSha256": "b8b6c8330f3388e5465cc3c4b5f9dce3d257e3848de060a7084109d24d4f46b8",
+  "originalSha256": "320ac23dbe33818620b57c5910df46a2060e6e5f13b0566d28cf2f8e6d3fff36",
+  "originalBytes": 3128494,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "ac8d75f2913a4f453e67eb0be38c2b4ba72e38307f2a335175a80095a01dbcd4",
+  "bytes": 499226,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "seattle",
+  "image": "illustrations/seattle.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-5ec1354d-005b-40a0-8030-67a78dfbe540",
+  "promptSha256": "1138182f5ab2f94ceb4d2f4e37f16d2651a017d04f0c4f0329f14b09e455f1ca",
+  "originalSha256": "25c47d412966f197780ca4db2633db0da7186c8a6f0afeb404b488ca2ac3855e",
+  "originalBytes": 2848042,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "56b2ded6a4d32699e4f4979d8efd28461087e5b277ccc6d9c1809444452d88b9",
+  "bytes": 422004,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

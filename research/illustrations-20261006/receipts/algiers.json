@@ -1,0 +1,14 @@
+{
+  "id": "algiers",
+  "image": "illustrations/algiers.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-f1c27477-c444-42d7-84dc-ecf4c1dd0fa6",
+  "promptSha256": "33e46ea3df5752e2ff695825d2669055c4f64bdcfe59079e7a48cb4e4525e7aa",
+  "originalSha256": "9684212580c4fcf0dbdf25e604f634fa410118889939c219d6fc8564cdfcc0cf",
+  "originalBytes": 2877522,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "a13235bdc884d9a60345f32110d3f79e7054220bdabb617be7424e9b3b6da3b3",
+  "bytes": 434912,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

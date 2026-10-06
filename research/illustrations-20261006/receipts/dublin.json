@@ -1,0 +1,14 @@
+{
+  "id": "dublin",
+  "image": "illustrations/dublin.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-fe7bb50f-504b-45c0-aec7-3e7691f10245",
+  "promptSha256": "9401ffef7c2b676ad665faeb07b4267422ce898849a40d0a3089e436e2bb88b2",
+  "originalSha256": "4626d40abe8a2907f3505a63dbb3405525ccebca29ac3274f479ae58f13dd658",
+  "originalBytes": 3131685,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "4f676719f73c151b7afaaa94ee97dac9fa825d6cb97f1c997163f86e89e02fcb",
+  "bytes": 522852,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

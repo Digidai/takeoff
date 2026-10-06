@@ -1,0 +1,14 @@
+{
+  "id": "abu-dhabi",
+  "image": "illustrations/abu-dhabi.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-89774907-a02f-4aa2-8302-6cf0595e03b1",
+  "promptSha256": "f1203d370e7d45b390bf84588ac6626bd445cdfcddde4521ea9ce9eff9330627",
+  "originalSha256": "91c817dd8ae6f9cc87fc0211853f2e08cd5de5fe5b3ac1a22c882cdce842c1ca",
+  "originalBytes": 2759928,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "8caa97376da58cab711c22b5e9d64f301a52a4c7ac587594690aa6596c037583",
+  "bytes": 367540,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

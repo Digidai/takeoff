@@ -7,17 +7,17 @@ async (page) => {
   await page.goto(base+'/');
   await page.setViewportSize({width:1440,height:900});
   const data=await page.evaluate(async()=>{
-    const cities=window.TakeoffCities;
+    const cities=window.TakeoffDestinations;
     const loaded=await Promise.all(cities.map(c=>new Promise(resolve=>{const image=new Image();image.onload=()=>resolve({id:c.id,width:image.naturalWidth,height:image.naturalHeight});image.onerror=()=>resolve({id:c.id,error:true});image.src='assets/'+c.image;})));
-    return {count:cities.length,ids:new Set(cities.map(c=>c.id)).size,regions:new Set(cities.map(c=>c.region)).size,countries:new Set(cities.map(c=>c.country)).size,loaded,metadataComplete:cities.every(c=>Number.isFinite(c.lat)&&Number.isFinite(c.lon)&&c.artist&&c.license&&c.licenseUrl&&c.photoSource&&c.citySource&&c.landmarkSource)};
+    return {count:cities.length,ids:new Set(cities.map(c=>c.id)).size,regions:new Set(cities.map(c=>c.region)).size,countries:new Set(cities.map(c=>c.country)).size,loaded,metadataComplete:cities.every(c=>Number.isFinite(c.lat)&&Number.isFinite(c.lon)&&c.generator&&c.sha256&&c.researchPhoto.artist&&c.researchPhoto.license&&c.researchPhoto.photoSource&&c.citySource&&c.landmarkSource)};
   });
   assert(data.count===120&&data.ids===120&&data.regions===6,'120 unique cities covering six regions');
-  assert(data.metadataComplete,'Every city has coordinates, source links, photo author and license');
-  assert(data.loaded.every(c=>!c.error&&c.width>0&&c.height>0),'All 120 photos decode in Chromium');
+  assert(data.metadataComplete,'Every city has artwork hashes, coordinates, source links and retained research photo credits');
+  assert(data.loaded.every(c=>!c.error&&c.width>0&&c.height>0),'All 120 city illustrations decode in Chromium');
   result.catalog=data;
   const originalRoute=(await state()).route;
   assert(originalRoute.length===120&&new Set(originalRoute).size===120,'Global route visits every city exactly once');
-  assert((await page.evaluate(route=>new Set(route.slice(0,6).map(i=>TakeoffCities[i].region)).size,originalRoute))===6,'First six global stops cover all six regions');
+  assert((await page.evaluate(route=>new Set(route.slice(0,6).map(i=>TakeoffDestinations[i].region)).size,originalRoute))===6,'First six global stops cover all six regions');
   const open=()=>page.getByRole('button',{name:'探索世界'}).click();
   await open();
   assert(await page.getByRole('button',{name:/^前往/}).count()===120,'Atlas contains all 120 destinations');
@@ -29,7 +29,7 @@ async (page) => {
   assert(await page.getByRole('button',{name:/^前往/}).count()===0&&await page.locator('#no-results').isVisible(),'Empty search shows a readable empty state');
   await search.fill('');
   for(const [region,count] of [['亚洲',36],['欧洲',30],['非洲',16],['北美洲',16],['南美洲',14],['大洋洲',8]]){
-    await page.getByRole('button',{name:region+count,exact:true}).click();assert(await page.getByRole('button',{name:/^前往/}).count()===count,'Filter '+region+' returns '+count+' cities');
+    await page.getByRole('button',{name:new RegExp('^'+region+'\\s*'+count+'$')}).click();assert(await page.getByRole('button',{name:/^前往/}).count()===count,'Filter '+region+' returns '+count+' cities');
   }
   await page.getByRole('button',{name:'前往惠灵顿',exact:true}).click();
   await page.waitForTimeout(1750);
@@ -39,30 +39,31 @@ async (page) => {
   await page.getByRole('button',{name:'下一站',exact:true}).click();await page.waitForTimeout(1700);
   await page.getByRole('button',{name:'下一站',exact:true}).click();await page.waitForTimeout(1700);
   assert((await state()).cityId==='sydney','Region route wraps to its first city');
-  await page.getByRole('button',{name:'自动漫游'}).click();await page.waitForTimeout(1100);
+  await page.getByRole('button',{name:/^(开始|继续)漫游$/}).click();await page.waitForTimeout(1100);
   assert((await state()).playing,'Automatic tour starts');
   await page.getByRole('button',{name:'暂停漫游'}).click();const paused=(await state()).elapsed;await page.waitForTimeout(300);
   assert(!(await state()).playing&&Math.abs((await state()).elapsed-paused)<.01,'Pause freezes the tour');
   const box=await page.getByRole('button',{name:'拖动遮光板，或点按前往下一座城市'}).boundingBox();
-  await page.mouse.move(box.x+box.width/2,box.y+box.height*.7);await page.mouse.down();await page.mouse.move(box.x+box.width/2,box.y+box.height*.7-250,{steps:12});
+  await page.mouse.move(box.x+box.width/2,box.y+box.height*.85);await page.mouse.down();await page.mouse.move(box.x+box.width/2,box.y+box.height*.85-box.height*.75,{steps:12});
   assert((await state()).openness<.32,'Pointer drag closes the shade');
   await page.mouse.up();await page.waitForTimeout(1750);
   assert((await state()).cityId==='melbourne'&&(await state()).openness>.99,'Releasing the closed shade travels and reopens');
-  await page.getByRole('button',{name:'自动漫游'}).click();await page.waitForTimeout(130);
+  await page.getByRole('button',{name:/^(开始|继续)漫游$/}).click();await page.waitForTimeout(130);
   assert((await state()).cityId==='melbourne'&&(await state()).openness>.98,'Resume after dragging preserves the current open city');
   await page.getByRole('button',{name:'暂停漫游'}).click();
   await page.getByRole('button',{name:'下一站',exact:true}).click();await page.waitForTimeout(130);await page.getByRole('button',{name:'下一站',exact:true}).click();await page.waitForTimeout(1800);
   assert(Number.isInteger((await state()).city)&&(await state()).openness>.99,'Rapid interrupted transitions settle in a valid open city');
-  await page.getByRole('button',{name:'进入沉浸模式'}).click();assert((await state()).immersive,'Immersive mode enters');
+  await page.getByRole('button',{name:'观景设置'}).click();
+  await page.getByRole('button',{name:'进入沉浸模式'}).click();assert((await state()).immersive,'Immersive mode enters from hidden preferences');
   await page.keyboard.press('Escape');assert(!(await state()).immersive,'Escape exits immersive mode');
-  await page.getByRole('button',{name:/^查看.+与照片来源$/}).click();
-  assert(await page.getByRole('link',{name:'查看原始照片'}).count()===1,'City details show the original photograph source');
+  await page.getByRole('button',{name:/^查看.+与插画资料$/}).click();
+  assert(await page.getByRole('link',{name:'插画与研究资料'}).count()===1,'City details show the illustration and research records');
   await page.getByRole('button',{name:'关闭城市详情'}).click();
-  await open();await page.getByRole('button',{name:'全部120',exact:true}).click();await search.fill('不丹');
+  await open();await page.getByRole('button',{name:/^全部\s*120$/}).click();await search.fill('不丹');
   await page.getByRole('button',{name:'漫游这 1 座城市 →'}).click();await page.waitForTimeout(1900);
   assert((await state()).cityId==='thimphu'&&(await state()).route.length===1&&(await state()).playing,'Search results can become a one-city tour');
   await page.getByRole('button',{name:'暂停漫游'}).click();
-  await page.getByRole('button',{name:'随便飞'}).click();assert((await state()).cityId==='thimphu','Random handles a one-city route');
+  await open();await page.locator('#atlas').getByRole('button',{name:'随便飞'}).click();await page.waitForTimeout(1200);assert((await state()).cityId==='thimphu','Random handles a one-city search result');
   for(const [width,height] of [[1054,720],[390,844],[360,640],[844,390]]){
     await page.setViewportSize({width,height});
     await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));

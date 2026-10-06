@@ -1,0 +1,14 @@
+{
+  "id": "brasilia",
+  "image": "illustrations/brasilia.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-13e8f8b6-26ba-46ce-abff-147b727971f1",
+  "promptSha256": "651257acc21c685c6d76f4da77ab0b19bd313a0205e2d94c74d23fa6f3bc9b5c",
+  "originalSha256": "3b7a8abdc91197a00c0bc5b2ca9bfa873b2086bb0c13eece8048a95098cae93e",
+  "originalBytes": 2758790,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "ced0c5a90a38c3dcd0613e8152664ef8040933a4478d0eeaa3782b58ad48daea",
+  "bytes": 382078,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

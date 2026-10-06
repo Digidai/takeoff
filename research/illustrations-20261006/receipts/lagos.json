@@ -1,0 +1,14 @@
+{
+  "id": "lagos",
+  "image": "illustrations/lagos.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-956b18b3-4028-4a66-a6af-fae7ee5fa63b",
+  "promptSha256": "6f92c393e98d514a5a0fdef4c50b31cc9a0f54efbb9f2dd156f571e927e5994b",
+  "originalSha256": "0048d87f307421a57efac480ad3af4524c688f31ceb1cf0051525f95a2c03ab2",
+  "originalBytes": 3027332,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "9d5bc0d2cb679e568a7f3599b8f1289ecab595ae807540b86deb4cbddd400c17",
+  "bytes": 455738,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

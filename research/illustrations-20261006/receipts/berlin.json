@@ -1,0 +1,14 @@
+{
+  "id": "berlin",
+  "image": "illustrations/berlin.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-c0114d57-44fc-4580-9121-95ceb3a0388f",
+  "promptSha256": "e1ea822b1a5b71848405d8c3edc1599ce7b8b29653dfad5bee7abb00818d3cb4",
+  "originalSha256": "d6ddc8d30c7b45f3b9e823523beef35c76f8b2cc8a6459c049945d96e6a8ac37",
+  "originalBytes": 2847091,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "2b03cc67776a3dfafef423b0d152165cf7b2d9bbb9dee811e53724fd0dadbf1f",
+  "bytes": 410418,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

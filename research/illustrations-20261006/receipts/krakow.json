@@ -1,0 +1,14 @@
+{
+  "id": "krakow",
+  "image": "illustrations/krakow.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-cda9c3ed-bb52-4231-b6f3-e2a743dd58eb",
+  "promptSha256": "86036ba780d12c0ba317af61d4301ba3b2250eb6f0d85aa0d8c5ff9d50f7acec",
+  "originalSha256": "1834ce4306935f2d00d4972869c9ada1444c8eb92cee3588eb3ecd7fc4d3aaa6",
+  "originalBytes": 2972129,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "b3b7bbfb0d51721f52273ce507505def52dd692803c3eac3744ffaa153a43f44",
+  "bytes": 452534,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}

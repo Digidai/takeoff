@@ -1,0 +1,14 @@
+{
+  "id": "panama-city",
+  "image": "illustrations/panama-city.webp",
+  "generator": "OpenAI built-in imagegen",
+  "generationId": "exec-baaca9b9-5909-4470-b350-ce0dd3ba49b2",
+  "promptSha256": "62cec7c6a691885f0a351ff74250017bca5bb18b5d5b5480454bbb2f11ee6fe4",
+  "originalSha256": "4658776a749daa1f512a324c3ab2bc5755d66d1c6de3fc65f3a122fc0210b6fd",
+  "originalBytes": 3137669,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "829d8dce4df15932c7201717e68e60ae24e5cadc60733b9935725ba3ab7126fa",
+  "bytes": 511420,
+  "encoding": "WebP quality 90; original dimensions and composition preserved"
+}
