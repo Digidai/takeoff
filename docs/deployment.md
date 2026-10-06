@@ -38,3 +38,8 @@
 
 GitHub Actions 只运行数据与构建检查。Cloudflare 发布通过 `npm run deploy`
 执行；仓库不保存账户令牌，也没有依赖未配置密钥的自动发布步骤。
+
+站点响应采用 `Cache-Control: no-transform`，保留原始照片字节，并避免域名级
+Web Analytics 与 JavaScript Detections 向 HTML 注入脚本。该行为来自
+[Cloudflare Web Analytics 文档](https://developers.cloudflare.com/web-analytics/faq/)
+及 [JavaScript Detections 文档](https://developers.cloudflare.com/cloudflare-challenges/challenge-types/javascript-detections/)。

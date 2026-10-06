@@ -41,7 +41,8 @@ npm run build
 ```
 
 The build writes a standalone website to `dist/`. Any static host can serve it.
-Cloudflare uses `_headers` for the supplied response headers.
+Cloudflare uses `_headers` for the supplied response headers. `no-transform`
+preserves original photo bytes and avoids automatic HTML script injection.
 
 ## Deploy to Cloudflare
 
@@ -75,8 +76,8 @@ is an explicit local command; no Cloudflare credentials are stored in this repo.
 | `THIRD_PARTY_NOTICES.md` | Every photograph's author, source, and license |
 
 Press `←` / `→` to travel, `Space` to play or pause, `/` to search, and `Esc`
-to leave immersive mode. The site stores no account or travel history and
-includes no analytics, cookies, external fonts, or remote image requests.
+to leave immersive mode. The application stores no account or travel history,
+sets no cookies, and includes no analytics, external fonts, or remote image requests.
 
 ## Add destinations
 
